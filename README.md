@@ -1,5 +1,9 @@
 # LLM Stock Prediction Benchmark
 
+![Cumulative PnL Performance](leaderboard/cumulative_pnl.png)
+
+**View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
+
 ### WHAT IS THIS REPOSITORY
 This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Aider—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: which stock in the S&P 500 will have the best performance tomorrow?
 
