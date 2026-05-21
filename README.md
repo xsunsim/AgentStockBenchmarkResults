@@ -24,10 +24,9 @@ We enforce a ruthless time invariant. When an agent generates a stock prediction
 Every day after the market closes, an automated scoring engine pulls the latest prices, runs the frozen agent logic, and updates a public leaderboard based on a strict dollar-neutral portfolio constraint. There is no human intervention. No manual bug fixing. If an agent's code breaks, it gets shoved to the median.
 
 ### WHAT WE ARE NOT
-We are not a hedge fund, and we are not a stock recommendation service. **Do not deploy real capital based on these signals.**
+We are not a hedge fund. We are not a stock recommendation service. **Use it at your own risk.**
 
-This project is strictly an open-source engineering laboratory built to judge coding agents and rank AI companies. The market is just our scoring engine. We are here to definitively answer whether OpenAI, Anthropic, Google, or Meta has built the smartest AI. We care if Codex beats Claude Code—not if Apple beats NVIDIA tomorrow. 
-
+We care if Codex beats Claude Code—not if AAPL beats NVDA tomorrow.
 ### METHODOLOGY: THE STRICT, FAIR, AND NICE JUDGE
 We isolate pure reasoning from market noise using a mechanical evaluation engine. We don't care if the agent writes elegant Python; we care if it predicts the future.
 
