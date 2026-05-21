@@ -43,7 +43,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MSCI,0.28752485,42,209.16,ranked,42,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AJG,0.28528827,43,208.17,ranked,43,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ACN,0.27907555,44,207.17,ranked,44,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CASY,0.27733598,45,206.18,ranked,45,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CASY,0.27758449,45,206.18,ranked,45,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EQR,0.27037773,46,205.18,ranked,46,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PHM,0.26863817,47,204.18,ranked,47,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BRO,0.26739563,48,203.19,ranked,48,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -124,8 +124,8 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,SNDK,0.12872763,123,128.49,ranked,123,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CAH,0.12847913,124,127.49,ranked,124,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CTAS,0.12847913,125,126.49,ranked,125,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CSCO,0.12698807,126,125.5,ranked,126,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,LNT,0.12698807,127,124.5,ranked,127,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,LNT,0.12723658,126,125.5,ranked,126,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CSCO,0.12698807,127,124.5,ranked,127,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,XYZ,0.12450298,128,123.51,ranked,128,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,UPS,0.12425447,129,122.51,ranked,129,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,HUBB,0.12276342,130,121.51,ranked,130,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -134,7 +134,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FSLR,0.11804175,133,118.53,ranked,133,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ROP,0.11729622,134,117.53,ranked,134,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,KKR,0.11630219,135,116.53,ranked,135,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TMO,0.11605368,136,115.54,ranked,136,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TMO,0.11630219,136,115.54,ranked,136,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ADI,0.11481113,137,114.54,ranked,137,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ATO,0.11431412,138,113.55,ranked,138,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,DVA,0.1138171,139,112.55,ranked,139,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -144,7 +144,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ROST,0.10735586,143,108.57,ranked,143,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,APH,0.10710736,144,107.57,ranked,144,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,JCI,0.10661034,145,106.57,ranked,145,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TTD,0.10636183,146,105.58,ranked,146,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TTD,0.10611332,146,105.58,ranked,146,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BG,0.10586481,147,104.58,ranked,147,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ALLE,0.10536779,148,103.59,ranked,148,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,DELL,0.10412525,149,102.59,ranked,149,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -227,7 +227,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CAG,0.01814115,226,25.9,ranked,226,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,GOOG,0.0139165,227,24.9,ranked,227,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AWK,0.0111829,228,23.9,ranked,228,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MRSH,0.00994036,229,22.91,ranked,229,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MRSH,0.01018887,229,22.91,ranked,229,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,O,0.00770378,230,21.91,ranked,230,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,WTW,0.00695825,231,20.92,ranked,231,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,HII,0.00571571,232,19.92,ranked,232,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -304,11 +304,11 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,VRT,-0.05218688,303,-50.8,ranked,303,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,VLTO,-0.05293241,304,-51.79,ranked,304,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PNW,-0.05318091,305,-52.79,ranked,305,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ADM,-0.0554175,306,-53.78,ranked,306,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ADM,-0.05492048,306,-53.78,ranked,306,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,COST,-0.0554175,307,-54.78,ranked,307,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,DLR,-0.05641153,308,-55.78,ranked,308,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AMZN,-0.05666004,309,-56.77,ranked,309,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,GWW,-0.06038767,310,-57.77,ranked,310,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,GWW,-0.06013917,310,-57.77,ranked,310,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FTNT,-0.0611332,311,-58.76,ranked,312,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TXT,-0.0611332,312,-59.76,ranked,311,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CI,-0.06138171,313,-60.76,ranked,313,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -323,7 +323,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,NVDA,-0.06809145,322,-69.72,ranked,322,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ARES,-0.07157058,323,-70.72,ranked,323,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,UHS,-0.07181909,324,-71.71,ranked,324,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,APD,-0.0723161,325,-72.71,ranked,325,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,APD,-0.07206759,325,-72.71,ranked,325,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PLTR,-0.07380716,326,-73.71,ranked,326,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BRK-B,-0.07554672,327,-74.7,ranked,327,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,WMT,-0.07728628,328,-75.7,ranked,328,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -347,7 +347,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,WMB,-0.10213718,346,-93.63,ranked,346,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EQT,-0.10238569,347,-94.62,ranked,347,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MDT,-0.10412525,348,-95.62,ranked,348,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CBOE,-0.10487078,349,-96.61,ranked,349,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CBOE,-0.10462227,349,-96.61,ranked,349,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,HPE,-0.10487078,350,-97.61,ranked,350,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ABBV,-0.10884692,351,-98.61,ranked,351,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AVB,-0.10959245,352,-99.6,ranked,352,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -362,7 +362,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MCK,-0.12002982,361,-108.57,ranked,361,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AIG,-0.12027833,362,-109.56,ranked,362,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EIX,-0.12077535,363,-110.56,ranked,363,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CPRT,-0.12127237,364,-111.55,ranked,364,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CPRT,-0.12102386,364,-111.55,ranked,364,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PGR,-0.12276342,365,-112.55,ranked,365,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CHRW,-0.12375746,366,-113.55,ranked,367,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CHTR,-0.12375746,367,-114.54,ranked,366,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -377,7 +377,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MS,-0.13419483,376,-123.51,ranked,376,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CLX,-0.13469185,377,-124.5,ranked,377,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FAST,-0.13469185,378,-125.5,ranked,378,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PODD,-0.13667992,379,-126.49,ranked,379,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PODD,-0.13643141,379,-126.49,ranked,379,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,WELL,-0.1389165,380,-127.49,ranked,380,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,RMD,-0.14015905,381,-128.49,ranked,381,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PNC,-0.14363817,382,-129.48,ranked,382,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -393,14 +393,14 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AEP,-0.15457256,392,-139.44,ranked,392,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,GE,-0.15457256,393,-140.44,ranked,393,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BMY,-0.15482107,394,-141.43,ranked,394,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EQIX,-0.15482107,395,-142.43,ranked,395,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EQIX,-0.15506958,395,-142.43,ranked,395,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FFIV,-0.15780318,396,-143.43,ranked,396,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,EOG,-0.1583002,397,-144.42,ranked,397,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PLD,-0.1583002,398,-145.42,ranked,398,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AFL,-0.16128231,399,-146.41,ranked,399,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PFE,-0.16153082,400,-147.41,ranked,400,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MMM,-0.16177932,401,-148.41,ranked,401,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AMD,-0.16202783,402,-149.4,ranked,402,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PFE,-0.16153082,399,-146.41,ranked,399,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,MMM,-0.16177932,400,-147.41,ranked,400,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AMD,-0.16202783,401,-148.41,ranked,401,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,AFL,-0.16426441,402,-149.4,ranked,402,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,VEEV,-0.16600398,403,-150.4,ranked,403,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FIX,-0.16625249,404,-151.39,ranked,404,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,HOOD,-0.17097416,405,-152.39,ranked,405,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -446,7 +446,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FE,-0.23459245,445,-192.23,ranked,445,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,WRB,-0.23633201,446,-193.23,ranked,446,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,RJF,-0.23832008,447,-194.22,ranked,447,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PFG,-0.23931412,448,-195.22,ranked,448,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,PFG,-0.23906561,448,-195.22,ranked,448,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,CARR,-0.24030815,449,-196.22,ranked,449,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,SBUX,-0.24080517,450,-197.21,ranked,450,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,LLY,-0.24130219,451,-198.21,ranked,451,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -471,7 +471,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,KDP,-0.27062624,470,-217.13,ranked,470,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,GEV,-0.27137177,471,-218.13,ranked,471,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,TMUS,-0.27137177,472,-219.12,ranked,472,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FCX,-0.28156064,473,-220.12,ranked,473,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FCX,-0.28131213,473,-220.12,ranked,473,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,VZ,-0.28305169,474,-221.12,ranked,474,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,OXY,-0.28528827,475,-222.11,ranked,475,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,LYV,-0.28553678,476,-223.11,ranked,476,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
@@ -494,7 +494,7 @@ ranking_date,strategy_id,ticker,score,portfolio_rank,position_dollars,ranking_st
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,ARE,-0.32579523,493,-240.04,ranked,493,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,FANG,-0.32753479,494,-241.04,ranked,494,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,LHX,-0.32927435,495,-242.03,ranked,495,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
-20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BK,-0.33523857,496,-243.03,ranked,496,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
+20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BK,-0.33499006,496,-243.03,ranked,496,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,NTRS,-0.33797217,497,-244.02,ranked,497,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,BEN,-0.33996024,498,-245.02,ranked,498,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0
 20260512,20260517__OpenAI__GPT5_4_mini__LinearNeutral,DOW,-0.34766402,499,-246.02,ranked,499,AgentStockBenchmarkResults/data/universe/20260512.txt,20260512,503,503,0,0

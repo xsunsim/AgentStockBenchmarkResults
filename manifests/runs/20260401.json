@@ -1,22 +1,26 @@
 {
   "schema_version": 1,
   "run_date": "20260401",
-  "generated_at_utc": "2026-05-21T03:48:21+00:00",
-  "status": "FAIL",
-  "started_at_utc": "2026-05-21T03:48:06+00:00",
-  "completed_at_utc": "2026-05-21T03:48:21+00:00",
+  "generated_at_utc": "2026-05-21T04:27:38+00:00",
+  "status": "PASS",
+  "started_at_utc": "2026-05-21T04:27:31+00:00",
+  "completed_at_utc": "2026-05-21T04:27:38+00:00",
+  "results_repo": "AgentStockBenchmarkResults",
+  "data_dir": "AgentStockBenchmarkResults/data/parquet",
+  "prompt_id": null,
+  "strategy_selector": null,
   "steps": [
     {
-      "name": "download-daily-csv",
+      "name": "ensure-cached-daily",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:19+00:00",
+      "completed_at_utc": "2026-05-21T04:27:31+00:00",
       "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260401.csv",
       "universe": "AgentStockBenchmarkResults/data/universe/20260401.txt"
     },
     {
       "name": "merge-data",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:20+00:00",
+      "completed_at_utc": "2026-05-21T04:27:33+00:00",
       "artifacts": {
         "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
         "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
@@ -28,7 +32,7 @@
     {
       "name": "verify-merge",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:20+00:00",
+      "completed_at_utc": "2026-05-21T04:27:33+00:00",
       "report": {
         "dates_checked": [
           "20260401"
@@ -42,61 +46,83 @@
     {
       "name": "generate-rankings",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
+      "completed_at_utc": "2026-05-21T04:27:36+00:00",
       "report": {
         "20260401": {
-          "20260517__Anthropic__Haiku4_5__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Anthropic__Opus4_6__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Anthropic__Opus4_7__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 144) (strategy.py, line 144)",
-          "20260517__Google__Gemini2_5Pro__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Google__Gemini3Flash__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__Google__Gemini3_1Pro__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__GPT4o__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__GPT5_4__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__GPT5_5__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__O3__LinearNeutral": "error:expected at least 2 finite scores, got 0",
-          "20260517__OpenAI__O4_mini__LinearNeutral": "error:expected at least 2 finite scores, got 0"
+          "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
+          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
+          "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 145) (strategy.py, line 145)",
+          "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
+          "20260517__OpenAI__O3__LinearNeutral": "PASS",
+          "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
         }
       }
     },
     {
       "name": "build-portfolios",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
+      "completed_at_utc": "2026-05-21T04:27:36+00:00",
       "counts": {
-        "20260401": 0
+        "20260401": 14
       }
     },
     {
       "name": "update-accounting",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
+      "completed_at_utc": "2026-05-21T04:27:37+00:00",
       "counts": {
-        "20260401": 0
+        "20260401": 14
       }
     },
     {
       "name": "build-metrics",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
-      "n_strategies": 0
+      "completed_at_utc": "2026-05-21T04:27:37+00:00",
+      "n_strategies": 14
     },
     {
       "name": "build-leaderboard",
-      "status": "SKIPPED",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
-      "reason": "no metrics"
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:27:37+00:00",
+      "artifacts": {
+        "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
+        "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
+        "html": "AgentStockBenchmarkResults/leaderboard/leaderboard.html"
+      }
     },
     {
-      "name": "error",
-      "status": "FAIL",
-      "completed_at_utc": "2026-05-21T03:48:21+00:00",
-      "error": "audit failed for 20260401: 2 issue(s); first: no ranking CSVs in AgentStockBenchmarkResults/rankings/20260401"
+      "name": "audit",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:27:38+00:00",
+      "report": {
+        "schema_version": 1,
+        "audit_date": "20260401",
+        "generated_at_utc": "2026-05-21T04:27:38+00:00",
+        "status": "PASS",
+        "failures": [],
+        "warnings": [],
+        "counts": {
+          "rankings": 14,
+          "portfolios": 14,
+          "universe_tickers": 503
+        }
+      }
+    },
+    {
+      "name": "write-manifests",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:27:38+00:00",
+      "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260401.json"
     }
   ],
-  "error": "audit failed for 20260401: 2 issue(s); first: no ranking CSVs in AgentStockBenchmarkResults/rankings/20260401"
+  "error": null
 }

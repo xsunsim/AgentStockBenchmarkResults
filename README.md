@@ -1,143 +1,46 @@
-# AgentStockBenchmarkResults
+# LLM Stock Prediction Benchmark
 
-This repo stores benchmark artifacts and lightweight result tooling for
-AgentStockBenchmark.
+### WHAT IS THIS REPOSITORY
+This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Aider—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: which stock in the S&P 500 will have the best performance tomorrow?
 
-It is intentionally separate from `AgentStockBenchmark`:
+### WHY POPULAR BENCHMARKS FAIL
+Current AI coding benchmarks are fundamentally broken. They are plagued by data contamination. When an AI solves a complex coding challenge, you never really know if it reasoned through the problem or just regurgitated a GitHub repository it saw during pre-training.
 
-- `data/raw/` contains source market-data CSV snapshots.
-- `data/parquet/` contains derived field-level OHLCV parquets.
-- `rankings/` contains frozen model ranking artifacts written before scoring.
-- `portfolios/` contains frozen portfolio artifacts built from rankings and the
-  applicable S&P 500 universe.
-- `accounting/` contains realized PnL and metrics after returns exist.
-- `leaderboard/` contains generated CSV, Markdown, and HTML views.
-- `manifests/` contains run, audit, artifact, and publish manifests keyed by
-  compact `YYYYMMDD` dates.
+DeepMind CEO Demis Hassabis recently proposed the ultimate stress test for Artificial General Intelligence (AGI): train a foundation model with a knowledge cutoff of 1911 and see if it can independently discover general relativity like Einstein did in 1915. If it can, it possesses true reasoning. If not, it is just a sophisticated pattern matcher.
 
-Only result-facing code lives here: selected artifact fetching, analysis,
-dashboard rendering, reporting, and audit-gated publication. Benchmark
-execution, strategy loading, and accounting logic live in `AgentStockBenchmark`.
+But since we cannot time travel to 1911 to guarantee a model hasn't secretly memorized Einstein's papers, how do we prove an AI isn't just cheating?
 
-All dated commands use compact `YYYYMMDD` dates. `YYYY-MM-DD` is accepted on the
-CLI for convenience, but generated file names use `YYYYMMDD`.
+**We use the stock market.** Nobody—not OpenAI, not Anthropic, not Meta—has the training data for which stock in the S&P 500 will have the best performance tomorrow. The future is the only uncontaminated test set.
 
-## Analyze Results
+### HOW DO WE CONTROL INFORMATION LEAKAGE
+True out-of-sample means tomorrow.
 
-Print a JSON summary of metrics, daily PnL, coverage, audits, and warnings:
+We enforce a ruthless time invariant. When an agent generates a stock prediction for today, it is only allowed to see a data snapshot truncated exactly at yesterday's close. To prove the AI isn't cheating, we use a two-repository "clean room" architecture. The agent's generated code is merged into an append-only registry where it receives a server-side timestamp before the next day's market data even exists.
 
-```bash
-cd AgentStockBenchmarkResults
-PYTHONPATH=src python -m agentstockbenchmark_results analyze \
-  --results-repo . \
-  --as-of 20260519
-```
+Every day after the market closes, an automated scoring engine pulls the latest prices, runs the frozen agent logic, and updates a public leaderboard based on a strict dollar-neutral portfolio constraint. There is no human intervention. No manual bug fixing. If an agent's code breaks, it gets shoved to the median.
 
-Write the same payload to a file:
+### WHAT WE ARE NOT
+We are not a hedge fund, and we are not a stock recommendation service. **Do not deploy real capital based on these signals.**
 
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results analyze \
-  --results-repo . \
-  --as-of 20260519 \
-  --output analysis_20260519.json
-```
+This project is strictly an open-source engineering laboratory built to judge coding agents and rank AI companies. The market is just our scoring engine. We are here to definitively answer whether OpenAI, Anthropic, Google, or Meta has built the smartest AI. We care if Codex beats Claude Code—not if Apple beats NVIDIA tomorrow. 
 
-## Render Leaderboard
+### METHODOLOGY: THE STRICT, FAIR, AND NICE JUDGE
+We isolate pure reasoning from market noise using a mechanical evaluation engine. We don't care if the agent writes elegant Python; we care if it predicts the future.
 
-```bash
-cd AgentStockBenchmarkResults
-PYTHONPATH=src python -m agentstockbenchmark_results render-leaderboard \
-  --results-repo .
-```
+*   **The Linear Portfolio:** Agents do not size their own positions. They simply return a raw numeric score for each eligible ticker. We rank these from highest to lowest and apply a fixed, dollar-neutral ladder. The top-ranked stock gets +$250, the worst gets -$250, and the middle ranks are evenly spaced. This forces the agent to demonstrate pure cross-sectional ranking skill. You cannot fake a high Sharpe ratio here by simply riding a bull market.
+*   **The Accounting:** We assume fractional shares and ignore transaction costs, borrow fees, and market impact. This is not a high-frequency trading benchmark. We are evaluating pure signal generation and research capability, not execution infrastructure.
+*   **Strict but Forgiving:** The evaluation engine is ruthless about the $t-1 \to t \to t+1$ time invariant, but it is a "nice judge" when it comes to edge cases. If an agent's code throws a NaN, drops a ticker, or hallucinations a format, the system doesn't crash. We simply shove that prediction to the median rank (exactly $0 allocation). The agent eats the zero-weight penalty and survives to predict another day.
 
-This writes:
+### HOW TO USE
+Transparency is the entire point. You don't have to trust our daily X (Twitter) posts or our public leaderboard—you can verify the math yourself.
 
-```text
-leaderboard/leaderboard.csv
-leaderboard/leaderboard.md
-leaderboard/leaderboard.html
-```
+*   **Inspect the Code:** Check the "Clean Room" repository to read the frozen `signal.py` logic, the exact CLI parameters, and the prompt provided to each agent.
+*   **Verify the Results:** Clone the active leaderboard repository and run `python run.py live`. The script will pull the daily market data, execute the frozen strategies, and recreate the portfolio accounting.
+*   Every calculation is deterministic and fully open-source. If our published daily P&L ever deviates from what you can calculate on your own machine, call us out.
 
-## Render Dashboard
+### HOW TO CONTRIBUTE
+We are turning this into an open-source research laboratory. While we are strictly controlling the actual code merges right now to maintain the "one push per model" integrity of the benchmark, we need the community's intelligence.
 
-Generate a static HTML dashboard and the JSON backing payload:
-
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results render-dashboard \
-  --results-repo . \
-  --as-of 20260519
-```
-
-This writes:
-
-```text
-dashboard/index.html
-dashboard/dashboard.json
-```
-
-Open `dashboard/index.html` in a browser.
-
-## Build Report
-
-Generate Markdown and HTML reports:
-
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results build-report \
-  --results-repo . \
-  --as-of 20260519
-```
-
-This writes:
-
-```text
-reports/report_20260519.md
-reports/report_20260519.html
-```
-
-Omit `--as-of` to write `reports/report_latest.md` and
-`reports/report_latest.html`.
-
-## Pull Results
-
-Pull public and date-scoped result artifacts from another local result checkout:
-
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results pull-results \
-  --source /path/to/another_AgentStockBenchmarkResults \
-  --dest . \
-  --date 20260519
-```
-
-Pull from an HTTP root that exposes the result repo layout:
-
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results pull-results \
-  --source https://example.com/AgentStockBenchmarkResults/ \
-  --dest . \
-  --date 20260519
-```
-
-`pull-results` copies public outputs, date manifests, dated raw/universe files,
-dated rankings/portfolios, dated metrics, and daily PnL files. It verifies
-artifact checksums when `manifests/artifacts/<YYYYMMDD>.json` is available.
-Use `--overwrite` to replace existing files. Use `--no-verify-checksums` only
-when you intentionally want a partial mirror.
-
-## Publish
-
-Publishing requires a passed audit manifest from `AgentStockBenchmark` and uses compact
-dates:
-
-```bash
-PYTHONPATH=src python -m agentstockbenchmark_results publish \
-  --date 20260519 \
-  --results-repo .
-```
-
-Publish renders leaderboard, dashboard, and report artifacts, then writes:
-
-```text
-manifests/published/20260519.json
-```
-
-Add `--push` only when you want the best-effort local Git add/commit/push path.
+*   **Prompt Engineering is Alpha:** The biggest variable in an autonomous agent's performance is the scaffolding and the prompt it receives. We will be updating the baseline system prompts monthly to see if we can extract better reasoning from the same base models.
+*   **Pitch Your Ideas:** Head over to GitHub Discussions or Issues. Critique the current baseline prompt. Propose new structural constraints, point out agentic blind spots we missed, or suggest better ways to force Codex or Claude Code to understand overfitting. Tell us how to make them smarter.
+*   We will synthesize the top-voted ideas into the next month's official prompt and test it live. Once the infrastructure is hardened, we will open up the pipeline for the community to submit PRs for independent, open-weight models.

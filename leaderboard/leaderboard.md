@@ -1,17 +1,27 @@
 # Leaderboard
 
-```
-                                  strategy_id  sharpe  cumulative_pnl  max_drawdown  win_rate  avg_daily_pnl  n_days
-      20260517__OpenAI__GPT5_5__LinearNeutral   8.531         1525.72       -240.17     0.692         117.36      13
-       20260517__OpenAI__GPT4o__LinearNeutral   7.844         1533.33       -308.17     0.692         117.95      13
-      20260517__OpenAI__GPT5_4__LinearNeutral   7.378         1373.27       -283.47     0.692         105.64      13
-          20260517__OpenAI__O3__LinearNeutral   7.349         1301.33       -308.76     0.692         100.10      13
-  20260517__Anthropic__Opus4_6__LinearNeutral   5.062          341.02       -127.51     0.615          26.23      13
-     20260517__OpenAI__O4_mini__LinearNeutral   4.857         1193.54       -455.62     0.692          91.81      13
- 20260517__OpenAI__GPT5_4_mini__LinearNeutral   4.846          970.63       -413.72     0.615          74.66      13
-20260517__Anthropic__Sonnet4_6__LinearNeutral   1.891          647.80      -1010.75     0.538          49.83      13
- 20260517__Anthropic__Haiku4_5__LinearNeutral   1.694          571.79      -1311.68     0.385          43.98      13
-20260517__Google__Gemini3_1Pro__LinearNeutral   1.195          365.50       -786.08     0.615          28.12      13
-20260517__Google__Gemini3Flash__LinearNeutral   0.859          267.04       -750.60     0.615          20.54      13
-20260517__OpenAI__GPT5_3_Codex__LinearNeutral   0.203           51.97       -702.23     0.615           4.00      13
-```
+|   prompt | company   | model        | port_type     |   sharpe |   cumulative_pnl |   max_drawdown | win_rate   |   avg_daily_pnl |   n_days |
+|---------:|:----------|:-------------|:--------------|---------:|-----------------:|---------------:|:-----------|----------------:|---------:|
+| 20260517 | OpenAI    | GPT5_5       | LinearNeutral |    5.656 |          2418.96 |        -330.92 | 57.6%      |           73.3  |       33 |
+| 20260517 | OpenAI    | GPT4o        | LinearNeutral |    5.004 |          2472.84 |        -643.15 | 60.6%      |           74.93 |       33 |
+| 20260517 | OpenAI    | O3           | LinearNeutral |    3.534 |          1615.38 |        -780.19 | 57.6%      |           48.95 |       33 |
+| 20260517 | OpenAI    | GPT5_4       | LinearNeutral |    3.365 |          1606.59 |        -455.41 | 57.6%      |           48.68 |       33 |
+| 20260517 | Anthropic | Haiku4_5     | LinearNeutral |    2.967 |          1891.69 |       -1322.49 | 54.5%      |           57.32 |       33 |
+| 20260517 | Anthropic | Opus4_7      | LinearNeutral |    2.703 |          1573.01 |        -713.85 | 48.5%      |           47.67 |       33 |
+| 20260517 | OpenAI    | O4_mini      | LinearNeutral |    2.683 |          1514.73 |        -849.8  | 54.5%      |           45.9  |       33 |
+| 20260517 | OpenAI    | GPT5_4_mini  | LinearNeutral |    1.398 |           612.62 |        -736.2  | 54.5%      |           18.56 |       33 |
+| 20260517 | OpenAI    | GPT5_3_Codex | LinearNeutral |    0.864 |           481.06 |       -1437.72 | 57.6%      |           14.58 |       33 |
+| 20260517 | Anthropic | Opus4_6      | LinearNeutral |   -0.25  |          -152.62 |       -1406.55 | 39.4%      |           -4.62 |       33 |
+| 20260517 | Anthropic | Sonnet4_6    | LinearNeutral |   -0.822 |          -588.24 |       -2097.13 | 39.4%      |          -17.83 |       33 |
+| 20260517 | Google    | Gemini3_1Pro | LinearNeutral |   -1.146 |          -776.85 |       -1722.01 | 45.5%      |          -23.54 |       33 |
+| 20260517 | Google    | Gemini3Flash | LinearNeutral |   -1.505 |         -1014.72 |       -2105.03 | 45.5%      |          -30.75 |       33 |
+| 20260517 | Google    | Gemini2_5Pro | LinearNeutral |   -2.058 |         -1435.07 |       -2679.44 | 39.4%      |          -43.49 |       33 |
+
+
+## Technical Notes
+
+### Model Status
+*   **Google Gemini 2.5 Flash**: This model is currently marked as **FAILED**. It generated strategy code with severe syntax errors (specifically, unterminated string literals caused by literal newlines inside `print` statements). These generation-time failures prevented the model from participating in the automated backfill.
+
+### Evaluation Context
+*   **Semi-Out-of-Sample Period**: The performance shown above covers the period from **2026-04-01 to 2026-05-20**. This serves as a semi-Out-of-Sample (OOS) test; while the strategies were submitted/frozen on 2026-05-17, the evaluation spans a window that includes recent market dynamics the models were not specifically optimized for. We look forward to tracking these strategies against purely live data in the future to further verify their alpha-generating capabilities.

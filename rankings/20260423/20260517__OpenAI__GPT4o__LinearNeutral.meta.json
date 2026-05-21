@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260423",
+  "entry_date": "20260424",
+  "exit_date": "20260427",
+  "prompt_id": "20260517",
+  "strategy_slug": "OpenAI__GPT4o__LinearNeutral",
+  "strategy_id": "20260517__OpenAI__GPT4o__LinearNeutral",
+  "strategy_sha256": "45532cc7ef484fcbec937629cdf60b999d7578b5309f01ec6001650ae47f1117",
+  "n_input_tickers": 503,
+  "n_scores": 503,
+  "n_ranked": 503,
+  "status": "PASS"
+}

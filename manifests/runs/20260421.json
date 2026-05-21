@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "run_date": "20260421",
+  "generated_at_utc": "2026-05-21T04:29:13+00:00",
+  "status": "PASS",
+  "started_at_utc": "2026-05-21T04:29:05+00:00",
+  "completed_at_utc": "2026-05-21T04:29:13+00:00",
+  "results_repo": "AgentStockBenchmarkResults",
+  "data_dir": "AgentStockBenchmarkResults/data/parquet",
+  "prompt_id": null,
+  "strategy_selector": null,
+  "steps": [
+    {
+      "name": "ensure-cached-daily",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:05+00:00",
+      "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260421.csv",
+      "universe": "AgentStockBenchmarkResults/data/universe/20260421.txt"
+    },
+    {
+      "name": "merge-data",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:07+00:00",
+      "artifacts": {
+        "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
+        "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
+        "low": "AgentStockBenchmarkResults/data/parquet/low.parquet",
+        "close": "AgentStockBenchmarkResults/data/parquet/close.parquet",
+        "volume": "AgentStockBenchmarkResults/data/parquet/volume.parquet"
+      }
+    },
+    {
+      "name": "verify-merge",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:08+00:00",
+      "report": {
+        "dates_checked": [
+          "20260421"
+        ],
+        "rows_checked": 503,
+        "values_checked": 2515,
+        "null_values_encoded": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generate-rankings",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:10+00:00",
+      "report": {
+        "20260421": {
+          "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
+          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
+          "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 145) (strategy.py, line 145)",
+          "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
+          "20260517__OpenAI__O3__LinearNeutral": "PASS",
+          "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
+        }
+      }
+    },
+    {
+      "name": "build-portfolios",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:10+00:00",
+      "counts": {
+        "20260421": 14
+      }
+    },
+    {
+      "name": "update-accounting",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:12+00:00",
+      "counts": {
+        "20260401": 14,
+        "20260402": 14,
+        "20260406": 14,
+        "20260407": 14,
+        "20260408": 14,
+        "20260409": 14,
+        "20260410": 14,
+        "20260413": 14,
+        "20260414": 14,
+        "20260415": 14,
+        "20260416": 14,
+        "20260417": 14,
+        "20260420": 14,
+        "20260421": 14
+      }
+    },
+    {
+      "name": "build-metrics",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:12+00:00",
+      "n_strategies": 14
+    },
+    {
+      "name": "build-leaderboard",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:12+00:00",
+      "artifacts": {
+        "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
+        "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
+        "html": "AgentStockBenchmarkResults/leaderboard/leaderboard.html"
+      }
+    },
+    {
+      "name": "audit",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:13+00:00",
+      "report": {
+        "schema_version": 1,
+        "audit_date": "20260421",
+        "generated_at_utc": "2026-05-21T04:29:13+00:00",
+        "status": "PASS",
+        "failures": [],
+        "warnings": [],
+        "counts": {
+          "rankings": 14,
+          "portfolios": 14,
+          "universe_tickers": 503
+        }
+      }
+    },
+    {
+      "name": "write-manifests",
+      "status": "PASS",
+      "completed_at_utc": "2026-05-21T04:29:13+00:00",
+      "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260421.json"
+    }
+  ],
+  "error": null
+}

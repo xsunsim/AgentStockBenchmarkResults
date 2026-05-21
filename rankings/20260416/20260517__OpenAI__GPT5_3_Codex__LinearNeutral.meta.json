@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260416",
+  "entry_date": "20260417",
+  "exit_date": "20260420",
+  "prompt_id": "20260517",
+  "strategy_slug": "OpenAI__GPT5_3_Codex__LinearNeutral",
+  "strategy_id": "20260517__OpenAI__GPT5_3_Codex__LinearNeutral",
+  "strategy_sha256": "c76e881a7089b314d10e98ad2748f1a3fc8ee0f2c9142f0fdc530fdc3a722a6f",
+  "n_input_tickers": 503,
+  "n_scores": 503,
+  "n_ranked": 503,
+  "status": "PASS"
+}
