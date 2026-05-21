@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-05-21T03:15:03+00:00",
+  "n_strategies": 15,
+  "strategies": [
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Anthropic__Haiku4_5__LinearNeutral",
+      "strategy_id": "20260517__Anthropic__Haiku4_5__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Anthropic__Haiku4_5__LinearNeutral/strategy.py",
+      "strategy_sha256": "215c28efec5a07c31f948881127962973759e88e65ba3e6aa0bf8e9e5e624807"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Anthropic__Opus4_6__LinearNeutral",
+      "strategy_id": "20260517__Anthropic__Opus4_6__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Anthropic__Opus4_6__LinearNeutral/strategy.py",
+      "strategy_sha256": "885ae59190e24060b509726aa5939dcc6745d2d6b8a0a428e941f96ec8c91e05"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Anthropic__Opus4_7__LinearNeutral",
+      "strategy_id": "20260517__Anthropic__Opus4_7__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Anthropic__Opus4_7__LinearNeutral/strategy.py",
+      "strategy_sha256": "32a5450d91c6e9c19e0b416afbffb0c13136fa367a78d817ddf7d29dd0556d8f"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Anthropic__Sonnet4_6__LinearNeutral",
+      "strategy_id": "20260517__Anthropic__Sonnet4_6__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Anthropic__Sonnet4_6__LinearNeutral/strategy.py",
+      "strategy_sha256": "d5681a92d316fed4dabf38b1b63a8817bee94addbb851bedfd59e849818ac6a0"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Google__Gemini2_5Flash__LinearNeutral",
+      "strategy_id": "20260517__Google__Gemini2_5Flash__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Google__Gemini2_5Flash__LinearNeutral/strategy.py",
+      "strategy_sha256": "8ac80f321c33c24a0c0982b33de601fb301345aba916fc10844c6c14153956e5"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Google__Gemini2_5Pro__LinearNeutral",
+      "strategy_id": "20260517__Google__Gemini2_5Pro__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Google__Gemini2_5Pro__LinearNeutral/strategy.py",
+      "strategy_sha256": "6bcca41e5c57184d293da4f9a3d7893ea733e86349bfa4fa4de20681530b2bdf"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Google__Gemini3Flash__LinearNeutral",
+      "strategy_id": "20260517__Google__Gemini3Flash__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Google__Gemini3Flash__LinearNeutral/strategy.py",
+      "strategy_sha256": "211e34d485370ed246f00914f5d5c579a1e66be8b8b8fbd24ad4ebe9ba04b090"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "Google__Gemini3_1Pro__LinearNeutral",
+      "strategy_id": "20260517__Google__Gemini3_1Pro__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Google__Gemini3_1Pro__LinearNeutral/strategy.py",
+      "strategy_sha256": "01589677afa7b69f59c77bcf8ea18d28b8bf9e77cb704be1aceb64b6b9856654"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__GPT4o__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__GPT4o__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__GPT4o__LinearNeutral/strategy.py",
+      "strategy_sha256": "45532cc7ef484fcbec937629cdf60b999d7578b5309f01ec6001650ae47f1117"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__GPT5_3_Codex__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__GPT5_3_Codex__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__GPT5_3_Codex__LinearNeutral/strategy.py",
+      "strategy_sha256": "c76e881a7089b314d10e98ad2748f1a3fc8ee0f2c9142f0fdc530fdc3a722a6f"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__GPT5_4__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__GPT5_4__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__GPT5_4__LinearNeutral/strategy.py",
+      "strategy_sha256": "6717967a95dca89697d87103ea65d8a41dbb4ce893574c78e182d0fe9580eda8"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__GPT5_4_mini__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__GPT5_4_mini__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__GPT5_4_mini__LinearNeutral/strategy.py",
+      "strategy_sha256": "0a4bdbd876e08454d4acab8bd545fbebaa85f19a4ac66a34c3e862781fc1b9ee"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__GPT5_5__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__GPT5_5__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__GPT5_5__LinearNeutral/strategy.py",
+      "strategy_sha256": "89d2d574c14fd41b7b48ab2db2e0637344754091914f29a98fcf2bedf9ce1529"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__O3__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__O3__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__O3__LinearNeutral/strategy.py",
+      "strategy_sha256": "6220afc76ebdb0e430affb5a1b649b0f6141ab0c129c3a81871bebb7750fa9dc"
+    },
+    {
+      "prompt_id": "20260517",
+      "strategy_slug": "OpenAI__O4_mini__LinearNeutral",
+      "strategy_id": "20260517__OpenAI__O4_mini__LinearNeutral",
+      "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/OpenAI__O4_mini__LinearNeutral/strategy.py",
+      "strategy_sha256": "ab890d4755a59b854b9fd83f5bd219653b8ee720c2babf00ff7be2274fdde1c4"
+    }
+  ]
+}

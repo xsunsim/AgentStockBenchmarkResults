@@ -1,0 +1,22 @@
+[project]
+name = "agentstockbenchmark-results"
+version = "0.1.0"
+description = "Artifacts, fetching helpers, and visualization for AgentStockBenchmark"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[project.scripts]
+agentstockbenchmark-results = "agentstockbenchmark_results.cli:main"
+asb-results = "agentstockbenchmark_results.cli:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
