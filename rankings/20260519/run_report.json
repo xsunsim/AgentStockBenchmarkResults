@@ -1,0 +1,17 @@
+{
+  "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
+  "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
+  "20260517__Anthropic__Opus4_7__LinearNeutral": "error:expected at least 2 finite scores, got 0",
+  "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
+  "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 145) (strategy.py, line 145)",
+  "20260517__Google__Gemini2_5Pro__LinearNeutral": "error:expected at least 2 finite scores, got 0",
+  "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
+  "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
+  "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
+  "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
+  "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
+  "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
+  "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
+  "20260517__OpenAI__O3__LinearNeutral": "PASS",
+  "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
+}

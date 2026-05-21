@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "audit_date": "20260407",
+  "generated_at_utc": "2026-05-21T03:48:59+00:00",
+  "status": "FAIL",
+  "failures": [
+    "no ranking CSVs in AgentStockBenchmarkResults/rankings/20260407",
+    "no portfolio CSVs in AgentStockBenchmarkResults/portfolios/20260407"
+  ],
+  "warnings": [],
+  "counts": {
+    "rankings": 0,
+    "portfolios": 0,
+    "universe_tickers": 503
+  }
+}

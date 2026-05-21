@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "artifact_date": "20260407",
+  "generated_at_utc": "2026-05-21T03:48:59+00:00",
+  "artifacts": [
+    {
+      "path": "data/raw/daily/20260407.csv",
+      "bytes": 46385,
+      "sha256": "d7180db01746fd5653e682bfe6a9c51b98538a5f5e742edd705a3a6ad4ff273e"
+    },
+    {
+      "path": "data/universe/20260407.txt",
+      "bytes": 2108,
+      "sha256": "a1089c959042640a9a722e8342b0f2dbc11f260cce4500cd2f308c4adce47920"
+    },
+    {
+      "path": "rankings/20260407/run_report.json",
+      "bytes": 1514,
+      "sha256": "677409a89ffcdd08e5b9e92adef57f6b3196fed12a55ff9ce2843c876c7e914c"
+    }
+  ]
+}

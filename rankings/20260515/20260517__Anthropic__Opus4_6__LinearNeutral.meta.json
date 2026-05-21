@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260515",
+  "entry_date": "20260518",
+  "exit_date": "20260519",
+  "prompt_id": "20260517",
+  "strategy_slug": "Anthropic__Opus4_6__LinearNeutral",
+  "strategy_id": "20260517__Anthropic__Opus4_6__LinearNeutral",
+  "strategy_sha256": "885ae59190e24060b509726aa5939dcc6745d2d6b8a0a428e941f96ec8c91e05",
+  "n_input_tickers": 503,
+  "n_scores": 503,
+  "n_ranked": 503,
+  "status": "PASS"
+}
