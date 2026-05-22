@@ -3,12 +3,14 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import datetime as dt
 import matplotlib.dates as mdates
+import numpy as np
 
 # Configuration
 RESULTS_REPO = Path("AgentStockBenchmarkResults")
 PNL_DIR = RESULTS_REPO / "accounting" / "daily_pnl"
 OUTPUT_PATH = RESULTS_REPO / "leaderboard" / "cumulative_pnl.png"
 SUBMISSION_DATE = dt.date(2026, 5, 20)  # The date strategies were truly live
+POSITION_MAX_DOLLARS = 250.0
 
 # Color mapping
 COMPANY_COLORS = {
@@ -16,6 +18,18 @@ COMPANY_COLORS = {
     "Anthropic": "#ff7f0e",  # Orange
     "Google": "#2ca02c",     # Green
 }
+
+def calculate_lmv(n):
+    """Calculate the Long Market Value for a portfolio of size n."""
+    if n < 2: return 0.0
+    d = (2 * POSITION_MAX_DOLLARS) / (n - 1)
+    # Positive positions are for indices i where 250 - i*d > 0
+    # i < 250/d = 250 / (500/(n-1)) = (n-1)/2
+    k = int(np.ceil((n - 1) / 2)) # Number of positive positions
+    # Sum of arithmetic progression: a=250, count=k, step=-d
+    # sum = k/2 * (2*a + (k-1)*step)
+    lmv = (k / 2.0) * (2 * POSITION_MAX_DOLLARS - (k - 1) * d)
+    return lmv
 
 def generate_plot():
     # 1. Load Leaderboard
@@ -58,12 +72,20 @@ def generate_plot():
         df_pnl = df_pnl.sort_values("ranking_date")
         df_pnl["cum_pnl"] = df_pnl["total_pnl"].cumsum()
         
+        # Get universe size from the first row of PnL
+        n_univ = int(df_pnl["n_portfolio_universe"].iloc[0])
+        lmv = calculate_lmv(n_univ)
+        
+        # Calculate Total Return since inception
+        # return = sum(daily_pnl) / LMV
+        total_return = best_m['cum_pnl'] / lmv
+        
         best_models_data.append({
             "company": company,
             "model": best_m["model"],
             "sharpe": best_m["sharpe"],
             "cum_pnl": best_m["cum_pnl"],
-            "avg_daily": best_m["avg_daily"],
+            "return": total_return,
             "color": color,
             "df_pnl": df_pnl
         })
@@ -78,7 +100,6 @@ def generate_plot():
     # 4. Plot and build table stats
     for m in best_models_data:
         df_pnl = m["df_pnl"]
-        total_return = m['cum_pnl'] / 500.0
         
         ax.plot(df_pnl["ranking_date"], df_pnl["cum_pnl"], 
                  color=m["color"], linewidth=3, alpha=0.9)
@@ -89,7 +110,7 @@ def generate_plot():
             m['model'], 
             f"{m['sharpe']:.2f}", 
             f"${m['cum_pnl']:,.0f}", 
-            f"{total_return:+.1%}"
+            f"{m['return']:+.2%}"
         ])
         row_colors.append(m["color"])
         all_dates_list.extend(df_pnl["ranking_date"])
