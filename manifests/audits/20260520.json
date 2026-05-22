@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "audit_date": "20260520",
-  "generated_at_utc": "2026-05-21T04:32:29+00:00",
+  "generated_at_utc": "2026-05-22T00:20:15+00:00",
   "status": "PASS",
   "failures": [],
   "warnings": [
     "accounting not yet scoreable for 20260520"
   ],
   "counts": {
-    "rankings": 14,
-    "portfolios": 14,
+    "rankings": 15,
+    "portfolios": 15,
     "universe_tickers": 503
   }
 }

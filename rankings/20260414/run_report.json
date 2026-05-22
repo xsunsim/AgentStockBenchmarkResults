@@ -3,7 +3,7 @@
   "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
   "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
   "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
-  "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 145) (strategy.py, line 145)",
+  "20260517__Google__Gemini2_5Flash__LinearNeutral": "PASS",
   "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
   "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
   "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",

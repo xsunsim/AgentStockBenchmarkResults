@@ -10,6 +10,7 @@ strategy_id,sharpe,cumulative_pnl,max_drawdown,win_rate,avg_daily_pnl,n_days
 20260517__OpenAI__GPT5_4_mini__LinearNeutral,-0.211,-74.15,-736.2,0.519,-2.75,27
 20260517__Anthropic__Opus4_6__LinearNeutral,-1.511,-737.03,-1406.55,0.37,-27.3,27
 20260517__Google__Gemini3_1Pro__LinearNeutral,-1.583,-893.86,-1722.01,0.444,-33.11,27
+20260517__Google__Gemini2_5Flash__LinearNeutral,-1.668,-897.22,-1672.22,0.444,-33.23,27
 20260517__Google__Gemini3Flash__LinearNeutral,-2.397,-1354.97,-2105.03,0.407,-50.18,27
 20260517__Anthropic__Sonnet4_6__LinearNeutral,-2.595,-1397.62,-1839.49,0.333,-51.76,27
 20260517__Google__Gemini2_5Pro__LinearNeutral,-2.952,-1770.82,-2679.44,0.37,-65.59,27

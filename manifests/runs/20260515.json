@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "run_date": "20260515",
-  "generated_at_utc": "2026-05-21T04:31:58+00:00",
+  "generated_at_utc": "2026-05-22T00:19:43+00:00",
   "status": "PASS",
-  "started_at_utc": "2026-05-21T04:31:48+00:00",
-  "completed_at_utc": "2026-05-21T04:31:58+00:00",
+  "started_at_utc": "2026-05-22T00:19:33+00:00",
+  "completed_at_utc": "2026-05-22T00:19:43+00:00",
   "results_repo": "AgentStockBenchmarkResults",
   "data_dir": "AgentStockBenchmarkResults/data/parquet",
   "prompt_id": null,
@@ -13,14 +13,14 @@
     {
       "name": "ensure-cached-daily",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:48+00:00",
+      "completed_at_utc": "2026-05-22T00:19:33+00:00",
       "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260515.csv",
       "universe": "AgentStockBenchmarkResults/data/universe/20260515.txt"
     },
     {
       "name": "merge-data",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:50+00:00",
+      "completed_at_utc": "2026-05-22T00:19:34+00:00",
       "artifacts": {
         "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
         "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
@@ -32,7 +32,7 @@
     {
       "name": "verify-merge",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:51+00:00",
+      "completed_at_utc": "2026-05-22T00:19:35+00:00",
       "report": {
         "dates_checked": [
           "20260515"
@@ -46,14 +46,14 @@
     {
       "name": "generate-rankings",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:54+00:00",
+      "completed_at_utc": "2026-05-22T00:19:38+00:00",
       "report": {
         "20260515": {
           "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
           "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
           "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
           "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
-          "20260517__Google__Gemini2_5Flash__LinearNeutral": "error:unterminated string literal (detected at line 145) (strategy.py, line 145)",
+          "20260517__Google__Gemini2_5Flash__LinearNeutral": "PASS",
           "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
           "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
           "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
@@ -70,60 +70,60 @@
     {
       "name": "build-portfolios",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:54+00:00",
+      "completed_at_utc": "2026-05-22T00:19:38+00:00",
       "counts": {
-        "20260515": 14
+        "20260515": 15
       }
     },
     {
       "name": "update-accounting",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:57+00:00",
+      "completed_at_utc": "2026-05-22T00:19:42+00:00",
       "counts": {
-        "20260401": 14,
-        "20260402": 14,
-        "20260406": 14,
-        "20260407": 14,
-        "20260408": 14,
-        "20260409": 14,
-        "20260410": 14,
-        "20260413": 14,
-        "20260414": 14,
-        "20260415": 14,
-        "20260416": 14,
-        "20260417": 14,
-        "20260420": 14,
-        "20260421": 14,
-        "20260422": 14,
-        "20260423": 14,
-        "20260424": 14,
-        "20260427": 14,
-        "20260428": 14,
-        "20260429": 14,
-        "20260430": 14,
-        "20260501": 14,
-        "20260504": 14,
-        "20260505": 14,
-        "20260506": 14,
-        "20260507": 14,
-        "20260508": 14,
-        "20260511": 14,
-        "20260512": 14,
-        "20260513": 14,
-        "20260514": 14,
-        "20260515": 14
+        "20260401": 15,
+        "20260402": 15,
+        "20260406": 15,
+        "20260407": 15,
+        "20260408": 15,
+        "20260409": 15,
+        "20260410": 15,
+        "20260413": 15,
+        "20260414": 15,
+        "20260415": 15,
+        "20260416": 15,
+        "20260417": 15,
+        "20260420": 15,
+        "20260421": 15,
+        "20260422": 15,
+        "20260423": 15,
+        "20260424": 15,
+        "20260427": 15,
+        "20260428": 15,
+        "20260429": 15,
+        "20260430": 15,
+        "20260501": 15,
+        "20260504": 15,
+        "20260505": 15,
+        "20260506": 15,
+        "20260507": 15,
+        "20260508": 15,
+        "20260511": 15,
+        "20260512": 15,
+        "20260513": 15,
+        "20260514": 15,
+        "20260515": 15
       }
     },
     {
       "name": "build-metrics",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:57+00:00",
-      "n_strategies": 14
+      "completed_at_utc": "2026-05-22T00:19:42+00:00",
+      "n_strategies": 15
     },
     {
       "name": "build-leaderboard",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:57+00:00",
+      "completed_at_utc": "2026-05-22T00:19:42+00:00",
       "artifacts": {
         "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
         "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
@@ -133,17 +133,17 @@
     {
       "name": "audit",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:58+00:00",
+      "completed_at_utc": "2026-05-22T00:19:43+00:00",
       "report": {
         "schema_version": 1,
         "audit_date": "20260515",
-        "generated_at_utc": "2026-05-21T04:31:58+00:00",
+        "generated_at_utc": "2026-05-22T00:19:43+00:00",
         "status": "PASS",
         "failures": [],
         "warnings": [],
         "counts": {
-          "rankings": 14,
-          "portfolios": 14,
+          "rankings": 15,
+          "portfolios": 15,
           "universe_tickers": 503
         }
       }
@@ -151,7 +151,7 @@
     {
       "name": "write-manifests",
       "status": "PASS",
-      "completed_at_utc": "2026-05-21T04:31:58+00:00",
+      "completed_at_utc": "2026-05-22T00:19:43+00:00",
       "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260515.json"
     }
   ],

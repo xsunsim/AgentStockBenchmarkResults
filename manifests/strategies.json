@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-05-21T04:32:28+00:00",
+  "generated_at_utc": "2026-05-22T00:20:14+00:00",
   "n_strategies": 15,
   "strategies": [
     {
@@ -36,7 +36,7 @@
       "strategy_slug": "Google__Gemini2_5Flash__LinearNeutral",
       "strategy_id": "20260517__Google__Gemini2_5Flash__LinearNeutral",
       "path": "/Users/xiaoyusun/AgentStockBench/AgentStockBenchmark/strategies/20260517/Google__Gemini2_5Flash__LinearNeutral/strategy.py",
-      "strategy_sha256": "2e2d748223b63ec796c625e4d52b0bf6b7cb970688a4278221e29f5c2fd8252a"
+      "strategy_sha256": "53a1de5c12347bcfad6ab6f6e8d84d019cd3cb1f35c667d6d54fec7aa2fb68b5"
     },
     {
       "prompt_id": "20260517",

@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "artifact_date": "20260518",
-  "generated_at_utc": "2026-05-21T04:32:07+00:00",
+  "generated_at_utc": "2026-05-22T00:19:52+00:00",
   "artifacts": [
     {
       "path": "accounting/metrics/20260518.csv",
-      "bytes": 1210,
-      "sha256": "a7e4e8c94b22be6bf5046d2d6ad08846eb1e8c0001a0d0db82f8ce98433d3e83"
+      "bytes": 1298,
+      "sha256": "6ee6536b91e2d1d767fb84e923a34cafd84a21750c84595afaa92927c06e541f"
     },
     {
       "path": "data/raw/daily/20260518.csv",
@@ -37,6 +37,11 @@
       "path": "portfolios/20260518/20260517__Anthropic__Sonnet4_6__LinearNeutral.csv",
       "bytes": 84278,
       "sha256": "96bd963029de04382bb3b1f9c1d3d670757e4e4f60d42758f0c4054a71be470e"
+    },
+    {
+      "path": "portfolios/20260518/20260517__Google__Gemini2_5Flash__LinearNeutral.csv",
+      "bytes": 85270,
+      "sha256": "19a1eed7d27ea2a70e1a8d78d0f6ccc6919c799f1ab1165cc1c990d773236b8d"
     },
     {
       "path": "portfolios/20260518/20260517__Google__Gemini2_5Pro__LinearNeutral.csv",
@@ -127,6 +132,16 @@
       "path": "rankings/20260518/20260517__Anthropic__Sonnet4_6__LinearNeutral.meta.json",
       "bytes": 465,
       "sha256": "e0275cd70bd08ade10a2f24744dd59c5210f5b05aad866ca59e00565bf4b9992"
+    },
+    {
+      "path": "rankings/20260518/20260517__Google__Gemini2_5Flash__LinearNeutral.csv",
+      "bytes": 62111,
+      "sha256": "6fad2eec6188a765ba7a0d6eddbb4f15b5de065c564756bdd61ba07a0fd77513"
+    },
+    {
+      "path": "rankings/20260518/20260517__Google__Gemini2_5Flash__LinearNeutral.meta.json",
+      "bytes": 469,
+      "sha256": "1ea23cfb6aae509b85f58da7a53e82fa8875a931dc10d909d556d1e2856279f2"
     },
     {
       "path": "rankings/20260518/20260517__Google__Gemini2_5Pro__LinearNeutral.csv",
@@ -230,8 +245,8 @@
     },
     {
       "path": "rankings/20260518/run_report.json",
-      "bytes": 926,
-      "sha256": "afd765625233952ee23372e34e1ad982d67185da51f29a8abc5798ab0ee7a733"
+      "bytes": 850,
+      "sha256": "4c8954c91366415208f9bcae538a5c1f18b39d0d539db40e24bc3e9f8f32d79c"
     }
   ]
 }
