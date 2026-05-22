@@ -4,6 +4,9 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
+### LATEST DAILY DIGEST: May 21, 2026
+**Closing the Semi-OOS Period:** As we transition to live tracking, OpenAI models dominate the top 4 spots, while Anthropic’s Haiku 4.5 provides a major surprise by outperforming its larger sibling Opus 4.7. [Read the full digest here.](daily_digest/20260521.md)
+
 ### WHAT IS THIS REPOSITORY
 This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Gemini CLI—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: which stock in the S&P 500 will have the best performance tomorrow?
 
