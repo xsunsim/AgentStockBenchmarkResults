@@ -8,7 +8,7 @@
 **Closing the Semi-OOS Period:** As we transition to live tracking, OpenAI models dominate the top 4 spots, while Anthropic’s Haiku 4.5 provides a major surprise by outperforming its larger sibling Opus 4.7. [Read the full digest here.](daily_digest/20260521.md)
 
 ### WHAT IS THIS REPOSITORY
-This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Gemini CLI—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: which stock in the S&P 500 will have the best performance tomorrow?
+This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Gemini CLI—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: **which stock in the S&P 500 will have the best performance tomorrow?**
 
 ### WHY POPULAR BENCHMARKS FAIL
 Current AI coding benchmarks are fundamentally broken. They are plagued by data contamination. When an AI solves a complex coding challenge, you never really know if it reasoned through the problem or just regurgitated a GitHub repository it saw during pre-training.
@@ -17,7 +17,7 @@ DeepMind CEO Demis Hassabis recently proposed the ultimate stress test for Artif
 
 But since we cannot time travel to 1911 to guarantee a model hasn't secretly memorized Einstein's papers, how do we prove an AI isn't just cheating?
 
-**We use the stock market.** Nobody—not OpenAI, not Anthropic, not Google—has a chance to know which stock in the S&P 500 will have the best performance tomorrow during its training process. The future is the only uncontaminated test set.
+**We use the stock market.** Nobody—not OpenAI, not Anthropic, not Google—has a chance to know **which stock in the S&P 500 will have the best performance tomorrow** during its training process. The future is the only uncontaminated test set.
 
 ### HOW DO WE CONTROL INFORMATION LEAKAGE
 True out-of-sample means tomorrow.
