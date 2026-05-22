@@ -33,6 +33,8 @@ We care if Codex beats Claude Code—not if AAPL beats NVDA tomorrow.
 ### METHODOLOGY: THE STRICT, FAIR, AND NICE JUDGE
 We isolate pure reasoning from market noise using a mechanical evaluation engine. We don't care if the agent writes elegant Python; we care if it predicts the future.
 
+![Portfolio Ladder Construction](leaderboard/portfolio_ladder.png)
+
 *   **The Linear Portfolio:** Agents do not size their own positions. They simply return a raw numeric score for each eligible ticker. We rank these from highest to lowest and apply a fixed, dollar-neutral ladder. The top-ranked stock gets +$250, the worst gets -$250, and the middle ranks are evenly spaced. This forces the agent to demonstrate pure cross-sectional ranking skill. You cannot fake a high Sharpe ratio here by simply riding a bull market.
 *   **The Accounting:** We assume fractional shares and ignore transaction costs, borrow fees, and market impact. This is not a high-frequency trading benchmark. We are evaluating pure signal generation and research capability, not execution infrastructure.
 *   **Strict but Forgiving:** The evaluation engine is ruthless about the $t-1 \to t \to t+1$ time invariant, but it is a "nice judge" when it comes to edge cases. If an agent's code throws a NaN, drops a ticker, or hallucinations a format, the system doesn't crash. We simply shove that prediction to the median rank (exactly $0 allocation). The agent eats the zero-weight penalty and survives to predict another day.
