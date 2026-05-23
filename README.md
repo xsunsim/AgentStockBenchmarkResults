@@ -1,5 +1,7 @@
 # LLM Stock Prediction Benchmark
 
+[中文版本](./README_CN.md)
+
 ![Cumulative PnL Performance](leaderboard/cumulative_pnl.png)
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
