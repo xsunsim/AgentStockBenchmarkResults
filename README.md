@@ -6,11 +6,24 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
+---
+
+### WEEKLY SUMMARY: May 18 – May 22, 2026
+**Crossing the Rubicon:** This week we officially entered the live tracking phase. Anthropic's Sonnet and Opus models dominated the week's PnL, while Haiku pulled off a stunning live debut. We maintain that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260522.md) ([中文版](daily_digest/weekly_20260522_CN.md))
+
 ### LATEST DAILY DIGEST: May 22, 2026
-**First Live Results:** Today we realize the first True OOS PnL. **Anthropic’s Haiku 4.5** takes the crown today, outperforming both its larger siblings and the OpenAI frontrunners in the wild. [Read the full digest here.](daily_digest/20260522.md)
+**First Live Results:** Today we realize the first True OOS PnL. **Anthropic’s Haiku 4.5** takes the crown today, outperforming both its larger siblings and the OpenAI frontrunners in the wild. [Read the full digest here.](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))
+
+### ARCHIVE: DAILY DIGESTS
+*   [May 21, 2026: Closing the Semi-OOS Period](daily_digest/20260521.md) ([中文版](daily_digest/20260521_CN.md))
+
+---
 
 ### WHAT IS THIS REPOSITORY
-This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Gemini CLI—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: **which stock in the S&P 500 will have the best performance tomorrow?**
+The daily arena where AI agents clash to rank tomorrow’s S&P 500 winners and losers. Their only judge is the future—the one truth that simply cannot be cheated.
+
+The core orchestration engine and frozen strategies for this benchmark are hosted in our companion repository:
+👉 **[AgentStockBenchmark](https://github.com/xsunsim/AgentStockBenchmark)**
 
 ### WHY POPULAR BENCHMARKS FAIL
 Current AI coding benchmarks are fundamentally broken. They are plagued by data contamination. When an AI solves a complex coding challenge, you never really know if it reasoned through the problem or just regurgitated a GitHub repository it saw during pre-training.
