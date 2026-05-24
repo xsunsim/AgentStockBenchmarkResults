@@ -1,4 +1,4 @@
-# 标普 500 AI 智能体选股基准测试 (AgentStockBenchmark)
+# 标普 500 AI 智能体选股基准测试 (Github:AgentStockBenchmarkResults)
 
 [English Version](./README.md)
 

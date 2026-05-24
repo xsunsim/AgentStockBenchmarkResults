@@ -1,4 +1,4 @@
-# LLM Stock Prediction Benchmark
+# LLM Stock Prediction Benchmark (Github:AgentStockBenchmarkResults)
 
 [中文版本](./README_CN.md)
 
