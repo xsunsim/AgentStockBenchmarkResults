@@ -17,7 +17,6 @@ def generate_digest(target_date: dt.date):
     """
     did = target_date.strftime("%Y%m%d")
     today_str = dt.date.today().strftime("%Y%m%d")
-    output_path = DIGEST_DIR / f"{today_str}.md"
     
     # 1. Load Leaderboard
     if not LEADERBOARD_PATH.exists():
@@ -39,6 +38,10 @@ def generate_digest(target_date: dt.date):
                     "company": sid.split("__")[1],
                     "model": sid.split("__")[2],
                     "daily_pnl": match.iloc[0]["total_pnl"],
+                    "long_pnl": match.iloc[0]["long_pnl"],
+                    "short_pnl": match.iloc[0]["short_pnl"],
+                    "entry_date": str(match.iloc[0]["entry_date"]),
+                    "exit_date": str(match.iloc[0]["exit_date"]),
                     "sharpe": row["sharpe"]
                 })
     
@@ -51,81 +54,142 @@ def generate_digest(target_date: dt.date):
     bottom_daily = df_daily.iloc[-1]
     company_perf = df_daily.groupby("company")["daily_pnl"].mean().sort_values(ascending=False)
     
-    entry_date = (target_date + dt.timedelta(days=1)).strftime('%Y-%m-%d')
-    realization_date = dt.date.today().strftime('%Y-%m-%d')
-    next_ranking_date = (target_date + dt.timedelta(days=1)).strftime('%Y-%m-%d')
-
-    # 4. Construct Content
-    content = f"# Daily Digest: {dt.date.today().strftime('%B %d, %Y')}\n"
-    content += f"## The First Live Moment of Truth\n\n"
-    content += (f"Today, we realize the PnL for the **May 20 rankings**—the inaugural predictions of the True Out-of-Sample period. "
-                f"These positions were **entered at the market close on {entry_date}** and **liquidated at today’s close ({realization_date})**. "
-                f"As of this moment, the arena has rotated: models have exited their May 20 bets and are now holding positions based on the **May 21 rankings**.\n\n")
+    entry_date = df_daily.iloc[0]["entry_date"]
+    exit_date = df_daily.iloc[0]["exit_date"]
     
-    if top_daily['daily_pnl'] > 0:
-        content += f"**{top_daily['company']}: {top_daily['model']}** seized the crown in this first live clash, delivering a PnL of **+${top_daily['daily_pnl']:,.2f}**! "
-        if "OpenAI" in top_daily['company']:
-            content += "The big brother continues to show its strength in the wild. "
-        elif "Anthropic" in top_daily['company']:
-            content += "Anthropic’s Haiku is proving that lean logic can bite hard! "
+    # Check market context
+    all_long_pos = (df_daily["long_pnl"] > 0).all()
+    all_short_neg = (df_daily["short_pnl"] < 0).all()
+    all_long_neg = (df_daily["long_pnl"] < 0).all()
+    all_short_pos = (df_daily["short_pnl"] > 0).all()
+    
+    market_context = ""
+    if all_long_pos and all_short_neg:
+        market_context = "Today was a clear bull market—everyone rode the 'market train' on the long side, but those with weak shorts felt the rising tide."
+    elif all_long_neg and all_short_pos:
+        market_context = "The bears were out in force today. Longs bled across the board, but the best models protected themselves with rock-solid short selections."
     else:
-        content += f"It was a trial by fire in the live arena. All models struggled to find footing, with **{top_daily['model']}** finishing 'best' at **${top_daily['daily_pnl']:+.2f}**. "
+        market_context = "A mixed day in the arena. Factor selection was key as the market showed no clear directional bias."
 
-    if bottom_daily['daily_pnl'] < 0:
-        content += f"Conversely, **{bottom_daily['model']}** found the live transition difficult, ending the day at **${bottom_daily['daily_pnl']:+.2f}**.\n\n"
+    # 4. Construct Content (English)
+    content = f"# Daily Digest: {dt.date.today().strftime('%B %d, %Y')}\n"
+    content += f"## The Arena Update\n\n"
+    content += (f"Today, we realize the PnL for the **{target_date.strftime('%B %d')} rankings**. "
+                f"These positions were **entered at the market close on {entry_date}** and **liquidated at today’s close ({exit_date})**.\n\n")
+    
+    content += f"### Market Context\n{market_context}\n\n"
 
-    content += "### Company Standings\n"
+    # PnL Table
+    df_table = df_daily[["company", "model", "daily_pnl", "long_pnl", "short_pnl"]].copy()
+    df_table["daily_pnl"] = df_table["daily_pnl"].map("${:,.2f}".format)
+    df_table["long_pnl"] = df_table["long_pnl"].map("${:,.2f}".format)
+    df_table["short_pnl"] = df_table["short_pnl"].map("${:,.2f}".format)
+    content += "### Performance Snapshot\n\n" + df_table.to_markdown(index=False) + "\n\n"
+
+    if top_daily['daily_pnl'] > 0:
+        content += f"**{top_daily['company']}: {top_daily['model']}** seized the crown today with a daily PnL of **+${top_daily['daily_pnl']:,.2f}**! "
+        if "OpenAI" in top_daily['company']:
+            content += "The big brother continues to flex its muscles. "
+        elif "Anthropic" in top_daily['company']:
+            content += "Anthropic is showing incredible momentum in the live arena. "
+    
+    content += "\n\n### Company Standings\n"
     for company, pnl in company_perf.items():
         if company == "OpenAI":
-            status = "holding the line" if pnl > 0 else "feeling the live market heat"
+            status = "holding the line" if pnl > 0 else "feeling the live market pressure"
             content += f"*   **OpenAI**: {status} (${pnl:+.2f} avg).\n"
         elif company == "Anthropic":
-            status = "stunning the field" if pnl > 0 else "searching for its rhythm"
+            status = "dominating the field" if pnl > 0 else "searching for its rhythm"
             content += f"*   **Anthropic**: {status} (${pnl:+.2f} avg).\n"
         elif company == "Google":
-            status = "starting to wake up" if pnl > 0 else "still shivering in the live arena"
-            content += f"*   **Google**: {status} (${pnl:+.2f} avg). The path to redemption is long!\n"
+            status = "showing signs of life" if pnl > 0 else "still shivering in the live arena"
+            content += f"*   **Google**: {status} (${pnl:+.2f} avg).\n"
 
     content += "\n### Intelligence vs. Scale\n"
     try:
         haiku_pnl = df_daily[df_daily['model'] == 'Haiku4_5']['daily_pnl'].iloc[0]
         opus_pnl = df_daily[df_daily['model'] == 'Opus4_7']['daily_pnl'].iloc[0]
         if haiku_pnl > opus_pnl:
-            content += f"The small-model legend continues: **Haiku 4.5** (${haiku_pnl:+.2f}) beat the flagship **Opus 4.7** (${opus_pnl:+.2f}) in their first live head-to-head.\n"
+            content += f"The small-model legend grows: **Haiku 4.5** (${haiku_pnl:+.2f}) beat the flagship **Opus 4.7** (${opus_pnl:+.2f}) today.\n"
         else:
-            content += f"Flagship dominance: **Opus 4.7** (${opus_pnl:+.2f}) outperformed the leaner **Haiku 4.5** (${haiku_pnl:+.2f}).\n"
+            content += f"Order is restored: **Opus 4.7** (${opus_pnl:+.2f}) outperformed **Haiku 4.5** (${haiku_pnl:+.2f}).\n"
     except:
         pass
 
-    content += "\n### The Live Count\n"
-    content += f"We are currently tracking {len(df_daily)} models in the wild. The 'Clean Room' is locked, and the future is the only judge.\n"
-    content += "\n***\n*Full details and equity curves available in the [Leaderboard](https://github.com/xsunsim/AgentStockBenchmarkResults/blob/main/leaderboard/leaderboard.md).*\n"
+    content += "\n***\n*Check the [Full Leaderboard](https://github.com/xsunsim/AgentStockBenchmarkResults/blob/main/leaderboard/leaderboard.md) for cumulative stats.*\n"
 
-    DIGEST_DIR.mkdir(parents=True, exist_ok=True)
-    output_path.write_text(content)
-    print(f"Digest generated at {output_path}")
+    (DIGEST_DIR / f"{today_str}.md").write_text(content)
     
-    social_text = f"🚨 AI Agent Benchmark: FIRST LIVE RESULTS 🚨\n\n"
-    social_text += f"📅 Prediction: 2026-05-20\n"
-    social_text += f"⚡ Execution: Entered 05-21 Close ➡️ Realized 05-22 Close\n"
-    social_text += f"🔄 Rotation: Now holding positions from 05-21 rankings.\n\n"
-    social_text += f"🏆 Top Performer: {top_daily['company']} {top_daily['model']} (+${top_daily['daily_pnl']:,.2f})\n"
-    if company_perf.index[0] == "Anthropic":
-        social_text += "🔥 Anthropic stuns the field in the first live session!\n"
-    elif company_perf.index[0] == "OpenAI":
-        social_text += "🦾 OpenAI remains the king of the arena.\n"
+    # 5. Construct Content (Chinese)
+    content_cn = f"# 每日摘要：{dt.date.today().strftime('%Y年%m月%d日')}\n"
+    content_cn += f"## 竞技场动态\n\n"
+    content_cn += (f"今天，我们结算了 **{target_date.month}月{target_date.day}日排名** 的收益。 "
+                   f"这些头寸在 **{entry_date} 收盘时建立**，并在 **今日收盘 ({exit_date}) 结算**。\n\n")
     
-    social_text += "\nFull rankings & live PnL: https://github.com/xsunsim/AgentStockBenchmarkResults"
+    market_context_cn = ""
+    if all_long_pos and all_short_neg:
+        market_context_cn = "今日市场呈现明显的单边上涨趋势——所有模型都在多头端获利，但由于空头端也随大盘上涨，未能实现有效的对冲保护。"
+    elif all_long_neg and all_short_pos:
+        market_context_cn = "今日空头大获全胜。虽然多头端普遍亏损，但最优秀的模型通过精准的空头选择成功抵御了市场下跌。"
+    else:
+        market_context_cn = "今日市场震荡，风格切换频繁。在没有明显趋势的情况下，因子的选择成为了胜负的关键。"
+    
+    content_cn += f"### 市场背景\n{market_context_cn}\n\n"
+    
+    df_table_cn = df_daily[["company", "model", "daily_pnl", "long_pnl", "short_pnl"]].copy()
+    df_table_cn.columns = ["公司", "模型", "今日收益", "多头收益", "空头收益"]
+    for col in ["今日收益", "多头收益", "空头收益"]:
+        df_table_cn[col] = df_table_cn[col].map("${:,.2f}".format)
+    
+    content_cn += "### 今日表现快照\n\n" + df_table_cn.to_markdown(index=False) + "\n\n"
+    
+    if top_daily['daily_pnl'] > 0:
+        content_cn += f"**{top_daily['company']}: {top_daily['model']}** 夺得今日桂冠，单日收益达 **+${top_daily['daily_pnl']:,.2f}**！ "
+    
+    content_cn += "\n\n### 公司表现\n"
+    for company, pnl in company_perf.items():
+        if company == "OpenAI":
+            status = "稳扎稳打" if pnl > 0 else "正感受实盘市场的压力"
+            content_cn += f"*   **OpenAI**: {status} (平均收益 ${pnl:+.2f})。\n"
+        elif company == "Anthropic":
+            status = "统治全场" if pnl > 0 else "正在寻找节奏"
+            content_cn += f"*   **Anthropic**: {status} (平均收益 ${pnl:+.2f})。\n"
+        elif company == "Google":
+            status = "展现生机" if pnl > 0 else "在实盘竞技场中仍显战栗"
+            content_cn += f"*   **Google**: {status} (平均收益 ${pnl:+.2f})。\n"
+
+    content_cn += "\n### 智能 vs. 规模\n"
+    try:
+        if haiku_pnl > opus_pnl:
+            content_cn += f"小模型传奇在继续：**Haiku 4.5** (${haiku_pnl:+.2f}) 今日击败了旗舰模型 **Opus 4.7** (${opus_pnl:+.2f})。\n"
+        else:
+            content_cn += f"旗舰回归：**Opus 4.7** (${opus_pnl:+.2f}) 今日表现优于 **Haiku 4.5** (${haiku_pnl:+.2f})。\n"
+    except:
+        pass
+    
+    content_cn += "\n***\n*详细信息请查看 [完整排行榜](https://github.com/xsunsim/AgentStockBenchmarkResults/blob/main/leaderboard/leaderboard.md)。*\n"
+    
+    (DIGEST_DIR / f"{today_str}_CN.md").write_text(content_cn)
+    print(f"Digests generated for {today_str}")
+
+    # Social Media Draft
+    social_text = f"🚨 AI Agent Benchmark Update 🚨\n\n"
+    social_text += f"📅 Prediction Date: {target_date.strftime('%Y-%m-%d')}\n"
+    social_text += f"🏆 Top Model: {top_daily['company']} {top_daily['model']} (${top_daily['daily_pnl']:+.2f})\n"
+    social_text += f"📊 Market: {'Bullish 🐂' if all_long_pos else 'Bearish 🐻' if all_long_neg else 'Mixed ⚖️'}\n\n"
+    social_text += f"Full results: https://github.com/xsunsim/AgentStockBenchmarkResults"
+    
     return social_text
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         t_date = dt.datetime.strptime(sys.argv[1], "%Y%m%d").date()
     else:
-        t_date = dt.date(2026, 5, 20)
+        # Default to finding the latest realized ranking date
+        # This is a bit complex to find purely from files, so we expect the caller to provide it
+        # or we just guess T-2 for now if no arg provided.
+        t_date = dt.date.today() - dt.timedelta(days=2)
     
     text = generate_digest(t_date)
-    if text:
-        print("\n--- SOCIAL MEDIA DRAFT ---")
-        print(text)
-        Path("social_post.txt").write_text(text)
+    print("\n--- SOCIAL MEDIA DRAFT ---")
+    print(text)

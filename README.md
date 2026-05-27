@@ -8,13 +8,14 @@
 
 ---
 
-### WEEKLY SUMMARY: May 18 – May 22, 2026
-**Crossing the Rubicon:** This week we officially entered the live tracking phase. Anthropic's Sonnet and Opus models dominated the week's PnL, while Haiku pulled off a stunning live debut. We maintain that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260522.md) ([中文版](daily_digest/weekly_20260522_CN.md))
+### WEEKLY SUMMARY: May 18 – May 26, 2026
+**The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: May 22, 2026
-**First Live Results:** Today we realize the first True OOS PnL. **Anthropic’s Haiku 4.5** takes the crown today, outperforming both its larger siblings and the OpenAI frontrunners in the wild. [Read the full digest here.](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))
+### LATEST DAILY DIGEST: May 26, 2026
+**Arena Turbulence & Factor Rotation:** Today we realize the second True OOS PnL (for May 21 rankings). **Anthropic’s Sonnet 4.6** takes the lead in a mixed market where factor selection was the key to survival. [Read the full digest here.](daily_digest/20260526.md) ([中文版](daily_digest/20260526_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [May 22, 2026: The First Live Moment of Truth](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))
 *   [May 21, 2026: Closing the Semi-OOS Period](daily_digest/20260521.md) ([中文版](daily_digest/20260521_CN.md))
 
 ---
