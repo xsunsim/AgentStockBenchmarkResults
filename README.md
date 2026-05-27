@@ -6,6 +6,15 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
+### LATEST AI PREDICTIONS (May 26, 2026)
+Here is what the top-performing model from each company is betting on for the current cycle:
+
+| Company | Model | 📈 Top Pick | 📉 Bottom Pick |
+|:---|:---|:---|:---|
+| **OpenAI** | GPT-5.5 | **CVX** (Chevron) | **IP** (International Paper) |
+| **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **TSCO** (Tractor Supply) |
+| **Google** | Gemini 2.5 Pro | **BK** (BNY Mellon) | **NCLH** (Norwegian Cruise Line) |
+
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
