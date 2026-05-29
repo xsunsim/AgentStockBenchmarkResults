@@ -6,13 +6,13 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (May 27, 2026)
+### LATEST AI PREDICTIONS (May 28, 2026)
 Here is what the top-performing model from each company is betting on for the current cycle:
 
 | Company | Model | 📈 Top Pick | 📉 Bottom Pick |
 |:---|:---|:---|:---|
-| **OpenAI** | GPT-5.5 | **CASY** (Casey's) | **CNC** (Centene) |
-| **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **UHS** (Universal Health) |
+| **OpenAI** | GPT-5.5 | **NSC** (Norfolk Southern) | **SJM** (Smucker) |
+| **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **ATO** (Atmos Energy) |
 | **Google** | Gemini 2.5 Pro | **BK** (BNY Mellon) | **NCLH** (Norwegian Cruise) |
 
 ---
@@ -20,8 +20,8 @@ Here is what the top-performing model from each company is betting on for the cu
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: May 27, 2026
-**The Big Brother Reclaims the Throne:** Today we realized the PnL for the May 22 rankings. **OpenAI’s GPT-5.5** took the crown, proving that stability and multi-factor discipline are hard to beat in a mixed market. [Read the full digest here.](daily_digest/20260527.md) ([中文版](daily_digest/20260527_CN.md))
+### LATEST DAILY DIGEST: May 28, 2026
+**OpenAI Asserts Dominance:** Today we realized the PnL for the May 26 rankings. **OpenAI’s O3** and **GPT-5.5** swept the top spots, proving that multi-factor discipline remains the benchmark to beat in a mixed market. [Read the full digest here.](daily_digest/20260528.md) ([中文版](daily_digest/20260528_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
 *   [May 26, 2026: Arena Turbulence & Factor Rotation](daily_digest/20260526.md) ([中文版](daily_digest/20260526_CN.md))

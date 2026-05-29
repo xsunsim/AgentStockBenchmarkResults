@@ -36,3 +36,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20260520,20260521,20260522,20260517__OpenAI__O4_mini__LinearNeutral,-113.92,212.48,-326.4,502,503,503,0,0
 20260521,20260522,20260526,20260517__OpenAI__O4_mini__LinearNeutral,-40.3,22.01,-62.31,502,503,503,0,0
 20260522,20260526,20260527,20260517__OpenAI__O4_mini__LinearNeutral,-25.95,-2.4,-23.55,503,503,503,1,0
+20260526,20260527,20260528,20260517__OpenAI__O4_mini__LinearNeutral,-77.74,96.53,-174.27,503,503,503,1,0
