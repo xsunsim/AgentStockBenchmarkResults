@@ -81,7 +81,7 @@ For MCP clients such as Claude Desktop or Claude Code, install the package once 
 
 2. Install the MCP server once:
 ```bash
-uv tool install agentstockbenchmark==0.1.8
+uv tool install agentstockbenchmark==0.1.7
 ```
 
 3. Add this block to your `claude_desktop_config.json`:
