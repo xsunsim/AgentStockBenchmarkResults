@@ -56,6 +56,7 @@ Every day after the market closes, an automated scoring engine pulls the latest 
 We are not a hedge fund. We are not a stock recommendation service. **Use it at your own risk.**
 
 We care if Codex beats Claude Code—not if AAPL beats NVDA tomorrow.
+
 ### METHODOLOGY: THE STRICT, FAIR, AND NICE JUDGE
 We isolate pure reasoning from market noise using a mechanical evaluation engine. We don't care if the agent writes elegant Python; we care if it predicts the future.
 
@@ -71,6 +72,83 @@ Transparency is the entire point. You don't have to trust our daily X (Twitter) 
 *   **Inspect the Code:** Check the "Clean Room" repository to read the frozen `signal.py` logic, the exact CLI parameters, and the prompt provided to each agent.
 *   **Verify the Results:** Clone the active leaderboard repository and run `python run.py live`. The script will pull the daily market data, execute the frozen strategies, and recreate the portfolio accounting.
 *   Every calculation is deterministic and fully open-source. If our published daily P&L ever deviates from what you can calculate on your own machine, call us out.
+
+### 🤖 USE IT AS AN MCP SERVER (Model Context Protocol)
+
+We have officially published AgentStockBenchmark as an MCP server. This allows you to give AI agents (like Claude Desktop or Cursor) direct access to our live market data, strategy execution engine, and historical leaderboard.
+
+#### 1. Configuration (Claude Desktop)
+
+The absolute most reliable way to install and run this server is using `uvx`. This method requires **zero manual installation** and bypasses all common Python `PATH` errors.
+
+1. **Install `uv`** (if you haven't already):
+   * Mac/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+   * Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+
+2. Add this exact block to your `claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "agent-stock": {
+      "command": "uvx",
+      "args": [
+        "--upgrade",
+        "--from",
+        "agentstockbenchmark",
+        "asb-mcp"
+      ],
+      "env": {}
+    }
+  }
+}
+```
+*(When you restart Claude, `uvx` will automatically download the package from PyPI, set up an isolated environment, and run the server. It will also seamlessly download the necessary benchmark baseline data in the background).*
+
+#### 2. Advanced: Manual pip Installation
+If you prefer not to use `uvx`, you can install it globally:
+```bash
+pip install agentstockbenchmark
+```
+**⚠️ WARNING**: If Claude Desktop complains it cannot find the `asb-mcp` command, it is because your Python `bin` directory is not in Claude's PATH. You must provide the **absolute path** to the executable in your config (e.g., `"command": "/opt/anaconda3/bin/asb-mcp"`).
+
+#### 3. Available Tools & Capabilities
+Once connected, your AI assistant has access to 11 specialized tools, categorized below:
+
+**A. Core Discovery & Performance**
+*   `get_leaderboard`: Instantly fetches the live, auto-synced production leaderboard from GitHub.
+*   `list_active_prompts`: Shows available strategy generation templates (e.g., `20260517`).
+*   `list_available_strategies`: Lists all AI-generated models currently competing in the arena.
+
+**B. The "Autopilot" Prediction Engine**
+*   `get_top_positions`: **(Highly Recommended)** Just tell the AI what day you want to trade (e.g., "Show me top positions for tomorrow"). This tool automatically handles the complex pipeline: checking market hours, syncing remote data, running the specified strategy, and returning the top 10 long/short stocks.
+*   `run_strategy_on_date`: Run a single model on a specific date for targeted analysis.
+*   `refresh_market_data`: Force a download of the latest OHLCV data for the S&P 500 universe.
+
+**C. The Research Sandbox (Build Your Own)**
+*   `create_research_workspace`: Sets up an isolated local folder for you to test a brand new prompt or strategy.
+*   `run_research_backtest`: Evaluates your experimental strategy over a custom date range.
+*   `analyze_results`: Calculates Sharpe ratio and PnL for your experiment.
+*   `promote_strategy`: Pushes a winning experimental strategy into your local production arena.
+
+**D. Production Workflows**
+*   `run_production_daily`: Executes the full $T-1 \to T$ pipeline (data ingestion, running all production strategies, portfolio construction, and leaderboard updating) for a given date.
+
+---
+
+### 🧠 FOR AI AGENTS (OPERATIONAL GUIDE)
+If you are an AI agent reading this via MCP, follow these best practices:
+
+1.  **Checking Performance**: Always start with `get_leaderboard` to see which model lineages are currently winning.
+2.  **Predicting the Future**: To get positions for the *next* trading day, use `get_top_positions` with the `target_trading_date` set to the next day. The tool handles all data fetching and execution automatically.
+3.  **Experimental Workflow**:
+    *   Use `list_active_prompts` to find a starting point.
+    *   Use `create_research_workspace` to set up a lab.
+    *   Generate a new `strategy.py` file based on the prompt.
+    *   Use `run_research_backtest` to verify your idea. (Limit date ranges to < 30 days to avoid timeouts).
+    *   Use `analyze_results` to see if your Sharpe ratio beats the current leaderboard.
+4.  **Data Latency**: Market data for "Today" only becomes available 15 minutes after the New York market close (4:15 PM ET). Do not attempt to pull data for today while the market is still open.
+
+---
 
 ### HOW TO CONTRIBUTE
 We are turning this into an open-source research laboratory. While we are strictly controlling the actual code merges right now to maintain the "one push per model" integrity of the benchmark, we need the community's intelligence.
