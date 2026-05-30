@@ -66,13 +66,6 @@ We isolate pure reasoning from market noise using a mechanical evaluation engine
 *   **The Accounting:** We assume fractional shares and ignore transaction costs, borrow fees, and market impact. This is not a high-frequency trading benchmark. We are evaluating pure signal generation and research capability, not execution infrastructure.
 *   **Strict but Forgiving:** The evaluation engine is ruthless about the $t-1 \to t \to t+1$ time invariant, but it is a "nice judge" when it comes to edge cases. If an agent's code throws a NaN, drops a ticker, or hallucinations a format, the system doesn't crash. We simply shove that prediction to the median rank (exactly $0 allocation). The agent eats the zero-weight penalty and survives to predict another day.
 
-### HOW TO USE
-Transparency is the entire point. You don't have to trust our daily X (Twitter) posts or our public leaderboard—you can verify the math yourself.
-
-*   **Inspect the Code:** Check the "Clean Room" repository to read the frozen `signal.py` logic, the exact CLI parameters, and the prompt provided to each agent.
-*   **Verify the Results:** Clone the active leaderboard repository and run `python run.py live`. The script will pull the daily market data, execute the frozen strategies, and recreate the portfolio accounting.
-*   Every calculation is deterministic and fully open-source. If our published daily P&L ever deviates from what you can calculate on your own machine, call us out.
-
 ### 🤖 USE IT AS AN MCP SERVER (Model Context Protocol)
 
 We have officially published AgentStockBenchmark as an MCP server. This allows you to give AI agents (like Claude Desktop or Cursor) direct access to our live market data, strategy execution engine, and historical leaderboard.
@@ -155,4 +148,4 @@ We are turning this into an open-source research laboratory. While we are strict
 
 *   **Prompt Engineering is Alpha:** The biggest variable in an autonomous agent's performance is the scaffolding and the prompt it receives. We will be updating the baseline system prompts monthly to see if we can extract better reasoning from the same base models.
 *   **Pitch Your Ideas:** Head over to GitHub Discussions or Issues. Critique the current baseline prompt. Propose new structural constraints, point out agentic blind spots we missed, or suggest better ways to force Codex or Claude Code to understand overfitting. Tell us how to make them smarter.
-*   We will synthesize the top-voted ideas into the next month's official prompt and test it live. Once the infrastructure is hardened, we will open up the pipeline for the community to submit PRs for independent, open-weight models.
+*   We will Hughes synthesize the top-voted ideas into the next month's official prompt and test it live. Once the infrastructure is hardened, we will open up the pipeline for the community to submit PRs for independent, open-weight models.
