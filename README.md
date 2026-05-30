@@ -70,41 +70,56 @@ We isolate pure reasoning from market noise using a mechanical evaluation engine
 
 We have officially published AgentStockBenchmark as an MCP server. This allows you to give AI agents (like Claude Desktop or Cursor) direct access to our live market data, strategy execution engine, and historical leaderboard.
 
-#### 1. Configuration (Claude Desktop)
+#### 1. Recommended Installation (Claude Desktop)
 
-The absolute most reliable way to install and run this server is using `uvx`. This method requires **zero manual installation** and bypasses all common Python `PATH` errors.
+For MCP clients such as Claude Desktop or Claude Code, install the package once as a persistent `uv` tool. This avoids slow MCP startup caused by `uvx` downloading Python, NumPy, pandas, pyarrow, and other dependencies during the initial MCP handshake.
 
 1. **Install `uv`** (if you haven't already):
    * Mac/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
    * Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
-2. Add this exact block to your `claude_desktop_config.json`:
+2. Install the MCP server once:
+```bash
+uv tool install agentstockbenchmark==0.1.7
+asb-mcp --help
+```
+
+3. Add this block to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
     "agent-stock": {
-      "command": "uvx",
-      "args": [
-        "--upgrade",
-        "--from",
-        "agentstockbenchmark",
-        "asb-mcp"
-      ],
+      "command": "asb-mcp",
+      "args": [],
       "env": {}
     }
   }
 }
 ```
-*(When you restart Claude, `uvx` will automatically download the package from PyPI, set up an isolated environment, and run the server. It will also seamlessly download the necessary benchmark baseline data in the background).*
 
-#### 2. Advanced: Manual pip Installation
-If you prefer not to use `uvx`, you can install it globally:
-```bash
-pip install agentstockbenchmark
+If Claude does not inherit `~/.local/bin` in `PATH`, point it at the absolute path reported by `which asb-mcp`, for example:
+
+```json
+{
+  "mcpServers": {
+    "agent-stock": {
+      "command": "/Users/<you>/.local/bin/asb-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}
 ```
-**⚠️ WARNING**: If Claude Desktop complains it cannot find the `asb-mcp` command, it is because your Python `bin` directory is not in Claude's PATH. You must provide the **absolute path** to the executable in your config (e.g., `"command": "/opt/anaconda3/bin/asb-mcp"`).
 
-#### 3. Available Tools & Capabilities
+Avoid launching MCP with `uvx --upgrade --from agentstockbenchmark asb-mcp`. That command can make Claude wait while dependencies are installed and can cause MCP initialization timeouts. If you must use `uvx`, prefer:
+
+```bash
+uvx --from agentstockbenchmark asb-mcp
+```
+
+The MCP server automatically syncs this companion results repository into `~/AgentStockBenchmarkResults` on first tool use. Override that location with `ASB_RESULTS_REPO` if needed.
+
+#### 2. Available Tools & Capabilities
 Once connected, your AI assistant has access to 11 specialized tools, categorized below:
 
 **A. Core Discovery & Performance**
