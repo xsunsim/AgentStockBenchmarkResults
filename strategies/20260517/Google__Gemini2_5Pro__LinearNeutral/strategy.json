@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260517",
+  "strategy_slug": "Google__Gemini2_5Pro__LinearNeutral",
+  "strategy_id": "20260517__Google__Gemini2_5Pro__LinearNeutral",
+  "source_cache": "/home/xiaoyusun/strategies/Google__Gemini2_5Pro__LinearNeutral_202605",
+  "source_cache_name": "Google__Gemini2_5Pro__LinearNeutral_202605",
+  "strategy_sha256": "6bcca41e5c57184d293da4f9a3d7893ea733e86349bfa4fa4de20681530b2bdf"
+}

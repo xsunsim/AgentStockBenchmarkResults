@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260517",
+  "strategy_slug": "OpenAI__GPT5_4__LinearNeutral",
+  "strategy_id": "20260517__OpenAI__GPT5_4__LinearNeutral",
+  "source_cache": "/home/xiaoyusun/strategies/OpenAI__GPT5_4__LinearNeutral_202605",
+  "source_cache_name": "OpenAI__GPT5_4__LinearNeutral_202605",
+  "strategy_sha256": "6717967a95dca89697d87103ea65d8a41dbb4ce893574c78e182d0fe9580eda8"
+}

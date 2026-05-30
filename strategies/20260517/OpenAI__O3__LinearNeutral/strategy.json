@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260517",
+  "strategy_slug": "OpenAI__O3__LinearNeutral",
+  "strategy_id": "20260517__OpenAI__O3__LinearNeutral",
+  "source_cache": "/home/xiaoyusun/strategies/OpenAI__O3__LinearNeutral_202605",
+  "source_cache_name": "OpenAI__O3__LinearNeutral_202605",
+  "strategy_sha256": "6220afc76ebdb0e430affb5a1b649b0f6141ab0c129c3a81871bebb7750fa9dc"
+}
