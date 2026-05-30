@@ -37,3 +37,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20260521,20260522,20260526,20260517__OpenAI__GPT5_4_mini__LinearNeutral,-251.87,-92.84,-159.03,502,503,503,0,0
 20260522,20260526,20260527,20260517__OpenAI__GPT5_4_mini__LinearNeutral,7.7,16.44,-8.75,503,503,503,1,0
 20260526,20260527,20260528,20260517__OpenAI__GPT5_4_mini__LinearNeutral,178.42,198.79,-20.37,503,503,503,1,0
+20260527,20260528,20260529,20260517__OpenAI__GPT5_4_mini__LinearNeutral,25.06,-7.27,32.33,503,503,503,1,0
