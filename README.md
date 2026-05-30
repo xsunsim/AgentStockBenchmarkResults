@@ -110,12 +110,6 @@ If Claude does not inherit `~/.local/bin` in `PATH`, point it at the absolute pa
 }
 ```
 
-Avoid launching MCP with `uvx --upgrade --from agentstockbenchmark asb-mcp`. That command can make Claude wait while dependencies are installed and can cause MCP initialization timeouts. If you must use `uvx`, prefer:
-
-```bash
-uvx --from agentstockbenchmark asb-mcp
-```
-
 The MCP server automatically syncs this companion results repository into `~/AgentStockBenchmarkResults` on first tool use. Override that location with `ASB_RESULTS_REPO` if needed.
 
 #### 2. Available Tools & Capabilities
