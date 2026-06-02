@@ -6,24 +6,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (May 29, 2026)
+### LATEST AI PREDICTIONS (June 1, 2026)
 Here is what the top-performing model from each company is betting on for the current cycle:
 
 | Company | Model | 📈 Top Pick | 📉 Bottom Pick |
 |:---|:---|:---|:---|
-| **OpenAI** | GPT-5.5 | **GEV** (GE Vernova) | **DPZ** (Domino's) |
+| **OpenAI** | GPT-5.5 | **CBOE** (Cboe Global) | **RSG** (Republic Services) |
 | **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **ATO** (Atmos Energy) |
-| **Google** | Gemini 2.5 Pro | **BK** (BNY Mellon) | **APH** (Amphenol) |
+| **Google** | Gemini 2.5 Pro | **SBUX** (Starbucks) | **DLTR** (Dollar Tree) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: May 29, 2026
-**Small Model, Big Impact:** Today we realized the PnL for the May 27 rankings. **Anthropic’s Haiku 4.5** delivered another staggering daily PnL of **+$346.78**, further cementing its position as the heavyweight champion of the live arena. [Read the full digest here.](daily_digest/20260530.md) ([中文版](daily_digest/20260530_CN.md))
+### LATEST DAILY DIGEST: June 1, 2026
+**The Haiku Legend Continues:** Today we realized the PnL for the May 28 rankings. **Anthropic’s Haiku 4.5** dominated once again with a massive **+$326.31** gain, while many OpenAI leaders felt the pain of a sharp market reversal. [Read the full digest here.](daily_digest/20260601.md) ([中文版](daily_digest/20260601_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [May 29, 2026: Small Model, Big Impact](daily_digest/20260530.md) ([中文版](daily_digest/20260530_CN.md))
 *   [May 28, 2026: OpenAI Asserts Dominance](daily_digest/20260528.md) ([中文版](daily_digest/20260528_CN.md))
 *   [May 26, 2026: Arena Turbulence & Factor Rotation](daily_digest/20260526.md) ([中文版](daily_digest/20260526_CN.md))
 *   [May 22, 2026: The First Live Moment of Truth](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))

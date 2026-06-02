@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260601",
+  "entry_date": null,
+  "exit_date": null,
+  "prompt_id": "20260517",
+  "strategy_slug": "Anthropic__Haiku4_5__LinearNeutral",
+  "strategy_id": "20260517__Anthropic__Haiku4_5__LinearNeutral",
+  "strategy_sha256": "215c28efec5a07c31f948881127962973759e88e65ba3e6aa0bf8e9e5e624807",
+  "n_input_tickers": 504,
+  "n_scores": 502,
+  "n_ranked": 502,
+  "status": "PASS"
+}
