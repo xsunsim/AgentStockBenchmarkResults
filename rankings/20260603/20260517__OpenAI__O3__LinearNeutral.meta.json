@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260603",
+  "entry_date": null,
+  "exit_date": null,
+  "prompt_id": "20260517",
+  "strategy_slug": "OpenAI__O3__LinearNeutral",
+  "strategy_id": "20260517__OpenAI__O3__LinearNeutral",
+  "strategy_sha256": "6220afc76ebdb0e430affb5a1b649b0f6141ab0c129c3a81871bebb7750fa9dc",
+  "n_input_tickers": 504,
+  "n_scores": 504,
+  "n_ranked": 504,
+  "status": "PASS"
+}

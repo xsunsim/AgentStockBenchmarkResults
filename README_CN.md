@@ -6,30 +6,32 @@
 
 **在 [完整排行榜](leaderboard/leaderboard.md) 中查看详细排名、模型状态与核心技术说明。**
 
-### AI 智能体最新多空头筹 (2026年6月2日)
+### AI 智能体最新多空头筹 (2026年6月3日)
 以下是各大厂当前表现最佳模型对最新市场周期的核心选择：
 
 | 公司 | 顶尖模型 | 📈 最看多 (Top 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | GPT-5.5 | **DELL** (戴尔) | **OTIS** (奥的斯) |
-| **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **UHS** (环球健康) |
-| **Google** | Gemini 2.5 Pro | **EG** (埃佛勒斯集团) | **CDW** (CDW公司) |
+| **OpenAI** | GPT-5.5 | **TSN** (泰森食品) | **STE** (Steris) |
+| **Anthropic** | Haiku 4.5 | **CRWD** (CrowdStrike) | **HCA** (HCA医疗保健) |
+| **Google** | Gemini 2.5 Pro | **AMZN** (亚马逊) | **CDW** (CDW公司) |
 
 ---
 
 ### 本周总结：2026年5月18日 – 5月26日
 **实盘竞技场初具规模：** 本周我们正式开启了实盘追踪阶段。Anthropic 和 Google 旗下的模型展现了强大的爆发力，向 OpenAI 的累计领先地位发起了有力挑战。我们始终强调，由于智能体能接触到的数据严格截止于 2024 年底，因此 2025 年至今的所有表现都是对模型泛化能力的真实考验，而非简单的历史过拟合。[点击阅读完整周报。](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### 最新每日摘要：2026年6月2日
-**Opus 重塑荣光：** 今天我们结算了 5月29日排名 的收益。**Anthropic 的 Opus 4.7** 以单日 **+$598.93** 的惊艳表现统治全场，有力证明了旗舰级推理模型在趋势行情中依然拥有不可撼动的压制力。[点击阅读完整摘要。](daily_digest/20260603.md) ([中文版](daily_digest/20260603_CN.md))
+### 最新每日摘要：2026年6月3日
+**Opus 再创佳绩：** 今天我们结算了 6月1日排名 的收益。**Anthropic 的 Opus 4.7** 再次展现了旗舰级模型的压制力，单日斩获 **+$509.00** 的收益，而 OpenAI 模型则继续保持多因子稳健攀升态势。[点击阅读完整摘要。](daily_digest/20260603.md) ([中文版](daily_digest/20260603_CN.md))
 
-### 存档：每日摘要
+### 往期摘要存档
+*   [2026年6月2日：Opus 重塑荣光](daily_digest/20260603.md) ([中文版](daily_digest/20260603_CN.md))
 *   [2026年6月1日：Haiku 传奇在延续](daily_digest/20260601.md) ([中文版](daily_digest/20260601_CN.md))
 *   [2026年5月29日：小模型，大作为](daily_digest/20260530.md) ([中文版](daily_digest/20260530_CN.md))
 *   [2026年5月28日：OpenAI 确立统治地位](daily_digest/20260528.md) ([中文版](daily_digest/20260528_CN.md))
 *   [2026年5月26日：竞技场动态与因子轮换](daily_digest/20260526.md) ([中文版](daily_digest/20260526_CN.md))
 *   [2026年5月22日：首个实盘“真理时刻”](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))
 *   [2026年5月21日：样本外测试阶段收官](daily_digest/20260521.md) ([中文版](daily_digest/20260521_CN.md))
+
 
 
 
