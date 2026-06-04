@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "run_date": "20260601",
-  "generated_at_utc": "2026-06-02T03:32:55+00:00",
+  "generated_at_utc": "2026-06-04T02:33:39+00:00",
   "status": "PASS",
-  "started_at_utc": "2026-06-02T03:32:00+00:00",
-  "completed_at_utc": "2026-06-02T03:32:55+00:00",
+  "started_at_utc": "2026-06-04T02:32:44+00:00",
+  "completed_at_utc": "2026-06-04T02:33:39+00:00",
   "results_repo": "AgentStockBenchmarkResults",
   "data_dir": "AgentStockBenchmarkResults/data/parquet",
   "prompt_id": null,
@@ -13,14 +13,14 @@
     {
       "name": "download-daily-csv",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:44+00:00",
+      "completed_at_utc": "2026-06-04T02:33:28+00:00",
       "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260601.csv",
       "universe": "AgentStockBenchmarkResults/data/universe/20260601.txt"
     },
     {
       "name": "merge-data",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:45+00:00",
+      "completed_at_utc": "2026-06-04T02:33:30+00:00",
       "artifacts": {
         "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
         "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
@@ -32,7 +32,7 @@
     {
       "name": "verify-merge",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:46+00:00",
+      "completed_at_utc": "2026-06-04T02:33:31+00:00",
       "report": {
         "dates_checked": [
           "20260601"
@@ -46,7 +46,7 @@
     {
       "name": "generate-rankings",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:49+00:00",
+      "completed_at_utc": "2026-06-04T02:33:34+00:00",
       "report": {
         "20260601": {
           "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
@@ -70,7 +70,7 @@
     {
       "name": "build-portfolios",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:49+00:00",
+      "completed_at_utc": "2026-06-04T02:33:34+00:00",
       "counts": {
         "20260601": 15
       }
@@ -78,7 +78,7 @@
     {
       "name": "update-accounting",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:54+00:00",
+      "completed_at_utc": "2026-06-04T02:33:38+00:00",
       "counts": {
         "20260401": 15,
         "20260402": 15,
@@ -120,20 +120,20 @@
         "20260526": 15,
         "20260527": 15,
         "20260528": 15,
-        "20260529": 0,
+        "20260529": 15,
         "20260601": 0
       }
     },
     {
       "name": "build-metrics",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:54+00:00",
+      "completed_at_utc": "2026-06-04T02:33:38+00:00",
       "n_strategies": 15
     },
     {
       "name": "build-leaderboard",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:54+00:00",
+      "completed_at_utc": "2026-06-04T02:33:38+00:00",
       "artifacts": {
         "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
         "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
@@ -143,11 +143,11 @@
     {
       "name": "audit",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:55+00:00",
+      "completed_at_utc": "2026-06-04T02:33:39+00:00",
       "report": {
         "schema_version": 1,
         "audit_date": "20260601",
-        "generated_at_utc": "2026-06-02T03:32:55+00:00",
+        "generated_at_utc": "2026-06-04T02:33:39+00:00",
         "status": "PASS",
         "failures": [],
         "warnings": [
@@ -163,7 +163,7 @@
     {
       "name": "write-manifests",
       "status": "PASS",
-      "completed_at_utc": "2026-06-02T03:32:55+00:00",
+      "completed_at_utc": "2026-06-04T02:33:39+00:00",
       "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260601.json"
     }
   ],
