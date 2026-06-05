@@ -1,44 +1,44 @@
 {
   "schema_version": 1,
   "run_date": "20260423",
-  "generated_at_utc": "2026-05-22T00:17:09+00:00",
+  "generated_at_utc": "2026-06-05T04:43:28+00:00",
   "status": "PASS",
-  "started_at_utc": "2026-05-22T00:17:01+00:00",
-  "completed_at_utc": "2026-05-22T00:17:09+00:00",
-  "results_repo": "AgentStockBenchmarkResults",
-  "data_dir": "AgentStockBenchmarkResults/data/parquet",
+  "started_at_utc": "2026-06-05T04:43:22+00:00",
+  "completed_at_utc": "2026-06-05T04:43:28+00:00",
+  "results_repo": "/Users/xiaoyusun/AgentStockBenchmarkResults",
+  "data_dir": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet",
   "prompt_id": null,
-  "strategy_selector": null,
+  "strategy_selector": "Anthropic__Opus4_8__LinearNeutral",
   "steps": [
     {
       "name": "ensure-cached-daily",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:01+00:00",
-      "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260423.csv",
-      "universe": "AgentStockBenchmarkResults/data/universe/20260423.txt"
+      "completed_at_utc": "2026-06-05T04:43:22+00:00",
+      "daily_csv": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/raw/daily/20260423.csv",
+      "universe": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/universe/20260423.txt"
     },
     {
       "name": "merge-data",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:02+00:00",
+      "completed_at_utc": "2026-06-05T04:43:23+00:00",
       "artifacts": {
-        "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
-        "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
-        "low": "AgentStockBenchmarkResults/data/parquet/low.parquet",
-        "close": "AgentStockBenchmarkResults/data/parquet/close.parquet",
-        "volume": "AgentStockBenchmarkResults/data/parquet/volume.parquet"
+        "open": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/open.parquet",
+        "high": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/high.parquet",
+        "low": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/low.parquet",
+        "close": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/close.parquet",
+        "volume": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/volume.parquet"
       }
     },
     {
       "name": "verify-merge",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:03+00:00",
+      "completed_at_utc": "2026-06-05T04:43:24+00:00",
       "report": {
         "dates_checked": [
           "20260423"
         ],
-        "rows_checked": 503,
-        "values_checked": 2515,
+        "rows_checked": 504,
+        "values_checked": 2520,
         "null_values_encoded": 0,
         "failures": []
       }
@@ -46,97 +46,83 @@
     {
       "name": "generate-rankings",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:06+00:00",
+      "completed_at_utc": "2026-06-05T04:43:24+00:00",
       "report": {
         "20260423": {
-          "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
-          "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
-          "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
-          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
-          "20260517__Google__Gemini2_5Flash__LinearNeutral": "PASS",
-          "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
-          "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
-          "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
-          "20260517__OpenAI__O3__LinearNeutral": "PASS",
-          "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
+          "20260517__Anthropic__Opus4_8__LinearNeutral": "PASS"
         }
       }
     },
     {
       "name": "build-portfolios",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:06+00:00",
+      "completed_at_utc": "2026-06-05T04:43:25+00:00",
       "counts": {
-        "20260423": 15
+        "20260423": 16
       }
     },
     {
       "name": "update-accounting",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:08+00:00",
+      "completed_at_utc": "2026-06-05T04:43:27+00:00",
       "counts": {
-        "20260401": 15,
-        "20260402": 15,
-        "20260406": 15,
-        "20260407": 15,
-        "20260408": 15,
-        "20260409": 15,
-        "20260410": 15,
-        "20260413": 15,
-        "20260414": 15,
-        "20260415": 15,
-        "20260416": 15,
-        "20260417": 15,
-        "20260420": 15,
-        "20260421": 15,
-        "20260422": 15,
-        "20260423": 15
+        "20260401": 16,
+        "20260402": 16,
+        "20260406": 16,
+        "20260407": 16,
+        "20260408": 16,
+        "20260409": 16,
+        "20260410": 16,
+        "20260413": 16,
+        "20260414": 16,
+        "20260415": 16,
+        "20260416": 16,
+        "20260417": 16,
+        "20260420": 16,
+        "20260421": 16,
+        "20260422": 16,
+        "20260423": 16
       }
     },
     {
       "name": "build-metrics",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:08+00:00",
-      "n_strategies": 15
+      "completed_at_utc": "2026-06-05T04:43:27+00:00",
+      "n_strategies": 16
     },
     {
       "name": "build-leaderboard",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:08+00:00",
+      "completed_at_utc": "2026-06-05T04:43:27+00:00",
       "artifacts": {
-        "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
-        "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
-        "html": "AgentStockBenchmarkResults/leaderboard/leaderboard.html"
+        "csv": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
+        "markdown": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.md",
+        "html": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.html"
       }
     },
     {
       "name": "audit",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:09+00:00",
+      "completed_at_utc": "2026-06-05T04:43:28+00:00",
       "report": {
         "schema_version": 1,
         "audit_date": "20260423",
-        "generated_at_utc": "2026-05-22T00:17:09+00:00",
+        "generated_at_utc": "2026-06-05T04:43:28+00:00",
         "status": "PASS",
         "failures": [],
         "warnings": [],
         "counts": {
-          "rankings": 15,
-          "portfolios": 15,
-          "universe_tickers": 503
+          "rankings": 16,
+          "portfolios": 16,
+          "universe_tickers": 504
         }
       }
     },
     {
       "name": "write-manifests",
       "status": "PASS",
-      "completed_at_utc": "2026-05-22T00:17:09+00:00",
-      "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260423.json"
+      "completed_at_utc": "2026-06-05T04:43:28+00:00",
+      "artifact_manifest": "/Users/xiaoyusun/AgentStockBenchmarkResults/manifests/artifacts/20260423.json"
     }
   ],
   "error": null

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260517",
+  "strategy_slug": "Anthropic__Opus4_8__LinearNeutral",
+  "strategy_id": "20260517__Anthropic__Opus4_8__LinearNeutral",
+  "strategy_sha256": "366d90fac02e529b329bafb581af858636935ed7b93445cc5cfbc9a345125a56"
+}

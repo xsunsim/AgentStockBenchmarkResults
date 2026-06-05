@@ -6,6 +6,7 @@
          20260517__OpenAI__GPT4o__LinearNeutral   4.966         3016.02       -643.15     0.605          70.14      43
             20260517__OpenAI__O3__LinearNeutral   4.724         2613.95       -780.19     0.605          60.79      43
         20260517__OpenAI__GPT5_4__LinearNeutral   3.149         1809.80       -455.41     0.581          42.09      43
+    20260517__Anthropic__Opus4_8__LinearNeutral   3.119         2073.75       -712.40     0.550          51.84      40
    20260517__Anthropic__Haiku4_5__LinearNeutral   3.095         2382.06      -1524.79     0.558          55.40      43
     20260517__Anthropic__Opus4_7__LinearNeutral   2.220         1757.20      -1135.46     0.488          40.87      43
        20260517__OpenAI__O4_mini__LinearNeutral   1.969         1439.28       -977.18     0.488          33.47      43

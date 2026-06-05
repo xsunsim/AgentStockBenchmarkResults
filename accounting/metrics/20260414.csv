@@ -2,6 +2,7 @@ strategy_id,sharpe,cumulative_pnl,max_drawdown,win_rate,avg_daily_pnl,n_days
 20260517__OpenAI__O3__LinearNeutral,4.556,652.1,-495.05,0.556,72.46,9
 20260517__OpenAI__GPT5_5__LinearNeutral,3.13,359.38,-235.97,0.556,39.93,9
 20260517__Anthropic__Haiku4_5__LinearNeutral,1.21,163.84,-620.18,0.556,18.2,9
+20260517__Anthropic__Opus4_8__LinearNeutral,0.641,118.68,-712.4,0.444,13.19,9
 20260517__OpenAI__GPT4o__LinearNeutral,-0.264,-40.78,-643.15,0.444,-4.53,9
 20260517__Anthropic__Sonnet4_6__LinearNeutral,-0.656,-118.2,-1142.01,0.444,-13.13,9
 20260517__OpenAI__GPT5_4__LinearNeutral,-1.022,-136.89,-455.41,0.444,-15.21,9
