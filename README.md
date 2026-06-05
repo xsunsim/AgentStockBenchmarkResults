@@ -1,70 +1,167 @@
-# AgentStockBenchmark: The Clean-Room Engine (Github:AgentStockBenchmark)
+# LLM Stock Prediction Benchmark (Github:AgentStockBenchmarkResults)
+
+[中文版本](./README_CN.md)
 
 ## 📢 ANNOUNCEMENT: Anthropic Opus 4.8 enters the Arena!
 The next generation of Anthropic reasoning is here. Opus 4.8 has been officially integrated and its performance history has been backfilled to April 1st, 2026, to match existing models. Since the strategy was generated with frozen research and older prompts/data, its 40-day track record serves as a robust out-of-sample (OOS) evaluation. Live daily trading begins June 4th.
 
-[中文版本](./README_CN.md)
 
-### THE ULTIMATE STRESS TEST FOR AGI
-This is a live, tamper-proof arena testing whether the world's smartest AI agents can actually solve the ultimate stock prediction problem. We are not testing raw models in a sterile academic sandbox. We are testing the full autonomous loop—tools like Claude Code, Codex, and Gemini CLI—given clean data, a strict objective, and zero internet access. Every day, they are judged on one highly specific question: **which stock in the S&P 500 will have the best performance tomorrow?**
+![Cumulative PnL Performance](leaderboard/cumulative_pnl.png)
 
-Most AI coding benchmarks are broken by data contamination. You never know if an AI "solved" a challenge or just memorized a GitHub repo. But nobody—not OpenAI, not Anthropic, not Google—has a chance to know **which stock in the S&P 500 will have the best performance tomorrow** during its training process. The future is the only uncontaminated test set.
+**View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-**If you find this project interesting, please consider giving it a ⭐ Star and Forking the repository to test your own ideas!**
+### LATEST AI PREDICTIONS (June 4, 2026)
+Here is what the **Top 3 Cumulative Leaders** are betting on for the current cycle:
 
----
-
-### JUST LOOKING FOR THE LEADERBOARD?
-If you are here to see which AI makes the most money in this arena, check out our companion repository:
-👉 **[AgentStockBenchmarkResults](https://github.com/xsunsim/AgentStockBenchmarkResults)**
-
-The Results repository hosts the live leaderboard, the beautiful cumulative PnL charts, and the daily performance digests.
+| Rank | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
+|:---|:---|:---|:---|
+| **#1** | **OpenAI GPT-5.5** | **CIEN** (Ciena) | **INVH** (Invitation Homes) |
+| **#2** | **OpenAI GPT-4o** | **BNY** (BNY Mellon) | **BK** (BNY Mellon) |
+| **#3** | **OpenAI O3** | **T** (AT&T) | **RSG** (Republic Services) |
 
 ---
 
-### THE "CLEAN ROOM" ARCHITECTURE
-To ensure 100% integrity, this engine enforces a strict two-repository boundary:
-1.  **This Repo (`AgentStockBenchmark`)**: The "Clean Room." It hosts the frozen agent logic, the prompts, and the orchestration engine. Once an agent generates a strategy, it is merged here and receives a permanent server-side timestamp.
-2.  **Results Repo (`AgentStockBenchmarkResults`)**: The "Arena." It hosts the realized market data and the public leaderboard. 
+### WEEKLY SUMMARY: May 18 – May 26, 2026
+**The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-**The Time Invariant**: An agent is only allowed to see a data snapshot truncated exactly at $t-1$ (yesterday). Its prediction for $t$ (today) must be frozen before market data for $t$ even exists.
+### LATEST DAILY DIGEST: June 4, 2026
+**The Google Surge:** Today we realized the PnL for the June 2 rankings. **Google’s Gemini 3.1 Pro** delivered a stunning comeback with a **+$314.61** daily gain, proving that the arena remains wide open. [Read the full digest here.](daily_digest/20260604.md) ([中文版](daily_digest/20260604_CN.md))
 
----
-
-### FOR DEVELOPERS & RESEARCHERS
-This repository is an open-source engineering laboratory. We invite tech-heavy users to fork this engine and experiment with the "Autonomous Loop."
-
-#### 1. Fork & Extend the Ideas
-The true alpha in this benchmark isn't just the model—it's the **ideas**. We encourage you to:
-*   **Implement New Portfolio Math**: Don't like our Linear Neutral ladder? Fork the engine and implement your own risk-parity or Kelly-criterion sizing logic in `stage3`.
-*   **Agentic Scaffolding**: Modify the research workflow in `agentstockbenchmark.research` to test how different "chain-of-thought" or "self-reflection" loops affect strategy quality.
-*   **Custom Universes**: The engine is built for the S&P 500, but the data-ingestion pipeline is flexible. Extend it to crypto, forex, or international equities.
-
-#### 2. Prompt Engineering is Alpha
-The biggest variable in performance is the scaffolding provided to the agent.
-*   Check [STRATEGY_EDITORIAL.md](STRATEGY_EDITORIAL.md) to see how different model lineages (OpenAI, Anthropic, Google) responded to **[Prompt Version 20260517](prompts/20260517/prompt.md)**.
-*   Experiment with the prompts in `prompts/`. Can you force a model to better understand overfitting? Can you scaffold it to build more robust volatility-normalization?
+### ARCHIVE: DAILY DIGESTS
+*   [June 3, 2026: Opus Strikes Again](daily_digest/20260603.md) ([中文版](daily_digest/20260603_CN.md))
+*   [June 1, 2026: The Haiku Legend Continues](daily_digest/20260601.md) ([中文版](daily_digest/20260601_CN.md))
+*   [May 29, 2026: Small Model, Big Impact](daily_digest/20260530.md) ([中文版](daily_digest/20260530_CN.md))
+*   [May 28, 2026: OpenAI Asserts Dominance](daily_digest/20260528.md) ([中文版](daily_digest/20260528_CN.md))
+*   [May 26, 2026: Arena Turbulence & Factor Rotation](daily_digest/20260526.md) ([中文版](daily_digest/20260526_CN.md))
+*   [May 22, 2026: The First Live Moment of Truth](daily_digest/20260522.md) ([中文版](daily_digest/20260522_CN.md))
+*   [May 21, 2026: Closing the Semi-OOS Period](daily_digest/20260521.md) ([中文版](daily_digest/20260521_CN.md))
 
 ---
 
-### ENGINE DOCUMENTATION
-*   [SYSTEM.md](SYSTEM.md): Deep dive into the architecture, data contracts, and the $t-1 \to t \to t+1$ failure model.
-*   [USAGE.md](USAGE.md): Full CLI cookbook for production, backfilling, and model migration.
-*   [STRATEGY_EDITORIAL.md](STRATEGY_EDITORIAL.md): A detailed quantitative analysis of the strategies produced by each model under **[Prompt Version 20260517](prompts/20260517/prompt.md)**.
+### WHAT IS THIS REPOSITORY
+The daily arena where AI agents clash to rank tomorrow’s S&P 500 winners and losers. Their only judge is the future—the one truth that simply cannot be cheated.
 
-### QUICK START
-```bash
-# Clone the engine
-git clone https://github.com/xsunsim/AgentStockBenchmark.git
-cd AgentStockBenchmark
-export PYTHONPATH=src
+The core orchestration engine and frozen strategies for this benchmark are hosted in our companion repository:
+👉 **[AgentStockBenchmark](https://github.com/xsunsim/AgentStockBenchmark)**
 
-# List active prompts and strategies
-python -m agentstockbenchmark stage1 list-prompts
-python -m agentstockbenchmark stage1 list-strategies --prompt-id 20260517
-```
+### WHY POPULAR BENCHMARKS FAIL
+Current AI coding benchmarks are fundamentally broken. They are plagued by data contamination. When an AI solves a complex coding challenge, you never really know if it reasoned through the problem or just regurgitated a GitHub repository it saw during pre-training.
+
+DeepMind CEO Demis Hassabis recently proposed the ultimate stress test for Artificial General Intelligence (AGI): train a foundation model with a knowledge cutoff of 1911 and see if it can independently discover general relativity like Einstein did in 1915. If it can, it possesses true reasoning. If not, it is just a sophisticated pattern matcher.
+
+But since we cannot time travel to 1911 to guarantee a model hasn't secretly memorized Einstein's papers, how do we prove an AI isn't just cheating?
+
+**We use the stock market.** Nobody—not OpenAI, not Anthropic, not Google—has a chance to know **which stock in the S&P 500 will have the best performance tomorrow** during its training process. The future is the only uncontaminated test set.
+
+### HOW DO WE CONTROL INFORMATION LEAKAGE
+True out-of-sample means tomorrow.
+
+We enforce a ruthless time invariant. When an agent generates a stock prediction for today, it is only allowed to see a data snapshot truncated exactly at yesterday's close. To prove the AI isn't cheating, we use a two-repository "clean room" architecture. The agent's generated code is merged into an append-only registry where it receives a server-side timestamp before the next day's market data even exists.
+
+Every day after the market closes, an automated scoring engine pulls the latest prices, runs the frozen agent logic, and updates a public leaderboard based on a strict dollar-neutral portfolio constraint. There is no human intervention. No manual bug fixing. If an agent's code breaks, it gets shoved to the median.
 
 ### WHAT WE ARE NOT
 We are not a hedge fund. We are not a stock recommendation service. **Use it at your own risk.**
 
 We care if Codex beats Claude Code—not if AAPL beats NVDA tomorrow.
+
+### METHODOLOGY: THE STRICT, FAIR, AND NICE JUDGE
+We isolate pure reasoning from market noise using a mechanical evaluation engine. We don't care if the agent writes elegant Python; we care if it predicts the future.
+
+![Portfolio Ladder Construction](leaderboard/portfolio_ladder.png)
+
+*   **The Linear Portfolio:** Agents do not size their own positions. They simply return a raw numeric score for each eligible ticker. We rank these from highest to lowest and apply a fixed, dollar-neutral ladder. The top-ranked stock gets +$250, the worst gets -$250, and the middle ranks are evenly spaced. This forces the agent to demonstrate pure cross-sectional ranking skill. You cannot fake a high Sharpe ratio here by simply riding a bull market.
+*   **The Accounting:** We assume fractional shares and ignore transaction costs, borrow fees, and market impact. This is not a high-frequency trading benchmark. We are evaluating pure signal generation and research capability, not execution infrastructure.
+*   **Strict but Forgiving:** The evaluation engine is ruthless about the $t-1 \to t \to t+1$ time invariant, but it is a "nice judge" when it comes to edge cases. If an agent's code throws a NaN, drops a ticker, or hallucinations a format, the system doesn't crash. We simply shove that prediction to the median rank (exactly $0 allocation). The agent eats the zero-weight penalty and survives to predict another day.
+
+### 🤖 USE IT AS AN MCP SERVER (Model Context Protocol)
+
+We have officially published AgentStockBenchmark as an MCP server. This allows you to give AI agents (like Claude Desktop or Cursor) direct access to our live market data, strategy execution engine, and historical leaderboard.
+
+#### 1. Recommended Installation (Claude Desktop)
+
+For MCP clients such as Claude Desktop or Claude Code, install the package once as a persistent `uv` tool. This avoids slow MCP startup caused by `uvx` downloading Python, NumPy, pandas, pyarrow, and other dependencies during the initial MCP handshake.
+
+1. **Install `uv`** (if you haven't already):
+   * Mac/Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+   * Windows: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+
+2. Install the MCP server once:
+```bash
+uv tool install agentstockbenchmark==0.1.7
+```
+
+3. Add this block to your `claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "agent-stock": {
+      "command": "asb-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}
+```
+
+If Claude does not inherit `~/.local/bin` in `PATH`, point it at the absolute path reported by `which asb-mcp`, for example:
+
+```json
+{
+  "mcpServers": {
+    "agent-stock": {
+      "command": "/Users/<you>/.local/bin/asb-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}
+```
+
+The MCP server automatically syncs this companion results repository into `~/AgentStockBenchmarkResults` on first tool use. Override that location with `ASB_RESULTS_REPO` if needed.
+
+#### 2. Available Tools & Capabilities
+Once connected, your AI assistant has access to 11 specialized tools, categorized below:
+
+**A. Core Discovery & Performance**
+*   `get_leaderboard`: Instantly fetches the live, auto-synced production leaderboard from GitHub.
+*   `list_active_prompts`: Shows available strategy generation templates (e.g., `20260517`).
+*   `list_available_strategies`: Lists all AI-generated models currently competing in the arena.
+
+**B. The "Autopilot" Prediction Engine**
+*   `get_top_positions`: **(Highly Recommended)** Just tell the AI what day you want to trade (e.g., "Show me top positions for tomorrow"). This tool automatically handles the complex pipeline: checking market hours, syncing remote data, running the specified strategy, and returning the top 10 long/short stocks.
+*   `run_strategy_on_date`: Run a single model on a specific date for targeted analysis.
+*   `refresh_market_data`: Force a download of the latest OHLCV data for the S&P 500 universe.
+
+**C. The Research Sandbox (Build Your Own)**
+*   `create_research_workspace`: Sets up an isolated local folder for you to test a brand new prompt or strategy.
+*   `run_research_backtest`: Evaluates your experimental strategy over a custom date range.
+*   `analyze_results`: Calculates Sharpe ratio and PnL for your experiment.
+*   `promote_strategy`: Pushes a winning experimental strategy into your local production arena.
+
+**D. Production Workflows**
+*   `run_production_daily`: Executes the full $T-1 \to T$ pipeline (data ingestion, running all production strategies, portfolio construction, and leaderboard updating) for a given date.
+
+---
+
+### 🧠 FOR AI AGENTS (OPERATIONAL GUIDE)
+If you are an AI agent reading this via MCP, follow these best practices:
+
+1.  **Checking Performance**: Always start with `get_leaderboard` to see which model lineages are currently winning.
+2.  **Predicting the Future**: To get positions for the *next* trading day, use `get_top_positions` with the `target_trading_date` set to the next day. The tool handles all data fetching and execution automatically.
+3.  **Experimental Workflow**:
+    *   Use `list_active_prompts` to find a starting point.
+    *   Use `create_research_workspace` to set up a lab.
+    *   Generate a new `strategy.py` file based on the prompt.
+    *   Use `run_research_backtest` to verify your idea. (Limit date ranges to < 30 days to avoid timeouts).
+    *   Use `analyze_results` to see if your Sharpe ratio beats the current leaderboard.
+4.  **Data Latency**: Market data for "Today" only becomes available 15 minutes after the New York market close (4:15 PM ET). Do not attempt to pull data for today while the market is still open.
+
+---
+
+### HOW TO CONTRIBUTE
+We are turning this into an open-source research laboratory. While we are strictly controlling the actual code merges right now to maintain the "one push per model" integrity of the benchmark, we need the community's intelligence.
+
+*   **Prompt Engineering is Alpha:** The biggest variable in an autonomous agent's performance is the scaffolding and the prompt it receives. We will be updating the baseline system prompts monthly to see if we can extract better reasoning from the same base models.
+*   **Pitch Your Ideas:** Head over to GitHub Discussions or Issues. Critique the current baseline prompt. Propose new structural constraints, point out agentic blind spots we missed, or suggest better ways to force Codex or Claude Code to understand overfitting. Tell us how to make them smarter.
+*   We will Hughes synthesize the top-voted ideas into the next month's official prompt and test it live. Once the infrastructure is hardened, we will open up the pipeline for the community to submit PRs for independent, open-weight models.

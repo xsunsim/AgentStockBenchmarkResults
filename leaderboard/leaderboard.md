@@ -19,3 +19,8 @@
   20260517__Google__Gemini2_5Pro__LinearNeutral  -1.077         -938.71      -2679.44     0.465         -21.83      43
   20260517__Google__Gemini3Flash__LinearNeutral  -1.837        -1667.97      -2808.14     0.442         -38.79      43
 ```
+
+
+### Technical Notes
+
+* **Anthropic Opus 4.8**: Although officially joining the live arena on June 4th, 2026, its performance history has been backfilled to April 1st to ensure comparability. Because this strategy was frozen using research logic and data from an earlier period, its 40-day track record serves as a robust out-of-sample (OOS) evaluation.
