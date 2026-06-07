@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "run_date": "20260605",
+  "generated_at_utc": "2026-06-07T03:09:09+00:00",
+  "status": "PASS",
+  "started_at_utc": "2026-06-07T03:09:00+00:00",
+  "completed_at_utc": "2026-06-07T03:09:09+00:00",
+  "results_repo": "/Users/xiaoyusun/AgentStockBenchmarkResults",
+  "data_dir": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet",
+  "prompt_id": null,
+  "strategy_selector": "Anthropic__Opus4_8__LinearNeutral",
+  "steps": [
+    {
+      "name": "ensure-cached-daily",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:00+00:00",
+      "daily_csv": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/raw/daily/20260605.csv",
+      "universe": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/universe/20260605.txt"
+    },
+    {
+      "name": "merge-data",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:01+00:00",
+      "artifacts": {
+        "open": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/open.parquet",
+        "high": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/high.parquet",
+        "low": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/low.parquet",
+        "close": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/close.parquet",
+        "volume": "/Users/xiaoyusun/AgentStockBenchmarkResults/data/parquet/volume.parquet"
+      }
+    },
+    {
+      "name": "verify-merge",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:02+00:00",
+      "report": {
+        "dates_checked": [
+          "20260605"
+        ],
+        "rows_checked": 505,
+        "values_checked": 2525,
+        "null_values_encoded": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generate-rankings",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:03+00:00",
+      "report": {
+        "20260605": {
+          "20260517__Anthropic__Opus4_8__LinearNeutral": "PASS"
+        }
+      }
+    },
+    {
+      "name": "build-portfolios",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:03+00:00",
+      "counts": {
+        "20260605": 16
+      }
+    },
+    {
+      "name": "update-accounting",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:08+00:00",
+      "counts": {
+        "20260401": 16,
+        "20260402": 16,
+        "20260406": 16,
+        "20260407": 16,
+        "20260408": 16,
+        "20260409": 16,
+        "20260410": 16,
+        "20260413": 16,
+        "20260414": 16,
+        "20260415": 16,
+        "20260416": 16,
+        "20260417": 16,
+        "20260420": 16,
+        "20260421": 16,
+        "20260422": 16,
+        "20260423": 16,
+        "20260424": 16,
+        "20260427": 16,
+        "20260428": 16,
+        "20260429": 16,
+        "20260430": 16,
+        "20260501": 16,
+        "20260504": 16,
+        "20260505": 16,
+        "20260506": 16,
+        "20260507": 16,
+        "20260508": 16,
+        "20260511": 16,
+        "20260512": 16,
+        "20260513": 16,
+        "20260514": 16,
+        "20260515": 16,
+        "20260518": 16,
+        "20260519": 16,
+        "20260520": 16,
+        "20260521": 16,
+        "20260522": 16,
+        "20260526": 16,
+        "20260527": 16,
+        "20260528": 16,
+        "20260529": 16,
+        "20260601": 16,
+        "20260602": 16,
+        "20260603": 16,
+        "20260604": 0,
+        "20260605": 0
+      }
+    },
+    {
+      "name": "build-metrics",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:08+00:00",
+      "n_strategies": 16
+    },
+    {
+      "name": "build-leaderboard",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:08+00:00",
+      "artifacts": {
+        "csv": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
+        "markdown": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.md",
+        "html": "/Users/xiaoyusun/AgentStockBenchmarkResults/leaderboard/leaderboard.html"
+      }
+    },
+    {
+      "name": "audit",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:09+00:00",
+      "report": {
+        "schema_version": 1,
+        "audit_date": "20260605",
+        "generated_at_utc": "2026-06-07T03:09:09+00:00",
+        "status": "PASS",
+        "failures": [],
+        "warnings": [
+          "accounting not yet scoreable for 20260605"
+        ],
+        "counts": {
+          "rankings": 16,
+          "portfolios": 16,
+          "universe_tickers": 505
+        }
+      }
+    },
+    {
+      "name": "write-manifests",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-07T03:09:09+00:00",
+      "artifact_manifest": "/Users/xiaoyusun/AgentStockBenchmarkResults/manifests/artifacts/20260605.json"
+    }
+  ],
+  "error": null
+}
