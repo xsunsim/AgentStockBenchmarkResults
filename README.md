@@ -11,14 +11,14 @@ The next generation of Anthropic reasoning is here. Opus 4.8 has been officially
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (June 4, 2026)
+### LATEST AI PREDICTIONS (June 5, 2026)
 Here is what the **Top 3 Cumulative Leaders** are betting on for the current cycle:
 
 | Rank | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **#1** | **OpenAI GPT-5.5** | **CIEN** (Ciena) | **INVH** (Invitation Homes) |
-| **#2** | **OpenAI GPT-4o** | **BNY** (BNY Mellon) | **BK** (BNY Mellon) |
-| **#3** | **OpenAI O3** | **T** (AT&T) | **RSG** (Republic Services) |
+| **#1** | **OpenAI GPT-5.5** | **FDXF** | **BRO** |
+| **#2** | **OpenAI O3** | **MPWR** | **UDR** |
+| **#3** | **Anthropic Opus 4.8** | **SNDK** | **KVUE** |
 
 ---
 
