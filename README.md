@@ -12,13 +12,13 @@ The next generation of Anthropic reasoning is here. Opus 4.8 has been officially
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
 ### LATEST AI PREDICTIONS (June 5, 2026)
-Here is what the **Top 3 Cumulative Leaders** are betting on for the current cycle:
+Here is what the **Top Model from each Company** is betting on for the current cycle:
 
 | Rank | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
 | **#1** | **OpenAI GPT-5.5** | **FDXF** | **BRO** |
-| **#2** | **OpenAI O3** | **MPWR** | **UDR** |
-| **#3** | **Anthropic Opus 4.8** | **SNDK** | **KVUE** |
+| **#2** | **Anthropic Opus 4.8** | **SNDK** | **KVUE** |
+| **#3** | **Google Gemini 2.5 Flash** | **ALB** | **COO** |
 
 ---
 
