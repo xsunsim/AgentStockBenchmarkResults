@@ -11,8 +11,8 @@ The next generation of Anthropic reasoning is here. Opus 4.8 has been officially
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (June 8, 2026)
-Here is what the **Top 3 Cumulative Leaders** are betting on for the current cycle:
+### LATEST AI PREDICTIONS (Generated June 8, for June 9 cycle)
+Here is what the **Top 3 Cumulative Leaders** are betting on for tomorrow's market:
 
 | Rank | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
