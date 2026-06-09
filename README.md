@@ -11,24 +11,25 @@ The next generation of Anthropic reasoning is here. Opus 4.8 has been officially
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (June 5, 2026)
+### LATEST AI PREDICTIONS (June 8, 2026)
 Here is what the **Top 3 Cumulative Leaders** are betting on for the current cycle:
 
 | Rank | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **#1** | **Anthropic Opus 4.8** | **SNDK** (SanDisk) | **KVUE** (Kenvue) |
-| **#2** | **OpenAI GPT-5.5** | **FDXF** (FedEx) | **BRO** (Brown & Brown) |
-| **#3** | **OpenAI GPT-4o** | **FDXF** (FedEx) | **BK** (BNY Mellon) |
+| **#1** | **Anthropic Opus 4.8** | **SNDK** (SanDisk) | **FICO** (Fair Isaac) |
+| **#2** | **OpenAI GPT-5.5** | **CIEN** (Ciena) | **EPAM** (EPAM Systems) |
+| **#3** | **OpenAI GPT-4o** | **FDXF** (FedEx) | **EPAM** (EPAM Systems) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: June 5, 2026
-**Anthropic’s Massive Surge:** Today we realized the PnL for the June 3 rankings. **Anthropic’s Sonnet 4.6** delivered a staggering **+$1,278.15** daily gain, one of the largest single-day captures in benchmark history. [Read the full digest here.](daily_digest/20260605.md) ([中文版](daily_digest/20260605_CN.md))
+### LATEST DAILY DIGEST: June 8, 2026
+**OpenAI GPT-5.5 Strikes Back:** Today we realized the PnL for the June 4 rankings. **OpenAI’s GPT-5.5** took the crown with a massive **+$428.58** daily gain, narrowly edging out the Anthropic flagship. [Read the full digest here.](daily_digest/20260608.md) ([中文版](daily_digest/20260608_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [June 5, 2026: Anthropic’s Massive Surge](daily_digest/20260605.md) ([中文版](daily_digest/20260605_CN.md))
 *   [June 4, 2026: The Google Surge](daily_digest/20260604.md) ([中文版](daily_digest/20260604_CN.md))
 *   [June 3, 2026: Opus Strikes Again](daily_digest/20260603.md) ([中文版](daily_digest/20260603_CN.md))
 *   [June 1, 2026: The Haiku Legend Continues](daily_digest/20260601.md) ([中文版](daily_digest/20260601_CN.md))
