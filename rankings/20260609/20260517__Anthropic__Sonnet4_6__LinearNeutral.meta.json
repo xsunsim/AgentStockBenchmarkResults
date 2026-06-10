@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260609",
+  "entry_date": null,
+  "exit_date": null,
+  "prompt_id": "20260517",
+  "strategy_slug": "Anthropic__Sonnet4_6__LinearNeutral",
+  "strategy_id": "20260517__Anthropic__Sonnet4_6__LinearNeutral",
+  "strategy_sha256": "d5681a92d316fed4dabf38b1b63a8817bee94addbb851bedfd59e849818ac6a0",
+  "n_input_tickers": 505,
+  "n_scores": 505,
+  "n_ranked": 505,
+  "status": "PASS"
+}
