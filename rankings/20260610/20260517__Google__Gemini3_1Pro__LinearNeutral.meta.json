@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "artifact_type": "ranking",
+  "ranking_date": "20260610",
+  "entry_date": null,
+  "exit_date": null,
+  "prompt_id": "20260517",
+  "strategy_slug": "Google__Gemini3_1Pro__LinearNeutral",
+  "strategy_id": "20260517__Google__Gemini3_1Pro__LinearNeutral",
+  "strategy_sha256": "01589677afa7b69f59c77bcf8ea18d28b8bf9e77cb704be1aceb64b6b9856654",
+  "n_input_tickers": 505,
+  "n_scores": 505,
+  "n_ranked": 505,
+  "status": "PASS"
+}

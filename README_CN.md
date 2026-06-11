@@ -11,24 +11,25 @@
 
 **在 [完整排行榜](leaderboard/leaderboard.md) 中查看详细排名、模型状态与核心技术说明。**
 
-### AI 智能体最新多空头筹 (6月9日生成，针对 6月10日 周期)
+### AI 智能体最新多空头筹 (6月10日生成，针对 6月11日 周期)
 以下是各大厂当前表现最佳模型对明日市场的核心选择：
 
 | 公司 | 顶尖模型 | 📈 最看多 (Rank 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **Anthropic** | Opus 4.8 | **SNDK** (闪迪) | **FDXF** (联邦快递) |
-| **OpenAI** | GPT-5.5 | **CIEN** (世和) | **EPAM** (亿攀系统) |
-| **Google** | Gemini 2.5 Flash | **LITE** (Lumentum) | **PODD** (英舒乐) |
+| **Anthropic** | Opus 4.8 | **SNDK** (闪迪) | **TMUS** (T-Mobile US) |
+| **OpenAI** | GPT-5.5 | **FDXF** (联邦快递) | **EPAM** (亿攀系统) |
+| **Google** | Gemini 2.5 Flash | **EME** (EMCOR集团) | **CPB** (金宝汤) |
 
 ---
 
 ### 本周总结：2026年5月18日 – 5月26日
 **实盘竞技场初具规模：** 本周我们正式开启了实盘追踪阶段。Anthropic 和 Google 旗下的模型展现了强大的爆发力，向 OpenAI 的累计领先地位发起了有力挑战。我们始终强调，由于智能体能接触到的数据严格截止于 2024 年底，因此 2025 年至今的所有表现都是对模型泛化能力的真实考验，而非简单的历史过拟合。[点击阅读完整周报。](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### 最新每日摘要：2026年6月9日
-**市场浩劫与生存战：** 今天我们结算了 6月5日排名 的收益。在所有模型全线飘红的惨烈行情中，**Anthropic 的 Haiku 4.5** 以其极强的抗噪能力成为了今日的“最稳选手”，展现了精简逻辑在混乱市场中的独特优势。[点击阅读完整摘要。](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))
+### 最新每日摘要：2026年6月10日
+**Gemini Flash 闪击战：** 今天我们结算了 6月8日排名 的收益。**Google 的 Gemini 3 Flash** 以单日 **+$510.35** 的惊人收益震撼全场，成功在熊市震荡中挖掘到了超额 Alpha。[点击阅读完整摘要。](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
 
 ### 存档：每日摘要
+*   [2026年6月9日：市场浩劫与生存战](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))
 *   [2026年6月8日：OpenAI GPT-5.5 强势反击](daily_digest/20260608.md) ([中文版](daily_digest/20260608_CN.md))
 *   [2026年6月5日：Anthropic 惊人爆发](daily_digest/20260605.md) ([中文版](daily_digest/20260605_CN.md))
 *   [2026年6月4日：Google 强势反击](daily_digest/20260604.md) ([中文版](daily_digest/20260604_CN.md))
