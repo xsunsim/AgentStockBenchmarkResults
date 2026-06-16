@@ -11,24 +11,25 @@ The next generation of Anthropic reasoning is here. Opus 4.8 has been officially
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated June 10, for June 11 cycle)
+### LATEST AI PREDICTIONS (Generated June 15, for June 16 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **Anthropic** | Opus 4.8 | **SNDK** (SanDisk) | **TMUS** (T-Mobile US) |
 | **OpenAI** | GPT-5.5 | **FDXF** (FedEx) | **EPAM** (EPAM Systems) |
-| **Google** | Gemini 2.5 Flash | **EME** (EMCOR Group) | **CPB** (Campbell Soup) |
+| **Anthropic** | Opus 4.8 | **FOXA** (Fox Corp) | **BKNG** (Booking Holdings) |
+| **Google** | Gemini 2.5 Pro | **JBHT** (J.B. Hunt) | **MRNA** (Moderna) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: June 10, 2026
-**The Gemini Flash Strike:** Today we realized the PnL for the June 8 rankings. **Google’s Gemini 3 Flash** shocked the arena with a **+$510.35** daily gain, successfully identifying alpha in a bearish session. [Read the full digest here.](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
+### LATEST DAILY DIGEST: June 15, 2026
+**OpenAI O3’s Tactical Precision:** Today we realized the PnL for the June 11 rankings. **OpenAI’s O3** model delivered a stellar **+$471.75** daily gain, successfully navigating a mixed market by identifying strong defensive alpha. [Read the full digest here.](daily_digest/20260615.md) ([中文版](daily_digest/20260615_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [June 10, 2026: The Gemini Flash Strike](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
 *   [June 9, 2026: Market Carnage & Survival](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))
 *   [June 8, 2026: OpenAI GPT-5.5 Strikes Back](daily_digest/20260608.md) ([中文版](daily_digest/20260608_CN.md))
 *   [June 5, 2026: Anthropic’s Massive Surge](daily_digest/20260605.md) ([中文版](daily_digest/20260605_CN.md))

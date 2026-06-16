@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "run_date": "20260615",
+  "generated_at_utc": "2026-06-16T03:19:57+00:00",
+  "status": "PASS",
+  "started_at_utc": "2026-06-16T03:18:56+00:00",
+  "completed_at_utc": "2026-06-16T03:19:57+00:00",
+  "results_repo": "AgentStockBenchmarkResults",
+  "data_dir": "AgentStockBenchmarkResults/data/parquet",
+  "prompt_id": null,
+  "strategy_selector": null,
+  "steps": [
+    {
+      "name": "download-daily-csv",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:45+00:00",
+      "daily_csv": "AgentStockBenchmarkResults/data/raw/daily/20260615.csv",
+      "universe": "AgentStockBenchmarkResults/data/universe/20260615.txt"
+    },
+    {
+      "name": "merge-data",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:46+00:00",
+      "artifacts": {
+        "open": "AgentStockBenchmarkResults/data/parquet/open.parquet",
+        "high": "AgentStockBenchmarkResults/data/parquet/high.parquet",
+        "low": "AgentStockBenchmarkResults/data/parquet/low.parquet",
+        "close": "AgentStockBenchmarkResults/data/parquet/close.parquet",
+        "volume": "AgentStockBenchmarkResults/data/parquet/volume.parquet"
+      }
+    },
+    {
+      "name": "verify-merge",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:47+00:00",
+      "report": {
+        "dates_checked": [
+          "20260615"
+        ],
+        "rows_checked": 503,
+        "values_checked": 2515,
+        "null_values_encoded": 0,
+        "failures": []
+      }
+    },
+    {
+      "name": "generate-rankings",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:50+00:00",
+      "report": {
+        "20260615": {
+          "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
+          "20260517__Anthropic__Opus4_8__LinearNeutral": "PASS",
+          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
+          "20260517__Google__Gemini2_5Flash__LinearNeutral": "PASS",
+          "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
+          "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
+          "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
+          "20260517__OpenAI__O3__LinearNeutral": "PASS",
+          "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
+        }
+      }
+    },
+    {
+      "name": "build-portfolios",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:50+00:00",
+      "counts": {
+        "20260615": 16
+      }
+    },
+    {
+      "name": "update-accounting",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:56+00:00",
+      "counts": {
+        "20260401": 16,
+        "20260402": 16,
+        "20260406": 16,
+        "20260407": 16,
+        "20260408": 16,
+        "20260409": 16,
+        "20260410": 16,
+        "20260413": 16,
+        "20260414": 16,
+        "20260415": 16,
+        "20260416": 16,
+        "20260417": 16,
+        "20260420": 16,
+        "20260421": 16,
+        "20260422": 16,
+        "20260423": 16,
+        "20260424": 16,
+        "20260427": 16,
+        "20260428": 16,
+        "20260429": 16,
+        "20260430": 16,
+        "20260501": 16,
+        "20260504": 16,
+        "20260505": 16,
+        "20260506": 16,
+        "20260507": 16,
+        "20260508": 16,
+        "20260511": 16,
+        "20260512": 16,
+        "20260513": 16,
+        "20260514": 16,
+        "20260515": 16,
+        "20260518": 16,
+        "20260519": 16,
+        "20260520": 16,
+        "20260521": 16,
+        "20260522": 16,
+        "20260526": 16,
+        "20260527": 16,
+        "20260528": 16,
+        "20260529": 16,
+        "20260601": 16,
+        "20260602": 16,
+        "20260603": 16,
+        "20260604": 16,
+        "20260605": 16,
+        "20260608": 16,
+        "20260609": 16,
+        "20260610": 16,
+        "20260611": 16,
+        "20260612": 0,
+        "20260615": 0
+      }
+    },
+    {
+      "name": "build-metrics",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:56+00:00",
+      "n_strategies": 16
+    },
+    {
+      "name": "build-leaderboard",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:56+00:00",
+      "artifacts": {
+        "csv": "AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
+        "markdown": "AgentStockBenchmarkResults/leaderboard/leaderboard.md",
+        "html": "AgentStockBenchmarkResults/leaderboard/leaderboard.html"
+      }
+    },
+    {
+      "name": "audit",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:57+00:00",
+      "report": {
+        "schema_version": 1,
+        "audit_date": "20260615",
+        "generated_at_utc": "2026-06-16T03:19:57+00:00",
+        "status": "PASS",
+        "failures": [],
+        "warnings": [
+          "accounting not yet scoreable for 20260615"
+        ],
+        "counts": {
+          "rankings": 16,
+          "portfolios": 16,
+          "universe_tickers": 503
+        }
+      }
+    },
+    {
+      "name": "write-manifests",
+      "status": "PASS",
+      "completed_at_utc": "2026-06-16T03:19:57+00:00",
+      "artifact_manifest": "AgentStockBenchmarkResults/manifests/artifacts/20260615.json"
+    }
+  ],
+  "error": null
+}
