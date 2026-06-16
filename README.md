@@ -2,11 +2,6 @@
 
 [中文版本](./README_CN.md)
 
-## 📢 ANNOUNCEMENT: Anthropic Opus 4.8 enters the Arena!
-The next generation of Anthropic reasoning is here. Opus 4.8 has been officially integrated and its performance history has been backfilled to April 1st, 2026, to match existing models. Since the strategy was generated with frozen research and older prompts/data, its 40-day track record serves as a robust out-of-sample (OOS) evaluation. Live daily trading begins June 4th.
-**Why Opus 4.8?** With its new Triple Alpha engine, Opus 4.8 delivers unprecedented reasoning density, outperforming its predecessors in cross-sectional noise rejection and risk-adjusted returns. Witness the next level of AI-driven quantitative analysis.
-
-
 ![Cumulative PnL Performance](leaderboard/cumulative_pnl.png)
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
