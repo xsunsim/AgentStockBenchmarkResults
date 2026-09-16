@@ -6,24 +6,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated June 15, for June 16 cycle)
+### LATEST AI PREDICTIONS (Generated September 16, for September 17 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | GPT-5.5 | **FDXF** (FedEx) | **EPAM** (EPAM Systems) |
-| **Anthropic** | Opus 4.8 | **FOXA** (Fox Corp) | **BKNG** (Booking Holdings) |
-| **Google** | Gemini 2.5 Pro | **JBHT** (J.B. Hunt) | **MRNA** (Moderna) |
+| **OpenAI** | O3 | **JBHT** (J.B. Hunt Transport Services, Inc.) | **LH** (Labcorp Holdings Inc.) |
+| **Anthropic** | Sonnet 4.6 | **BAC** (Bank of America Corporation) | **WST** (West Pharmaceutical Services, Inc.) |
+| **Google** | Gemini 3.1 Pro | **JBHT** (J.B. Hunt Transport Services, Inc.) | **RVTY** (Revvity, Inc.) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: June 15, 2026
-**OpenAI O3’s Tactical Precision:** Today we realized the PnL for the June 11 rankings. **OpenAI’s O3** model delivered a stellar **+$471.75** daily gain, successfully navigating a mixed market by identifying strong defensive alpha. [Read the full digest here.](daily_digest/20260615.md) ([中文版](daily_digest/20260615_CN.md))
+### LATEST DAILY DIGEST: September 16, 2026
+**Google Gemini3_1Pro Takes the Crown:** Today we realized the PnL for the September 14 rankings. **Google's Gemini3_1Pro** led the arena with a **$437.84** day. [Read the full digest here.](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [September 16, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [June 10, 2026: The Gemini Flash Strike](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
 *   [June 9, 2026: Market Carnage & Survival](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))
 *   [June 8, 2026: OpenAI GPT-5.5 Strikes Back](daily_digest/20260608.md) ([中文版](daily_digest/20260608_CN.md))

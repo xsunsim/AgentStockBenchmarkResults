@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "artifact_date": "20260616",
+  "generated_at_utc": "2026-09-16T17:29:38+00:00",
+  "artifacts": [
+    {
+      "path": "accounting/metrics/20260616.csv",
+      "bytes": 1366,
+      "sha256": "5db804c888e81f36564fd6d30dc00965d716589aa39f76aef1ff72ca42e7be12"
+    },
+    {
+      "path": "data/raw/daily/20260616.csv",
+      "bytes": 46854,
+      "sha256": "2e0e9c1285585b4a874c192cc4e31dac18d93c1b031a64eaed58b7f3f42f1220"
+    },
+    {
+      "path": "data/universe/20260616.txt",
+      "bytes": 2115,
+      "sha256": "3cc1c927a4c1aee8fc85e94fd3464470e3909d7aa99ee71fb14b4e7d69105ba5"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Anthropic__Haiku4_5__LinearNeutral.csv",
+      "bytes": 95651,
+      "sha256": "c54fe7a1f3d847cb282c3cc88eff658ec67d46d1effa44d6dd2203d65bc61511"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Anthropic__Opus4_6__LinearNeutral.csv",
+      "bytes": 94347,
+      "sha256": "f1d24f7ef77bd8e6173fc4c22ee336d26acb2cdfcaa85ea480a79e3a6c02d6d7"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Anthropic__Opus4_7__LinearNeutral.csv",
+      "bytes": 94356,
+      "sha256": "5052b7e88e413803270ddd77863a57ce4a12165ebcff2b64cb80de9650965b88"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Anthropic__Opus4_8__LinearNeutral.csv",
+      "bytes": 94381,
+      "sha256": "00146fb349755140a704fc51f4f410072b247a31767140a34c28121613ed71de"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Anthropic__Sonnet4_6__LinearNeutral.csv",
+      "bytes": 95368,
+      "sha256": "43ac6710556e46162a31ce79b1ce5b4cc548e279bd7579590abf8f3b2a3b53e0"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Google__Gemini2_5Flash__LinearNeutral.csv",
+      "bytes": 96362,
+      "sha256": "f5d4de39577c2acd93142137411c89d71fefa186bc6650e65ca298201b244a75"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Google__Gemini2_5Pro__LinearNeutral.csv",
+      "bytes": 94948,
+      "sha256": "9b66eb6bc3c02b83f7b6cb5d5faa54488e2f4275a09996f2c248132ef559e389"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Google__Gemini3Flash__LinearNeutral.csv",
+      "bytes": 95336,
+      "sha256": "a6c1b6f5df3179037d4d132d6833f90b250772cfa7c381b0377d5753c9ddc83c"
+    },
+    {
+      "path": "portfolios/20260616/20260517__Google__Gemini3_1Pro__LinearNeutral.csv",
+      "bytes": 95367,
+      "sha256": "548f92a60251d751055dea4006afe1b73f677dfdd407555fb31a4158de474709"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__GPT4o__LinearNeutral.csv",
+      "bytes": 91839,
+      "sha256": "ed072f8e31b3be10cd1b2900f091d7b7612e24a1265b532b8aa168154acc49f3"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__GPT5_3_Codex__LinearNeutral.csv",
+      "bytes": 95371,
+      "sha256": "2ee66e9de93c4f3ff4d392ce0b50cd9185334226c2d803333680d0aa7e27af6b"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__GPT5_4__LinearNeutral.csv",
+      "bytes": 92311,
+      "sha256": "ee8b1c37ce2602267a1e7a5c33a9012011ca2c2ada454bf383e146c901185700"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__GPT5_4_mini__LinearNeutral.csv",
+      "bytes": 94864,
+      "sha256": "935876ac5a22f8e05ea01be562660d2129d45e62f9d4f17842733cb727ca242a"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__GPT5_5__LinearNeutral.csv",
+      "bytes": 92355,
+      "sha256": "a8ccdc1ca9b2f7d43f81c738a39f3eac992b0ce5a0100543db45a9e41f098089"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__O3__LinearNeutral.csv",
+      "bytes": 90292,
+      "sha256": "b389931121157dfeb3359a10def6224892d883990cf5bd72d94003c9295a0fa0"
+    },
+    {
+      "path": "portfolios/20260616/20260517__OpenAI__O4_mini__LinearNeutral.csv",
+      "bytes": 92864,
+      "sha256": "021eb79fe70e508c7c92a787b6bed75819ac82c3c6fb0e54a62362e3083cd86e"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Haiku4_5__LinearNeutral.csv",
+      "bytes": 57976,
+      "sha256": "2c2e15186d4714e0ef435ee7a4764bf9661506f3d7eb811fd37a377de4e97ed0"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Haiku4_5__LinearNeutral.meta.json",
+      "bytes": 463,
+      "sha256": "06cbd0ade63618bd2a681d095090fd0e7a81984dd385ba44a68d179bb09fabd2"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_6__LinearNeutral.csv",
+      "bytes": 59147,
+      "sha256": "4c0e376efc3b4bff90ae10c282ae8fce5ef0f5c5cbaab427b2ce3fe08ef3d874"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_6__LinearNeutral.meta.json",
+      "bytes": 461,
+      "sha256": "fec7cab6603da0c41d421aba9f09add6f0a18140abbd9e753123c2797796cb2b"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_7__LinearNeutral.csv",
+      "bytes": 59158,
+      "sha256": "49cc67a23519c2c5aa2ab7b68fe8bbceb843f6702d698e1248f2192592110bb6"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_7__LinearNeutral.meta.json",
+      "bytes": 461,
+      "sha256": "bf84f22ff8a46358ed687c54e196556e334add7cd124ee29f0e1c44d9bb9c624"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_8__LinearNeutral.csv",
+      "bytes": 59185,
+      "sha256": "04296119364dc9f494372ec60f78117983396954764ab5b18f30c9eda3b46b13"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Opus4_8__LinearNeutral.meta.json",
+      "bytes": 461,
+      "sha256": "3528bcc2f5e763aab5f8499143c7d7e938e7b8cc22d3c87d0e7d64994436428c"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Sonnet4_6__LinearNeutral.csv",
+      "bytes": 61202,
+      "sha256": "e3b7f5f918ac9e3e8f4163118984a0d952728fc31a6d31afca186f26c243ec32"
+    },
+    {
+      "path": "rankings/20260616/20260517__Anthropic__Sonnet4_6__LinearNeutral.meta.json",
+      "bytes": 465,
+      "sha256": "67773e6718f44a39b6aa90562d43d2acf247b612908c75eb8547823e2abc7496"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini2_5Flash__LinearNeutral.csv",
+      "bytes": 63236,
+      "sha256": "2b27568e21755d4eb9c3a52a336d14edb765a907ba0c8db0a90a7b79a66e9940"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini2_5Flash__LinearNeutral.meta.json",
+      "bytes": 469,
+      "sha256": "96cf56ca6a0459967abeb4cbef9ca55a3ffa4c675a31e1fa60b0b409e01a072a"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini2_5Pro__LinearNeutral.csv",
+      "bytes": 60787,
+      "sha256": "edba9ca4cf6de356370e3c60188c80131ab30ac1c1384ab417f373012efab42c"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini2_5Pro__LinearNeutral.meta.json",
+      "bytes": 465,
+      "sha256": "f77f6282ce3328575369d31f98ec5de2647dc727d9ed4b674f7256f1d170b129"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini3Flash__LinearNeutral.csv",
+      "bytes": 61171,
+      "sha256": "c61a620af3dc213588cc73e27490713052636c861893e74ed073c2837902fac6"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini3Flash__LinearNeutral.meta.json",
+      "bytes": 465,
+      "sha256": "c8b906521adf3195898d8fd583cb553efcac2f64b29ad3055e92f442245e6e5f"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini3_1Pro__LinearNeutral.csv",
+      "bytes": 61145,
+      "sha256": "b085e80927bac6f1c3c60ef3d57e66ada441d744e9f7a89dcfe937bbc6ee9b82"
+    },
+    {
+      "path": "rankings/20260616/20260517__Google__Gemini3_1Pro__LinearNeutral.meta.json",
+      "bytes": 465,
+      "sha256": "671023bc96723abfc911ffd1f500848a3b17db5f514140c2dfbfa64c917ca60f"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT4o__LinearNeutral.csv",
+      "bytes": 54034,
+      "sha256": "a43b7e47d9b515f3c89baeb3359a0f39d033e5bc411d995ecfcf7e684493c541"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT4o__LinearNeutral.meta.json",
+      "bytes": 451,
+      "sha256": "fa15fcc6c7ee7823288793a23bc6ffeedf465933ac56c58b4501a8ccfc4d44f4"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_3_Codex__LinearNeutral.csv",
+      "bytes": 61212,
+      "sha256": "cd6fa7572116f795de2dac58ee23da71a944756015a4c1cf102a12deeef818bd"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_3_Codex__LinearNeutral.meta.json",
+      "bytes": 465,
+      "sha256": "315323a51d822207ee68966db3759eb23ff1d8060da59349559f24f4aee38da5"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_4__LinearNeutral.csv",
+      "bytes": 54949,
+      "sha256": "93af849d265481c521debca3f4ed8f6926edcfb240a8756690d12c0da1b71fcb"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_4__LinearNeutral.meta.json",
+      "bytes": 453,
+      "sha256": "21c0744860f27d24f4c9c3994f4dc10c17f8cb1633e96987b252e656c987b00b"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_4_mini__LinearNeutral.csv",
+      "bytes": 60156,
+      "sha256": "2ec2eb71528f21500533a6c1c72b20d647eaecc5a833639d871d9eb0294c859a"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_4_mini__LinearNeutral.meta.json",
+      "bytes": 463,
+      "sha256": "0e500310c226519c52f3f4dbf7e81d95ab0be516af3af6d6d3eaa2036fd3dcea"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_5__LinearNeutral.csv",
+      "bytes": 55077,
+      "sha256": "b391d1a30df30f1d8e59e596a20feb1c26aa40e3182815d022923484264925ce"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__GPT5_5__LinearNeutral.meta.json",
+      "bytes": 453,
+      "sha256": "43c7e4520263ac0a398ecb33a0b5647df578f7af42296b7036c9738258cdab7a"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__O3__LinearNeutral.csv",
+      "bytes": 50860,
+      "sha256": "c813ffc5807923b9be1b0df98d6df18bb7bbef199e5bc6cd9ef06a4d3bb0db49"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__O3__LinearNeutral.meta.json",
+      "bytes": 445,
+      "sha256": "c433d2f484db7b28b83acf9831da83c30803e6b604662f8609df68ea17c68f5a"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__O4_mini__LinearNeutral.csv",
+      "bytes": 56098,
+      "sha256": "d9fdbe81f45b46243463a4583c255c7759e13aea2f0e85377192d971fca5b64b"
+    },
+    {
+      "path": "rankings/20260616/20260517__OpenAI__O4_mini__LinearNeutral.meta.json",
+      "bytes": 455,
+      "sha256": "7649cf5755575e14a3771d1607128ceb6842b1b6aa28bc509925f657dbae0159"
+    },
+    {
+      "path": "rankings/20260616/run_report.json",
+      "bytes": 955,
+      "sha256": "eb99617bdc7688a7dbddc6ca1bb0db25da0f578a095ccae2f8ca9ab467a5a59e"
+    }
+  ]
+}

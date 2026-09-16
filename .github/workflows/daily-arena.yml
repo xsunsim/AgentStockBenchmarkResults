@@ -1,0 +1,90 @@
+name: Daily arena digest
+
+on:
+  schedule:
+    # Weekdays after the US market close (6:25pm EDT / 5:25pm EST).
+    - cron: '25 22 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Run date as YYYYMMDD (default: today)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out results repo
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check out benchmark engine
+        uses: actions/checkout@v4
+        with:
+          repository: xsunsim/AgentStockBenchmark
+          path: engine
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -q yfinance pandas pyarrow tabulate numpy scipy html5lib lxml
+
+      - name: Run daily benchmark pipeline
+        env:
+          PYTHONPATH: engine/src
+        run: |
+          RUN_DATE="${{ inputs.date }}"
+          if [ -z "$RUN_DATE" ]; then RUN_DATE=$(date -u +%Y%m%d); fi
+          echo "RUN_DATE=$RUN_DATE" >> "$GITHUB_ENV"
+          python -m agentstockbenchmark daily-run \
+            --date "$RUN_DATE" \
+            --results-repo "$GITHUB_WORKSPACE"
+
+      - name: Generate digest and update README
+        env:
+          PYTHONPATH: engine/src
+        run: |
+          # Realized ranking date = latest ranking_date liquidated today.
+          RDATE=$(python - "$RUN_DATE" <<'EOF'
+          import sys, pandas as pd
+          from pathlib import Path
+          did = sys.argv[1]
+          best = None
+          for f in Path("accounting/daily_pnl").glob("*.csv"):
+              df = pd.read_csv(f, usecols=["ranking_date", "exit_date"])
+              m = df[df["exit_date"].astype(str) == did]
+              if not m.empty:
+                  r = m["ranking_date"].astype(str).max()
+                  if best is None or r > best:
+                      best = r
+          print(best or "")
+          EOF
+          )
+          if [ -z "$RDATE" ]; then
+            echo "No realized PnL for $RUN_DATE (holiday/no data). Skipping digest."
+            exit 0
+          fi
+          echo "Realized ranking date: $RDATE"
+          python scripts/generate_daily_digest.py "$RDATE"
+          python scripts/update_readme.py "$RUN_DATE"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily_digest accounting data leaderboard manifests portfolios rankings README.md README_CN.md scripts
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Arena digest ${RUN_DATE}"
+            git push
+          fi

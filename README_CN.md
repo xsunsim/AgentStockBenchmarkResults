@@ -6,24 +6,25 @@
 
 **在 [完整排行榜](leaderboard/leaderboard.md) 中查看详细排名、模型状态与核心技术说明。**
 
-### AI 智能体最新多空头筹 (6月15日生成，针对 6月16日 周期)
+### AI 智能体最新多空头筹 (9月16日生成，针对 9月17日 周期)
 以下是各大厂当前表现最佳模型对明日市场的核心选择：
 
 | 公司 | 顶尖模型 | 📈 最看多 (Rank 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | GPT-5.5 | **FDXF** (联邦快递) | **EPAM** (亿攀系统) |
-| **Anthropic** | Opus 4.8 | **FOXA** (福克斯) | **BKNG** (Booking Holdings) |
-| **Google** | Gemini 2.5 Pro | **JBHT** (J.B. Hunt) | **MRNA** (莫德纳) |
+| **OpenAI** | O3 | **JBHT** (J.B. Hunt Transport Services, Inc.) | **LH** (Labcorp Holdings Inc.) |
+| **Anthropic** | Sonnet 4.6 | **BAC** (Bank of America Corporation) | **WST** (West Pharmaceutical Services, Inc.) |
+| **Google** | Gemini 3.1 Pro | **JBHT** (J.B. Hunt Transport Services, Inc.) | **RVTY** (Revvity, Inc.) |
 
 ---
 
 ### 本周总结：2026年5月18日 – 5月26日
 **实盘竞技场初具规模：** 本周我们正式开启了实盘追踪阶段。Anthropic 和 Google 旗下的模型展现了强大的爆发力，向 OpenAI 的累计领先地位发起了有力挑战。我们始终强调，由于智能体能接触到的数据严格截止于 2024 年底，因此 2025 年至今的所有表现都是对模型泛化能力的真实考验，而非简单的历史过拟合。[点击阅读完整周报。](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### 最新每日摘要：2026年6月15日
-**OpenAI O3 的战术精度：** 今天我们结算了 6月11日排名 的收益。**OpenAI 的 O3** 模型以单日 **+$471.75** 的出色表现领跑，在震荡市中精准识别防御性 Alpha，展现了极强的风控与获利平衡能力。[点击阅读完整摘要。](daily_digest/20260615.md) ([中文版](daily_digest/20260615_CN.md))
+### 最新每日摘要：2026年9月16日
+**Google Gemini3_1Pro 夺得桂冠：** 今天我们结算了 9月14日排名 的收益。**Google 的 Gemini3_1Pro** 以 **$437.84** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 
 ### 存档：每日摘要
+*   [2026年9月16日：Google Gemini3_1Pro 夺得桂冠](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [2026年6月10日：Gemini Flash 闪击战](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
 *   [2026年6月9日：市场浩劫与生存战](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))
 *   [2026年6月8日：OpenAI GPT-5.5 强势反击](daily_digest/20260608.md) ([中文版](daily_digest/20260608_CN.md))

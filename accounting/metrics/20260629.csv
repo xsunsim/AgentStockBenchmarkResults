@@ -1,0 +1,17 @@
+strategy_id,sharpe,cumulative_pnl,max_drawdown,win_rate,avg_daily_pnl,n_days
+20260517__OpenAI__GPT5_5__LinearNeutral,3.518,3557.25,-716.34,0.623,58.32,61
+20260517__OpenAI__GPT5_4__LinearNeutral,3.383,3631.3,-598.91,0.59,59.53,61
+20260517__OpenAI__O3__LinearNeutral,2.995,3932.46,-1090.74,0.574,64.47,61
+20260517__Anthropic__Opus4_8__LinearNeutral,2.527,2942.52,-1017.43,0.557,48.24,61
+20260517__Anthropic__Opus4_6__LinearNeutral,2.094,3362.12,-1406.55,0.475,55.12,61
+20260517__Anthropic__Sonnet4_6__LinearNeutral,2.052,4124.86,-2097.13,0.459,67.62,61
+20260517__OpenAI__GPT5_4_mini__LinearNeutral,2.043,1935.79,-736.2,0.59,31.73,61
+20260517__OpenAI__GPT4o__LinearNeutral,2.017,2308.27,-1137.22,0.607,37.84,61
+20260517__Google__Gemini3_1Pro__LinearNeutral,1.043,1848.97,-1908.14,0.475,30.31,61
+20260517__Google__Gemini2_5Pro__LinearNeutral,0.912,1469.17,-2679.44,0.459,24.08,61
+20260517__Google__Gemini2_5Flash__LinearNeutral,0.783,1145.62,-1706.59,0.475,18.78,61
+20260517__Anthropic__Opus4_7__LinearNeutral,0.651,863.12,-1341.94,0.525,14.15,61
+20260517__OpenAI__GPT5_3_Codex__LinearNeutral,0.535,652.22,-1600.96,0.525,10.69,61
+20260517__OpenAI__O4_mini__LinearNeutral,0.357,459.48,-1705.71,0.508,7.53,61
+20260517__Google__Gemini3Flash__LinearNeutral,0.314,488.03,-2808.14,0.443,8.0,61
+20260517__Anthropic__Haiku4_5__LinearNeutral,0.157,231.61,-3577.94,0.525,3.8,61
