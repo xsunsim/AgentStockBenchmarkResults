@@ -118,24 +118,25 @@ def generate_plot():
     # 5. Vertical Split Line (True OOS)
     split_date = pd.Timestamp(SUBMISSION_DATE)
     ax.axvline(split_date, color='#d62728', linestyle='--', linewidth=2, alpha=0.7)
-    
-    # Extend x-axis
-    ax.set_xlim(left=min(all_dates_list), right=split_date + pd.Timedelta(days=5))
+
+    # Extend x-axis to the latest data point (full backfilled history)
+    max_date = max(all_dates_list)
+    ax.set_xlim(left=min(all_dates_list), right=max_date + pd.Timedelta(days=3))
     
     # Labels for OOS regions
     ylim = ax.get_ylim()
-    y_text = ylim[0] + (ylim[1] - ylim[0]) * 0.1
-    ax.text(split_date - pd.Timedelta(days=0.5), y_text, 
-            "SEMI-OOS (BACKTEST)", rotation=90, verticalalignment='bottom', 
+    y_text = ylim[0] + (ylim[1] - ylim[0]) * 0.12
+    ax.text(split_date - pd.Timedelta(days=6), y_text,
+            "SEMI-OOS (BACKTEST)", rotation=90, verticalalignment='bottom',
             horizontalalignment='right', fontsize=10, fontweight='bold', alpha=0.6)
-    ax.text(split_date + pd.Timedelta(days=0.5), y_text, 
-            "TRUE OOS (LIVE)", rotation=90, verticalalignment='bottom', 
+    ax.text(split_date + pd.Timedelta(days=6), y_text,
+            "TRUE OOS (LIVE)", rotation=90, verticalalignment='bottom',
             horizontalalignment='left', fontsize=10, fontweight='bold', color='#d62728')
 
     # 6. Summary Table
     col_labels = ["Color", "Company", "Model", "Sharpe", "Total PnL", "Return"]
-    the_table = plt.table(cellText=summary_stats, colLabels=col_labels, 
-                          loc='upper left', bbox=[0.02, 0.65, 0.45, 0.25])
+    the_table = plt.table(cellText=summary_stats, colLabels=col_labels,
+                          loc='lower right', bbox=[0.52, 0.05, 0.46, 0.28])
     
     the_table.auto_set_font_size(False)
     the_table.set_fontsize(9)
@@ -156,8 +157,8 @@ def generate_plot():
     ax.set_ylabel("Cumulative PnL ($)", fontsize=12)
     ax.grid(True, which='both', linestyle='--', linewidth=0.5, alpha=0.5)
     
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
-    ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MO))
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %Y'))
+    ax.xaxis.set_major_locator(mdates.MonthLocator())
     
     plt.tight_layout()
     plt.savefig(OUTPUT_PATH, dpi=300)

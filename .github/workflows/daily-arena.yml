@@ -36,7 +36,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -q yfinance pandas pyarrow tabulate numpy scipy html5lib lxml
+          pip install -q yfinance pandas pyarrow tabulate numpy scipy html5lib lxml matplotlib
 
       - name: Run daily benchmark pipeline
         env:
@@ -76,6 +76,7 @@ jobs:
           echo "Realized ranking date: $RDATE"
           python scripts/generate_daily_digest.py "$RDATE"
           python scripts/update_readme.py "$RUN_DATE"
+          python scripts/generate_pnl_plot.py
 
       - name: Commit and push
         run: |
