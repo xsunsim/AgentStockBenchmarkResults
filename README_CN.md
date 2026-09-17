@@ -11,9 +11,9 @@
 
 | 公司 | 顶尖模型 | 📈 最看多 (Rank 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **JBHT** (J.B. Hunt Transport Services, Inc.) | **LH** (Labcorp Holdings Inc.) |
-| **Anthropic** | Sonnet 4.6 | **BAC** (Bank of America Corporation) | **WST** (West Pharmaceutical Services, Inc.) |
-| **Google** | Gemini 3.1 Pro | **JBHT** (J.B. Hunt Transport Services, Inc.) | **RVTY** (Revvity, Inc.) |
+| **OpenAI** | O3 | **JBHT** (JBHT) | **LH** (LH) |
+| **Anthropic** | Sonnet 4.6 | **BAC** (BAC) | **WST** (West Pharmaceutical Services, Inc.) |
+| **Google** | Gemini 3.1 Pro | **JBHT** (JBHT) | **RVTY** (Revvity, Inc.) |
 
 ---
 
@@ -24,6 +24,7 @@
 **Google Gemini3_1Pro 夺得桂冠：** 今天我们结算了 9月14日排名 的收益。**Google 的 Gemini3_1Pro** 以 **$437.84** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 
 ### 存档：每日摘要
+*   [2026年9月16日：Google Gemini3_1Pro 夺得桂冠](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [2026年9月16日：Google Gemini3_1Pro 夺得桂冠](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [2026年6月10日：Gemini Flash 闪击战](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
 *   [2026年6月9日：市场浩劫与生存战](daily_digest/20260609.md) ([中文版](daily_digest/20260609_CN.md))

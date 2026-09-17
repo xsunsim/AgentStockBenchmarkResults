@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "artifact_date": "20260916",
-  "generated_at_utc": "2026-09-16T18:43:51+00:00",
+  "generated_at_utc": "2026-09-17T02:44:52+00:00",
   "artifacts": [
     {
       "path": "accounting/metrics/20260916.csv",
@@ -260,8 +260,8 @@
     },
     {
       "path": "rankings/20260916/run_report.json",
-      "bytes": 907,
-      "sha256": "5da2080c3ec608a9103016b1ab62f4e5e0707b5122ee1c268f310d09fb6dbc36"
+      "bytes": 955,
+      "sha256": "eb99617bdc7688a7dbddc6ca1bb0db25da0f578a095ccae2f8ca9ab467a5a59e"
     }
   ]
 }

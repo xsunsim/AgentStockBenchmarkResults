@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "run_date": "20260916",
-  "generated_at_utc": "2026-09-16T18:43:55+00:00",
+  "generated_at_utc": "2026-09-17T02:44:56+00:00",
   "status": "PASS",
-  "started_at_utc": "2026-09-16T18:42:53+00:00",
-  "completed_at_utc": "2026-09-16T18:43:55+00:00",
+  "started_at_utc": "2026-09-17T02:44:02+00:00",
+  "completed_at_utc": "2026-09-17T02:44:56+00:00",
   "results_repo": "/home/hatch/workspace/AgentStockBenchmarkResults",
   "data_dir": "/home/hatch/workspace/AgentStockBenchmarkResults/data/parquet",
   "prompt_id": null,
@@ -13,14 +13,14 @@
     {
       "name": "download-daily-csv",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:42:53+00:00",
+      "completed_at_utc": "2026-09-17T02:44:02+00:00",
       "daily_csv": "/home/hatch/workspace/AgentStockBenchmarkResults/data/raw/daily/20260916.csv",
       "universe": "/home/hatch/workspace/AgentStockBenchmarkResults/data/universe/20260916.txt"
     },
     {
       "name": "merge-data",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:42:57+00:00",
+      "completed_at_utc": "2026-09-17T02:44:07+00:00",
       "artifacts": {
         "open": "/home/hatch/workspace/AgentStockBenchmarkResults/data/parquet/open.parquet",
         "high": "/home/hatch/workspace/AgentStockBenchmarkResults/data/parquet/high.parquet",
@@ -32,7 +32,7 @@
     {
       "name": "verify-merge",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:01+00:00",
+      "completed_at_utc": "2026-09-17T02:44:10+00:00",
       "report": {
         "dates_checked": [
           "20260916"
@@ -46,32 +46,32 @@
     {
       "name": "generate-rankings",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:14+00:00",
+      "completed_at_utc": "2026-09-17T02:44:11+00:00",
       "report": {
         "20260916": {
-          "20260517__Anthropic__Haiku4_5__LinearNeutral": "PASS",
-          "20260517__Anthropic__Opus4_6__LinearNeutral": "PASS",
-          "20260517__Anthropic__Opus4_7__LinearNeutral": "PASS",
-          "20260517__Anthropic__Opus4_8__LinearNeutral": "PASS",
-          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "PASS",
-          "20260517__Google__Gemini2_5Flash__LinearNeutral": "PASS",
-          "20260517__Google__Gemini2_5Pro__LinearNeutral": "PASS",
-          "20260517__Google__Gemini3Flash__LinearNeutral": "PASS",
-          "20260517__Google__Gemini3_1Pro__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT4o__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_4__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "PASS",
-          "20260517__OpenAI__GPT5_5__LinearNeutral": "PASS",
-          "20260517__OpenAI__O3__LinearNeutral": "PASS",
-          "20260517__OpenAI__O4_mini__LinearNeutral": "PASS"
+          "20260517__Anthropic__Haiku4_5__LinearNeutral": "skipped",
+          "20260517__Anthropic__Opus4_6__LinearNeutral": "skipped",
+          "20260517__Anthropic__Opus4_7__LinearNeutral": "skipped",
+          "20260517__Anthropic__Opus4_8__LinearNeutral": "skipped",
+          "20260517__Anthropic__Sonnet4_6__LinearNeutral": "skipped",
+          "20260517__Google__Gemini2_5Flash__LinearNeutral": "skipped",
+          "20260517__Google__Gemini2_5Pro__LinearNeutral": "skipped",
+          "20260517__Google__Gemini3Flash__LinearNeutral": "skipped",
+          "20260517__Google__Gemini3_1Pro__LinearNeutral": "skipped",
+          "20260517__OpenAI__GPT4o__LinearNeutral": "skipped",
+          "20260517__OpenAI__GPT5_3_Codex__LinearNeutral": "skipped",
+          "20260517__OpenAI__GPT5_4__LinearNeutral": "skipped",
+          "20260517__OpenAI__GPT5_4_mini__LinearNeutral": "skipped",
+          "20260517__OpenAI__GPT5_5__LinearNeutral": "skipped",
+          "20260517__OpenAI__O3__LinearNeutral": "skipped",
+          "20260517__OpenAI__O4_mini__LinearNeutral": "skipped"
         }
       }
     },
     {
       "name": "build-portfolios",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:14+00:00",
+      "completed_at_utc": "2026-09-17T02:44:11+00:00",
       "counts": {
         "20260916": 16
       }
@@ -79,7 +79,7 @@
     {
       "name": "update-accounting",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:51+00:00",
+      "completed_at_utc": "2026-09-17T02:44:52+00:00",
       "counts": {
         "20260401": 16,
         "20260402": 16,
@@ -202,13 +202,13 @@
     {
       "name": "build-metrics",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:51+00:00",
+      "completed_at_utc": "2026-09-17T02:44:52+00:00",
       "n_strategies": 16
     },
     {
       "name": "build-leaderboard",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:51+00:00",
+      "completed_at_utc": "2026-09-17T02:44:52+00:00",
       "artifacts": {
         "csv": "/home/hatch/workspace/AgentStockBenchmarkResults/leaderboard/leaderboard.csv",
         "markdown": "/home/hatch/workspace/AgentStockBenchmarkResults/leaderboard/leaderboard.md",
@@ -218,11 +218,11 @@
     {
       "name": "audit",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:55+00:00",
+      "completed_at_utc": "2026-09-17T02:44:56+00:00",
       "report": {
         "schema_version": 1,
         "audit_date": "20260916",
-        "generated_at_utc": "2026-09-16T18:43:55+00:00",
+        "generated_at_utc": "2026-09-17T02:44:56+00:00",
         "status": "PASS",
         "failures": [],
         "warnings": [
@@ -238,7 +238,7 @@
     {
       "name": "write-manifests",
       "status": "PASS",
-      "completed_at_utc": "2026-09-16T18:43:55+00:00",
+      "completed_at_utc": "2026-09-17T02:44:56+00:00",
       "artifact_manifest": "/home/hatch/workspace/AgentStockBenchmarkResults/manifests/artifacts/20260916.json"
     }
   ],
