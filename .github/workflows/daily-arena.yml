@@ -1,9 +1,9 @@
 name: Daily arena digest
 
+# NOTE: scheduled runs are disabled — the daily update is run by the agent via
+# ~/workspace/arena/daily_pipeline.sh (cron: stock-arena-daily-updates).
+# This workflow is kept for manual re-runs only.
 on:
-  schedule:
-    # Weekdays after the US market close (6:25pm EDT / 5:25pm EST).
-    - cron: '25 22 * * 1-5'
   workflow_dispatch:
     inputs:
       date:
