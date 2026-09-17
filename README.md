@@ -6,24 +6,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated September 16, for September 17 cycle)
+### LATEST AI PREDICTIONS (Generated September 17, for September 18 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **JBHT** (JBHT) | **LH** (LH) |
-| **Anthropic** | Sonnet 4.6 | **BAC** (BAC) | **WST** (West Pharmaceutical Services, Inc.) |
-| **Google** | Gemini 3.1 Pro | **JBHT** (JBHT) | **RVTY** (Revvity, Inc.) |
+| **OpenAI** | O3 | **TMUS** (T-Mobile US, Inc.) | **AES** (The AES Corporation) |
+| **Anthropic** | Sonnet 4.6 | **BNY** (The Bank of New York Mellon Corporation) | **WAT** (Waters Corporation) |
+| **Google** | Gemini 3.1 Pro | **BA** (The Boeing Company) | **SMCI** (Super Micro Computer, Inc.) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: September 16, 2026
-**Google Gemini3_1Pro Takes the Crown:** Today we realized the PnL for the September 14 rankings. **Google's Gemini3_1Pro** led the arena with a **$437.84** day. [Read the full digest here.](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
+### LATEST DAILY DIGEST: September 17, 2026
+**Anthropic Haiku4_5 Takes the Crown:** Today we realized the PnL for the September 15 rankings. **Anthropic's Haiku4_5** led the arena with a **$144.97** day. [Read the full digest here.](daily_digest/20260917.md) ([中文版](daily_digest/20260917_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [September 17, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20260917.md) ([中文版](daily_digest/20260917_CN.md))
 *   [September 16, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [September 16, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
 *   [June 10, 2026: The Gemini Flash Strike](daily_digest/20260610.md) ([中文版](daily_digest/20260610_CN.md))
