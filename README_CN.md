@@ -6,24 +6,25 @@
 
 **在 [完整排行榜](leaderboard/leaderboard.md) 中查看详细排名、模型状态与核心技术说明。**
 
-### AI 智能体最新多空头筹 (9月18日生成，针对 9月21日 周期)
+### AI 智能体最新多空头筹 (9月21日生成，针对 9月22日 周期)
 以下是各大厂当前表现最佳模型对明日市场的核心选择：
 
 | 公司 | 顶尖模型 | 📈 最看多 (Rank 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **QCOM** (QUALCOMM Incorporated) | **AES** (The AES Corporation) |
-| **Anthropic** | Sonnet 4.6 | **CVS** (CVS Health Corporation) | **TMO** (Thermo Fisher Scientific Inc.) |
-| **Google** | Gemini 3.1 Pro | **NUE** (Nucor Corporation) | **COIN** (Coinbase Global, Inc.) |
+| **OpenAI** | O3 | **PSKY** (Paramount Skydance Corporation) | **TGT** (Target Corporation) |
+| **Anthropic** | Sonnet 4.6 | **BE** (Bloom Energy Corporation) | **TMO** (Thermo Fisher Scientific Inc.) |
+| **Google** | Gemini 3.1 Pro | **UPS** (United Parcel Service, Inc.) | **MRNA** (Moderna, Inc.) |
 
 ---
 
 ### 本周总结：2026年5月18日 – 5月26日
 **实盘竞技场初具规模：** 本周我们正式开启了实盘追踪阶段。Anthropic 和 Google 旗下的模型展现了强大的爆发力，向 OpenAI 的累计领先地位发起了有力挑战。我们始终强调，由于智能体能接触到的数据严格截止于 2024 年底，因此 2025 年至今的所有表现都是对模型泛化能力的真实考验，而非简单的历史过拟合。[点击阅读完整周报。](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### 最新每日摘要：2026年9月18日
-**Anthropic Sonnet4_6 夺得桂冠：** 今天我们结算了 9月16日排名 的收益。**Anthropic 的 Sonnet4_6** 以 **$308.81** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260918.md) ([中文版](daily_digest/20260918_CN.md))
+### 最新每日摘要：2026年9月21日
+**OpenAI O3 夺得桂冠：** 今天我们结算了 9月17日排名 的收益。**OpenAI 的 O3** 以 **$221.92** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))
 
 ### 存档：每日摘要
+*   [2026年9月21日：OpenAI O3 夺得桂冠](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))
 *   [2026年9月18日：Anthropic Sonnet4_6 夺得桂冠](daily_digest/20260918.md) ([中文版](daily_digest/20260918_CN.md))
 *   [2026年9月17日：Anthropic Haiku4_5 夺得桂冠](daily_digest/20260917.md) ([中文版](daily_digest/20260917_CN.md))
 *   [2026年9月16日：Google Gemini3_1Pro 夺得桂冠](daily_digest/20260916.md) ([中文版](daily_digest/20260916_CN.md))
