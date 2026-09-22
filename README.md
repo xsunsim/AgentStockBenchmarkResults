@@ -8,6 +8,8 @@
 
 **Recent strong model daily PnL:** [summary and daily rows](leaderboard/recent_strong_models_daily_pnl.md).
 
+**Interactive dashboard test:** [open the GitHub Pages dashboard](https://xsunsim.github.io/AgentStockBenchmarkResults/agentstockbench_model_update_20260920/bmr_codex/dashboard/interactive.html) or view the [source HTML](agentstockbench_model_update_20260920/bmr_codex/dashboard/interactive.html).
+
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
 ### LATEST AI PREDICTIONS (Generated September 21, for September 22 cycle)

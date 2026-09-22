@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentStockBenchmark Interactive Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #172026;
+      --muted: #667085;
+      --line: #d9dee7;
+      --accent: #0f766e;
+      --accent-2: #2563eb;
+      --bad: #b42318;
+      --good-bg: #ecfdf3;
+      --bad-bg: #fff1f3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 24px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 18px 24px 36px;
+    }
+
+    .meta {
+      margin-top: 4px;
+      color: var(--muted);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .stat,
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+    }
+
+    .stat {
+      padding: 12px 14px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    section {
+      margin-top: 14px;
+      padding: 14px;
+      overflow: auto;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .toolbar button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      min-height: 34px;
+      padding: 6px 10px;
+    }
+
+    .toolbar button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: #e6fffb;
+      color: #0f5f59;
+    }
+
+    .chart-shell {
+      position: relative;
+      min-width: 720px;
+    }
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 420px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fbfcfd;
+    }
+
+    .grid { stroke: #e8ecf2; stroke-width: 1; }
+    .axis { stroke: #98a2b3; stroke-width: 1; }
+    .series { fill: none; stroke: var(--accent); stroke-width: 3; }
+    .bar-positive { fill: var(--accent-2); opacity: 0.68; }
+    .bar-negative { fill: var(--bad); opacity: 0.62; }
+    .marker { fill: var(--accent); stroke: #fff; stroke-width: 2; }
+    .label { fill: var(--muted); font-size: 12px; }
+
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      display: none;
+      min-width: 150px;
+      background: #111827;
+      color: #fff;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+      transform: translate(-50%, calc(-100% - 12px));
+      white-space: nowrap;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 720px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 8px 9px;
+      text-align: right;
+    }
+
+    th {
+      background: #f2f4f7;
+      color: #344054;
+      font-size: 12px;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    td:first-child {
+      font-weight: 600;
+    }
+
+    .pos { color: var(--accent); }
+    .neg { color: var(--bad); }
+
+    @media (max-width: 720px) {
+      header { padding: 16px; }
+      main { padding: 14px 12px 28px; }
+      h1 { font-size: 21px; }
+      .chart-shell,
+      table { min-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AgentStockBenchmark Interactive Dashboard</h1>
+    <div class="meta" id="meta">Loading dashboard data...</div>
+  </header>
+
+  <main>
+    <div class="stats" id="stats"></div>
+
+    <section>
+      <h2>Cumulative PnL</h2>
+      <div class="toolbar" aria-label="Chart range">
+        <button type="button" data-range="all" aria-pressed="true">All</button>
+        <button type="button" data-range="60" aria-pressed="false">60D</button>
+        <button type="button" data-range="30" aria-pressed="false">30D</button>
+        <button type="button" data-range="10" aria-pressed="false">10D</button>
+      </div>
+      <div class="chart-shell">
+        <svg id="chart" role="img" aria-label="Interactive cumulative PnL chart"></svg>
+        <div class="tooltip" id="tooltip"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Top Strategies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Strategy</th>
+            <th>Sharpe</th>
+            <th>Cumulative PnL</th>
+            <th>Max Drawdown</th>
+            <th>Win Rate</th>
+            <th>Days</th>
+          </tr>
+        </thead>
+        <tbody id="strategies"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script>
+    const fmtNumber = new Intl.NumberFormat("en-US", { maximumFractionDigits: 3 });
+    const fmtPct = new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 1 });
+    const fmtDate = (yyyymmdd) => `${yyyymmdd.slice(0, 4)}-${yyyymmdd.slice(4, 6)}-${yyyymmdd.slice(6, 8)}`;
+    const chart = document.getElementById("chart");
+    const tooltip = document.getElementById("tooltip");
+    let dashboard = null;
+    let activeRange = "all";
+
+    function formatSigned(value) {
+      const sign = value > 0 ? "+" : "";
+      return `${sign}${fmtNumber.format(value)}`;
+    }
+
+    function scale(value, domainMin, domainMax, rangeMin, rangeMax) {
+      if (domainMax === domainMin) return (rangeMin + rangeMax) / 2;
+      return rangeMin + ((value - domainMin) / (domainMax - domainMin)) * (rangeMax - rangeMin);
+    }
+
+    function linePath(points) {
+      return points.map((point, index) => `${index === 0 ? "M" : "L"}${point.x.toFixed(2)},${point.y.toFixed(2)}`).join(" ");
+    }
+
+    function renderStats(data) {
+      const summary = data.summary;
+      document.getElementById("stats").innerHTML = [
+        ["Top Strategy", summary.top_strategy_id],
+        ["Top Sharpe", fmtNumber.format(summary.top_sharpe)],
+        ["Top Cumulative PnL", formatSigned(summary.top_cumulative_pnl)],
+        ["Latest PnL Date", fmtDate(summary.latest_pnl_date)],
+        ["Strategies", summary.strategy_count],
+        ["Daily Rows", summary.daily_pnl_rows],
+      ].map(([label, value]) => `
+        <div class="stat">
+          <span>${label}</span>
+          <strong>${value}</strong>
+        </div>
+      `).join("");
+    }
+
+    function renderStrategies(data) {
+      document.getElementById("strategies").innerHTML = data.top_strategies.map((row) => `
+        <tr>
+          <td>${row.strategy_id}</td>
+          <td>${fmtNumber.format(row.sharpe)}</td>
+          <td class="${row.cumulative_pnl >= 0 ? "pos" : "neg"}">${formatSigned(row.cumulative_pnl)}</td>
+          <td class="neg">${formatSigned(row.max_drawdown)}</td>
+          <td>${fmtPct.format(row.win_rate)}</td>
+          <td>${row.n_days}</td>
+        </tr>
+      `).join("");
+    }
+
+    function renderChart() {
+      const allRows = dashboard.daily_pnl;
+      const rows = activeRange === "all" ? allRows : allRows.slice(-Number(activeRange));
+      const width = chart.clientWidth || 1000;
+      const height = 420;
+      const margin = { top: 24, right: 24, bottom: 46, left: 64 };
+      const innerWidth = width - margin.left - margin.right;
+      const innerHeight = height - margin.top - margin.bottom;
+      const yValues = rows.flatMap((row) => [row.cumulative_pnl, row.total_pnl, 0]);
+      const yMin = Math.min(...yValues);
+      const yMax = Math.max(...yValues);
+      const yPad = Math.max((yMax - yMin) * 0.08, 0.01);
+      const domainMin = yMin - yPad;
+      const domainMax = yMax + yPad;
+      const zeroY = scale(0, domainMin, domainMax, margin.top + innerHeight, margin.top);
+      const points = rows.map((row, index) => ({
+        row,
+        x: scale(index, 0, Math.max(rows.length - 1, 1), margin.left, margin.left + innerWidth),
+        y: scale(row.cumulative_pnl, domainMin, domainMax, margin.top + innerHeight, margin.top),
+      }));
+      const barWidth = Math.max(2, Math.min(10, innerWidth / rows.length * 0.55));
+
+      chart.setAttribute("viewBox", `0 0 ${width} ${height}`);
+      chart.innerHTML = "";
+
+      for (let i = 0; i <= 4; i += 1) {
+        const value = domainMin + ((domainMax - domainMin) / 4) * i;
+        const y = scale(value, domainMin, domainMax, margin.top + innerHeight, margin.top);
+        chart.insertAdjacentHTML("beforeend", `
+          <line class="grid" x1="${margin.left}" x2="${margin.left + innerWidth}" y1="${y}" y2="${y}"></line>
+          <text class="label" x="${margin.left - 10}" y="${y + 4}" text-anchor="end">${fmtNumber.format(value)}</text>
+        `);
+      }
+
+      chart.insertAdjacentHTML("beforeend", `
+        <line class="axis" x1="${margin.left}" x2="${margin.left + innerWidth}" y1="${zeroY}" y2="${zeroY}"></line>
+        <text class="label" x="${margin.left}" y="${height - 15}">${fmtDate(rows[0].ranking_date)}</text>
+        <text class="label" x="${margin.left + innerWidth}" y="${height - 15}" text-anchor="end">${fmtDate(rows[rows.length - 1].ranking_date)}</text>
+      `);
+
+      points.forEach(({ row, x }) => {
+        const y = scale(row.total_pnl, domainMin, domainMax, zeroY, margin.top);
+        const barTop = Math.min(y, zeroY);
+        const barHeight = Math.max(1, Math.abs(zeroY - y));
+        chart.insertAdjacentHTML("beforeend", `
+          <rect class="${row.total_pnl >= 0 ? "bar-positive" : "bar-negative"}" x="${x - barWidth / 2}" y="${barTop}" width="${barWidth}" height="${barHeight}"></rect>
+        `);
+      });
+
+      chart.insertAdjacentHTML("beforeend", `<path class="series" d="${linePath(points)}"></path>`);
+
+      points.forEach(({ row, x, y }) => {
+        const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        dot.setAttribute("class", "marker");
+        dot.setAttribute("cx", x);
+        dot.setAttribute("cy", y);
+        dot.setAttribute("r", 4);
+        dot.tabIndex = 0;
+        dot.addEventListener("mouseenter", () => showTooltip(row, x, y));
+        dot.addEventListener("focus", () => showTooltip(row, x, y));
+        dot.addEventListener("mouseleave", hideTooltip);
+        dot.addEventListener("blur", hideTooltip);
+        chart.appendChild(dot);
+      });
+    }
+
+    function showTooltip(row, x, y) {
+      tooltip.style.left = `${x}px`;
+      tooltip.style.top = `${y}px`;
+      tooltip.innerHTML = `
+        <strong>${fmtDate(row.ranking_date)}</strong><br>
+        Daily PnL: ${formatSigned(row.total_pnl)}<br>
+        Cumulative: ${formatSigned(row.cumulative_pnl)}
+      `;
+      tooltip.style.display = "block";
+    }
+
+    function hideTooltip() {
+      tooltip.style.display = "none";
+    }
+
+    document.querySelectorAll("[data-range]").forEach((button) => {
+      button.addEventListener("click", () => {
+        activeRange = button.dataset.range;
+        document.querySelectorAll("[data-range]").forEach((item) => {
+          item.setAttribute("aria-pressed", String(item === button));
+        });
+        renderChart();
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (dashboard) renderChart();
+    });
+
+    fetch("dashboard.json")
+      .then((response) => response.json())
+      .then((data) => {
+        dashboard = data;
+        document.getElementById("meta").textContent = `As of ${fmtDate(data.as_of)}. Generated ${new Date(data.generated_at_utc).toLocaleString()}.`;
+        renderStats(data);
+        renderStrategies(data);
+        renderChart();
+      })
+      .catch((error) => {
+        document.getElementById("meta").textContent = `Could not load dashboard.json: ${error.message}`;
+      });
+  </script>
+</body>
+</html>

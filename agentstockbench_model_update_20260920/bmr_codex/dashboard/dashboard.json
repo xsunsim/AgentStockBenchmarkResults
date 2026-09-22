@@ -1,0 +1,812 @@
+{
+  "schema_version": 1,
+  "results_repo": "/home/xiaoyusun/bmr_codex",
+  "as_of": "20260515",
+  "generated_at_utc": "2026-05-20T05:35:10+00:00",
+  "sources": {
+    "metrics": "/home/xiaoyusun/bmr_codex/accounting/metrics/20260515.csv",
+    "daily_pnl_dir": "/home/xiaoyusun/bmr_codex/accounting/daily_pnl",
+    "audit_dir": "/home/xiaoyusun/bmr_codex/manifests/audits"
+  },
+  "summary": {
+    "strategy_count": 4,
+    "top_strategy_id": "HistDemo__Momentum20D__LongShort",
+    "top_sharpe": 6.61775794788328,
+    "top_cumulative_pnl": 0.4991940681411495,
+    "daily_pnl_rows": 480,
+    "latest_pnl_date": "20260515",
+    "ranking_dates": 1,
+    "portfolio_dates": 1,
+    "audit_pass": 1,
+    "audit_fail": 0
+  },
+  "top_strategies": [
+    {
+      "strategy_id": "HistDemo__Momentum20D__LongShort",
+      "sharpe": 6.61775794788328,
+      "cumulative_pnl": 0.4991940681411495,
+      "max_drawdown": -0.0305442118636684,
+      "win_rate": 0.6583333333333333,
+      "avg_daily_pnl": 0.0041599505678429,
+      "n_days": 120
+    },
+    {
+      "strategy_id": "HistDemo__EqualWeight__LongOnly",
+      "sharpe": 1.7334505688170236,
+      "cumulative_pnl": 0.1104572322115527,
+      "max_drawdown": -0.0907572300852833,
+      "win_rate": 0.5666666666666667,
+      "avg_daily_pnl": 0.0009204769350962,
+      "n_days": 120
+    },
+    {
+      "strategy_id": "HistDemo__MeanReversion5D__LongShort",
+      "sharpe": -2.782303725486996,
+      "cumulative_pnl": -0.1763947419891251,
+      "max_drawdown": -0.2243155106427147,
+      "win_rate": 0.45,
+      "avg_daily_pnl": -0.0014699561832427,
+      "n_days": 120
+    },
+    {
+      "strategy_id": "HistDemo__LowVolatility60D__LongShort",
+      "sharpe": -2.894939065193255,
+      "cumulative_pnl": -0.2572001516749819,
+      "max_drawdown": -0.2731666948407129,
+      "win_rate": 0.3666666666666666,
+      "avg_daily_pnl": -0.0021433345972915,
+      "n_days": 120
+    }
+  ],
+  "daily_pnl": [
+    {
+      "ranking_date": "20251121",
+      "total_pnl": 0.0196458348022104,
+      "strategies": 4,
+      "cumulative_pnl": 0.0196458348022104
+    },
+    {
+      "ranking_date": "20251124",
+      "total_pnl": -0.0031533117210990995,
+      "strategies": 4,
+      "cumulative_pnl": 0.0164925230811113
+    },
+    {
+      "ranking_date": "20251125",
+      "total_pnl": 0.0133270346572668,
+      "strategies": 4,
+      "cumulative_pnl": 0.029819557738378098
+    },
+    {
+      "ranking_date": "20251126",
+      "total_pnl": 0.004587218596893,
+      "strategies": 4,
+      "cumulative_pnl": 0.034406776335271096
+    },
+    {
+      "ranking_date": "20251128",
+      "total_pnl": 0.000336280099942899,
+      "strategies": 4,
+      "cumulative_pnl": 0.034743056435214
+    },
+    {
+      "ranking_date": "20251201",
+      "total_pnl": -0.014191540031346001,
+      "strategies": 4,
+      "cumulative_pnl": 0.020551516403867997
+    },
+    {
+      "ranking_date": "20251202",
+      "total_pnl": -0.0004155753660559664,
+      "strategies": 4,
+      "cumulative_pnl": 0.02013594103781203
+    },
+    {
+      "ranking_date": "20251203",
+      "total_pnl": 0.0036002033832093997,
+      "strategies": 4,
+      "cumulative_pnl": 0.023736144421021427
+    },
+    {
+      "ranking_date": "20251204",
+      "total_pnl": -0.0110160205908165,
+      "strategies": 4,
+      "cumulative_pnl": 0.012720123830204927
+    },
+    {
+      "ranking_date": "20251205",
+      "total_pnl": 0.0022275636235295,
+      "strategies": 4,
+      "cumulative_pnl": 0.014947687453734426
+    },
+    {
+      "ranking_date": "20251208",
+      "total_pnl": -0.007153587287264,
+      "strategies": 4,
+      "cumulative_pnl": 0.007794100166470426
+    },
+    {
+      "ranking_date": "20251209",
+      "total_pnl": -0.005718898734384,
+      "strategies": 4,
+      "cumulative_pnl": 0.002075201432086426
+    },
+    {
+      "ranking_date": "20251210",
+      "total_pnl": 0.0105663261194179,
+      "strategies": 4,
+      "cumulative_pnl": 0.012641527551504326
+    },
+    {
+      "ranking_date": "20251211",
+      "total_pnl": 0.015098843440182,
+      "strategies": 4,
+      "cumulative_pnl": 0.027740370991686324
+    },
+    {
+      "ranking_date": "20251212",
+      "total_pnl": 0.0058154798352173,
+      "strategies": 4,
+      "cumulative_pnl": 0.03355585082690363
+    },
+    {
+      "ranking_date": "20251215",
+      "total_pnl": 0.012413855934395,
+      "strategies": 4,
+      "cumulative_pnl": 0.04596970676129863
+    },
+    {
+      "ranking_date": "20251216",
+      "total_pnl": 0.0008493329774247993,
+      "strategies": 4,
+      "cumulative_pnl": 0.04681903973872343
+    },
+    {
+      "ranking_date": "20251217",
+      "total_pnl": -0.0056996967712864,
+      "strategies": 4,
+      "cumulative_pnl": 0.04111934296743703
+    },
+    {
+      "ranking_date": "20251218",
+      "total_pnl": 0.0043722549036974,
+      "strategies": 4,
+      "cumulative_pnl": 0.04549159787113443
+    },
+    {
+      "ranking_date": "20251219",
+      "total_pnl": -0.007255791867271898,
+      "strategies": 4,
+      "cumulative_pnl": 0.03823580600386253
+    },
+    {
+      "ranking_date": "20251222",
+      "total_pnl": 0.007900001531451,
+      "strategies": 4,
+      "cumulative_pnl": 0.04613580753531353
+    },
+    {
+      "ranking_date": "20251223",
+      "total_pnl": -0.0030696981589192003,
+      "strategies": 4,
+      "cumulative_pnl": 0.04306610937639433
+    },
+    {
+      "ranking_date": "20251224",
+      "total_pnl": 0.0090884580632859,
+      "strategies": 4,
+      "cumulative_pnl": 0.05215456743968023
+    },
+    {
+      "ranking_date": "20251226",
+      "total_pnl": -0.0019175973477083999,
+      "strategies": 4,
+      "cumulative_pnl": 0.05023697009197183
+    },
+    {
+      "ranking_date": "20251229",
+      "total_pnl": -0.003692499383318,
+      "strategies": 4,
+      "cumulative_pnl": 0.046544470708653835
+    },
+    {
+      "ranking_date": "20251230",
+      "total_pnl": -0.0012525113968371007,
+      "strategies": 4,
+      "cumulative_pnl": 0.04529195931181673
+    },
+    {
+      "ranking_date": "20251231",
+      "total_pnl": -0.006715068317517399,
+      "strategies": 4,
+      "cumulative_pnl": 0.03857689099429933
+    },
+    {
+      "ranking_date": "20260102",
+      "total_pnl": 0.005661475389171801,
+      "strategies": 4,
+      "cumulative_pnl": 0.04423836638347113
+    },
+    {
+      "ranking_date": "20260105",
+      "total_pnl": 0.0078831044212019,
+      "strategies": 4,
+      "cumulative_pnl": 0.05212147080467303
+    },
+    {
+      "ranking_date": "20260106",
+      "total_pnl": 0.026344053663490304,
+      "strategies": 4,
+      "cumulative_pnl": 0.07846552446816334
+    },
+    {
+      "ranking_date": "20260107",
+      "total_pnl": -0.0077649114143959,
+      "strategies": 4,
+      "cumulative_pnl": 0.07070061305376743
+    },
+    {
+      "ranking_date": "20260108",
+      "total_pnl": 0.008652513012174099,
+      "strategies": 4,
+      "cumulative_pnl": 0.07935312606594153
+    },
+    {
+      "ranking_date": "20260109",
+      "total_pnl": 0.0106225067884561,
+      "strategies": 4,
+      "cumulative_pnl": 0.08997563285439762
+    },
+    {
+      "ranking_date": "20260112",
+      "total_pnl": -0.0014150975097569998,
+      "strategies": 4,
+      "cumulative_pnl": 0.08856053534464062
+    },
+    {
+      "ranking_date": "20260113",
+      "total_pnl": -0.0003544696116949001,
+      "strategies": 4,
+      "cumulative_pnl": 0.08820606573294572
+    },
+    {
+      "ranking_date": "20260114",
+      "total_pnl": 0.005900648149674,
+      "strategies": 4,
+      "cumulative_pnl": 0.09410671388261972
+    },
+    {
+      "ranking_date": "20260115",
+      "total_pnl": 0.0153358207085799,
+      "strategies": 4,
+      "cumulative_pnl": 0.10944253459119963
+    },
+    {
+      "ranking_date": "20260116",
+      "total_pnl": 0.0057519179298165,
+      "strategies": 4,
+      "cumulative_pnl": 0.11519445252101612
+    },
+    {
+      "ranking_date": "20260120",
+      "total_pnl": -0.006348009712855603,
+      "strategies": 4,
+      "cumulative_pnl": 0.10884644280816053
+    },
+    {
+      "ranking_date": "20260121",
+      "total_pnl": 0.0184129059528056,
+      "strategies": 4,
+      "cumulative_pnl": 0.12725934876096612
+    },
+    {
+      "ranking_date": "20260122",
+      "total_pnl": 0.0021951256353080002,
+      "strategies": 4,
+      "cumulative_pnl": 0.1294544743962741
+    },
+    {
+      "ranking_date": "20260123",
+      "total_pnl": -0.009997907684171099,
+      "strategies": 4,
+      "cumulative_pnl": 0.11945656671210302
+    },
+    {
+      "ranking_date": "20260126",
+      "total_pnl": 0.0036918898936127596,
+      "strategies": 4,
+      "cumulative_pnl": 0.12314845660571577
+    },
+    {
+      "ranking_date": "20260127",
+      "total_pnl": -0.0164505970763906,
+      "strategies": 4,
+      "cumulative_pnl": 0.10669785952932517
+    },
+    {
+      "ranking_date": "20260128",
+      "total_pnl": 0.0033382917631909967,
+      "strategies": 4,
+      "cumulative_pnl": 0.11003615129251618
+    },
+    {
+      "ranking_date": "20260129",
+      "total_pnl": 0.008732603108712302,
+      "strategies": 4,
+      "cumulative_pnl": 0.11876875440122847
+    },
+    {
+      "ranking_date": "20260130",
+      "total_pnl": -0.0019382791258257016,
+      "strategies": 4,
+      "cumulative_pnl": 0.11683047527540277
+    },
+    {
+      "ranking_date": "20260202",
+      "total_pnl": 0.0086366089440107,
+      "strategies": 4,
+      "cumulative_pnl": 0.12546708421941347
+    },
+    {
+      "ranking_date": "20260203",
+      "total_pnl": 0.0040978535678839,
+      "strategies": 4,
+      "cumulative_pnl": 0.12956493778729736
+    },
+    {
+      "ranking_date": "20260204",
+      "total_pnl": 0.016471930086160096,
+      "strategies": 4,
+      "cumulative_pnl": 0.14603686787345746
+    },
+    {
+      "ranking_date": "20260205",
+      "total_pnl": -0.0005677781355843993,
+      "strategies": 4,
+      "cumulative_pnl": 0.14546908973787306
+    },
+    {
+      "ranking_date": "20260206",
+      "total_pnl": -0.012007524380341101,
+      "strategies": 4,
+      "cumulative_pnl": 0.13346156535753195
+    },
+    {
+      "ranking_date": "20260209",
+      "total_pnl": -0.015537622406333797,
+      "strategies": 4,
+      "cumulative_pnl": 0.11792394295119815
+    },
+    {
+      "ranking_date": "20260210",
+      "total_pnl": 0.0112963770558705,
+      "strategies": 4,
+      "cumulative_pnl": 0.12922032000706865
+    },
+    {
+      "ranking_date": "20260211",
+      "total_pnl": 0.008431290996801299,
+      "strategies": 4,
+      "cumulative_pnl": 0.13765161100386994
+    },
+    {
+      "ranking_date": "20260212",
+      "total_pnl": 0.0082520160968787,
+      "strategies": 4,
+      "cumulative_pnl": 0.14590362710074864
+    },
+    {
+      "ranking_date": "20260213",
+      "total_pnl": 0.0096098843322516,
+      "strategies": 4,
+      "cumulative_pnl": 0.15551351143300024
+    },
+    {
+      "ranking_date": "20260217",
+      "total_pnl": 0.007830135470469301,
+      "strategies": 4,
+      "cumulative_pnl": 0.16334364690346953
+    },
+    {
+      "ranking_date": "20260218",
+      "total_pnl": -0.0109962312665486,
+      "strategies": 4,
+      "cumulative_pnl": 0.15234741563692092
+    },
+    {
+      "ranking_date": "20260219",
+      "total_pnl": -0.0019663454686691013,
+      "strategies": 4,
+      "cumulative_pnl": 0.1503810701682518
+    },
+    {
+      "ranking_date": "20260220",
+      "total_pnl": 0.003953619266269,
+      "strategies": 4,
+      "cumulative_pnl": 0.1543346894345208
+    },
+    {
+      "ranking_date": "20260223",
+      "total_pnl": -0.0013552283180708988,
+      "strategies": 4,
+      "cumulative_pnl": 0.15297946111644992
+    },
+    {
+      "ranking_date": "20260224",
+      "total_pnl": 0.0010705098384611996,
+      "strategies": 4,
+      "cumulative_pnl": 0.1540499709549111
+    },
+    {
+      "ranking_date": "20260225",
+      "total_pnl": -0.010227066831269201,
+      "strategies": 4,
+      "cumulative_pnl": 0.1438229041236419
+    },
+    {
+      "ranking_date": "20260226",
+      "total_pnl": 0.0096486755224202,
+      "strategies": 4,
+      "cumulative_pnl": 0.15347157964606212
+    },
+    {
+      "ranking_date": "20260227",
+      "total_pnl": -0.0031445138476675003,
+      "strategies": 4,
+      "cumulative_pnl": 0.1503270657983946
+    },
+    {
+      "ranking_date": "20260302",
+      "total_pnl": -0.0227006723682103,
+      "strategies": 4,
+      "cumulative_pnl": 0.1276263934301843
+    },
+    {
+      "ranking_date": "20260303",
+      "total_pnl": -0.014260156971741702,
+      "strategies": 4,
+      "cumulative_pnl": 0.11336623645844261
+    },
+    {
+      "ranking_date": "20260304",
+      "total_pnl": 0.0111695829487492,
+      "strategies": 4,
+      "cumulative_pnl": 0.12453581940719181
+    },
+    {
+      "ranking_date": "20260305",
+      "total_pnl": -0.0223665969458296,
+      "strategies": 4,
+      "cumulative_pnl": 0.10216922246136222
+    },
+    {
+      "ranking_date": "20260306",
+      "total_pnl": -0.0112551692805146,
+      "strategies": 4,
+      "cumulative_pnl": 0.09091405318084761
+    },
+    {
+      "ranking_date": "20260309",
+      "total_pnl": 0.000817850140327302,
+      "strategies": 4,
+      "cumulative_pnl": 0.09173190332117491
+    },
+    {
+      "ranking_date": "20260310",
+      "total_pnl": -0.003175146233357899,
+      "strategies": 4,
+      "cumulative_pnl": 0.08855675708781702
+    },
+    {
+      "ranking_date": "20260311",
+      "total_pnl": -0.007472874678121501,
+      "strategies": 4,
+      "cumulative_pnl": 0.08108388240969552
+    },
+    {
+      "ranking_date": "20260312",
+      "total_pnl": -0.015361230247069601,
+      "strategies": 4,
+      "cumulative_pnl": 0.06572265216262592
+    },
+    {
+      "ranking_date": "20260313",
+      "total_pnl": 0.0015329803508,
+      "strategies": 4,
+      "cumulative_pnl": 0.06725563251342592
+    },
+    {
+      "ranking_date": "20260316",
+      "total_pnl": 0.0098109214578045,
+      "strategies": 4,
+      "cumulative_pnl": 0.07706655397123043
+    },
+    {
+      "ranking_date": "20260317",
+      "total_pnl": -0.0013248200940077662,
+      "strategies": 4,
+      "cumulative_pnl": 0.07574173387722266
+    },
+    {
+      "ranking_date": "20260318",
+      "total_pnl": -0.017639644117580303,
+      "strategies": 4,
+      "cumulative_pnl": 0.05810208975964236
+    },
+    {
+      "ranking_date": "20260319",
+      "total_pnl": -0.0152998618103725,
+      "strategies": 4,
+      "cumulative_pnl": 0.042802227949269855
+    },
+    {
+      "ranking_date": "20260320",
+      "total_pnl": -0.0205810598510928,
+      "strategies": 4,
+      "cumulative_pnl": 0.022221168098177056
+    },
+    {
+      "ranking_date": "20260323",
+      "total_pnl": 0.0129270276197967,
+      "strategies": 4,
+      "cumulative_pnl": 0.03514819571797376
+    },
+    {
+      "ranking_date": "20260324",
+      "total_pnl": 0.0028853558309663036,
+      "strategies": 4,
+      "cumulative_pnl": 0.03803355154894006
+    },
+    {
+      "ranking_date": "20260325",
+      "total_pnl": 0.0060839848014607,
+      "strategies": 4,
+      "cumulative_pnl": 0.044117536350400756
+    },
+    {
+      "ranking_date": "20260326",
+      "total_pnl": 0.001197052682267101,
+      "strategies": 4,
+      "cumulative_pnl": 0.04531458903266786
+    },
+    {
+      "ranking_date": "20260327",
+      "total_pnl": -0.013614503048208501,
+      "strategies": 4,
+      "cumulative_pnl": 0.03170008598445936
+    },
+    {
+      "ranking_date": "20260330",
+      "total_pnl": 0.005629587278738498,
+      "strategies": 4,
+      "cumulative_pnl": 0.03732967326319785
+    },
+    {
+      "ranking_date": "20260331",
+      "total_pnl": 0.0235305089711333,
+      "strategies": 4,
+      "cumulative_pnl": 0.06086018223433115
+    },
+    {
+      "ranking_date": "20260401",
+      "total_pnl": 0.007319375493433302,
+      "strategies": 4,
+      "cumulative_pnl": 0.06817955772776445
+    },
+    {
+      "ranking_date": "20260402",
+      "total_pnl": -0.0064872486697908,
+      "strategies": 4,
+      "cumulative_pnl": 0.06169230905797365
+    },
+    {
+      "ranking_date": "20260406",
+      "total_pnl": -0.00013295721896079975,
+      "strategies": 4,
+      "cumulative_pnl": 0.06155935183901285
+    },
+    {
+      "ranking_date": "20260407",
+      "total_pnl": 0.0011097857598822009,
+      "strategies": 4,
+      "cumulative_pnl": 0.06266913759889506
+    },
+    {
+      "ranking_date": "20260408",
+      "total_pnl": 0.0363067883735895,
+      "strategies": 4,
+      "cumulative_pnl": 0.09897592597248456
+    },
+    {
+      "ranking_date": "20260409",
+      "total_pnl": 0.0150327764947933,
+      "strategies": 4,
+      "cumulative_pnl": 0.11400870246727786
+    },
+    {
+      "ranking_date": "20260410",
+      "total_pnl": -0.0066406640050481,
+      "strategies": 4,
+      "cumulative_pnl": 0.10736803846222975
+    },
+    {
+      "ranking_date": "20260413",
+      "total_pnl": 0.0013010707738767007,
+      "strategies": 4,
+      "cumulative_pnl": 0.10866910923610645
+    },
+    {
+      "ranking_date": "20260414",
+      "total_pnl": 0.0103439530147704,
+      "strategies": 4,
+      "cumulative_pnl": 0.11901306225087685
+    },
+    {
+      "ranking_date": "20260415",
+      "total_pnl": -0.0107334677959443,
+      "strategies": 4,
+      "cumulative_pnl": 0.10827959445493254
+    },
+    {
+      "ranking_date": "20260416",
+      "total_pnl": 0.004138413668680599,
+      "strategies": 4,
+      "cumulative_pnl": 0.11241800812361315
+    },
+    {
+      "ranking_date": "20260417",
+      "total_pnl": 0.0160563044025376,
+      "strategies": 4,
+      "cumulative_pnl": 0.12847431252615074
+    },
+    {
+      "ranking_date": "20260420",
+      "total_pnl": -0.0054913745526909,
+      "strategies": 4,
+      "cumulative_pnl": 0.12298293797345984
+    },
+    {
+      "ranking_date": "20260421",
+      "total_pnl": -0.0004409269861854019,
+      "strategies": 4,
+      "cumulative_pnl": 0.12254201098727444
+    },
+    {
+      "ranking_date": "20260422",
+      "total_pnl": 0.0029138742504741,
+      "strategies": 4,
+      "cumulative_pnl": 0.12545588523774853
+    },
+    {
+      "ranking_date": "20260423",
+      "total_pnl": 0.022424961082614124,
+      "strategies": 4,
+      "cumulative_pnl": 0.14788084632036266
+    },
+    {
+      "ranking_date": "20260424",
+      "total_pnl": 0.011914465737498898,
+      "strategies": 4,
+      "cumulative_pnl": 0.15979531205786157
+    },
+    {
+      "ranking_date": "20260427",
+      "total_pnl": 0.0079696912869959,
+      "strategies": 4,
+      "cumulative_pnl": 0.16776500334485747
+    },
+    {
+      "ranking_date": "20260428",
+      "total_pnl": 0.0061109313062755,
+      "strategies": 4,
+      "cumulative_pnl": 0.17387593465113296
+    },
+    {
+      "ranking_date": "20260429",
+      "total_pnl": 0.008727203731349397,
+      "strategies": 4,
+      "cumulative_pnl": 0.18260313838248235
+    },
+    {
+      "ranking_date": "20260430",
+      "total_pnl": 0.0108767296107398,
+      "strategies": 4,
+      "cumulative_pnl": 0.19347986799322214
+    },
+    {
+      "ranking_date": "20260501",
+      "total_pnl": -0.0033689202455795993,
+      "strategies": 4,
+      "cumulative_pnl": 0.19011094774764253
+    },
+    {
+      "ranking_date": "20260504",
+      "total_pnl": -0.016330849686594803,
+      "strategies": 4,
+      "cumulative_pnl": 0.17378009806104772
+    },
+    {
+      "ranking_date": "20260505",
+      "total_pnl": 0.016993938291407204,
+      "strategies": 4,
+      "cumulative_pnl": 0.19077403635245493
+    },
+    {
+      "ranking_date": "20260506",
+      "total_pnl": 0.0362744820403249,
+      "strategies": 4,
+      "cumulative_pnl": 0.22704851839277984
+    },
+    {
+      "ranking_date": "20260507",
+      "total_pnl": -0.005680509373168699,
+      "strategies": 4,
+      "cumulative_pnl": 0.22136800901961115
+    },
+    {
+      "ranking_date": "20260508",
+      "total_pnl": 0.0192439583518497,
+      "strategies": 4,
+      "cumulative_pnl": 0.24061196737146084
+    },
+    {
+      "ranking_date": "20260511",
+      "total_pnl": -0.012422076170127902,
+      "strategies": 4,
+      "cumulative_pnl": 0.22818989120133293
+    },
+    {
+      "ranking_date": "20260512",
+      "total_pnl": -0.009900752854422,
+      "strategies": 4,
+      "cumulative_pnl": 0.21828913834691094
+    },
+    {
+      "ranking_date": "20260513",
+      "total_pnl": -0.008627535254248198,
+      "strategies": 4,
+      "cumulative_pnl": 0.20966160309266274
+    },
+    {
+      "ranking_date": "20260514",
+      "total_pnl": -0.0104753283691469,
+      "strategies": 4,
+      "cumulative_pnl": 0.19918627472351585
+    },
+    {
+      "ranking_date": "20260515",
+      "total_pnl": -0.0231298680349208,
+      "strategies": 4,
+      "cumulative_pnl": 0.17605640668859507
+    }
+  ],
+  "coverage": {
+    "ranking_dates": [
+      "20260515"
+    ],
+    "portfolio_dates": [
+      "20260515"
+    ],
+    "metric_dates": [
+      "20260515"
+    ],
+    "by_date": [
+      {
+        "date": "20260515",
+        "rankings": 4,
+        "portfolios": 4,
+        "metrics_snapshot": true,
+        "audit": "PASS"
+      }
+    ]
+  },
+  "audits": [
+    {
+      "audit_date": "20260515",
+      "status": "PASS",
+      "failures": 0,
+      "warnings": 1
+    }
+  ],
+  "warnings": []
+}
