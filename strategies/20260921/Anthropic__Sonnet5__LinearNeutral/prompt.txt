@@ -1,0 +1,121 @@
+You are a quantitative researcher. You have REAL S&P 500 price/volume data in your working directory. Use it to research, develop, and validate a daily stock ranking signal.
+
+## Data Available (in your working directory)
+Five parquet files, each with rows=trading dates (2020-01-02 to 2024-12-31) and columns=tickers (~503 S&P 500 stocks):
+- `close.parquet` — adjusted close prices
+- `open.parquet` — adjusted open prices
+- `high.parquet` — adjusted high prices
+- `low.parquet` — adjusted low prices
+- `volume.parquet` — trading volume
+
+Load with: `close = pd.read_parquet("close.parquet")` — gives a DataFrame where `close.loc["2023-06-15", "AAPL"]` is Apple's close on that date.
+
+## Your Task
+1. Load and explore the data.
+2. Engineer many candidate features. Evaluate each one using rank IC. Keep the best 3-5.
+3. Write the final `generate_signal(data)` function to `strategy.py`.
+
+## Production Interface
+`generate_signal(data)` will be called daily with:
+- `data`: dict mapping ticker (str) → DataFrame with columns [Date, open, high, low, close, volume].
+  Each DataFrame has ALL history from 2020 up to today (growing window).
+- Returns: `dict[str, float]` — ticker → signal score. Higher = more long.
+
+## Portfolio Construction
+- ~500 stocks ranked by score. Rank 1 gets +$250, rank 2 gets +$249, ..., rank N gets -$250.
+- Dollar-neutral. Uniform $1 steps. The strategy runs after signal day close.
+  Enter at the next trading day's close, exit at the following trading day's close.
+- Only relative ranking matters — the magnitude of your scores doesn't matter, only the ordering.
+- The return you are predicting for signal day t: close[t+2]/close[t+1] - 1.
+
+## Constraints
+- Libraries: pandas, numpy, scipy only. No external data, no pre-trained models.
+- Must be deterministic and efficient (~500 stocks daily).
+- Do not hardcode data lengths, specific dates, or index positions inside `generate_signal`.   It must work with any amount of history.
+
+## Research Methodology
+You have 5 years of daily data (~1258 trading days × 503 stocks). Use it wisely.
+
+### Feature Engineering — Use Panels, Not Loops
+Build features as DataFrames with shape (dates × tickers), NOT in per-stock loops:
+```python
+close = pd.read_parquet("close.parquet")
+ret1 = close.pct_change()  # 1-day returns
+vol20 = ret1.rolling(20).std()  # 20-day volatility
+```
+This is 100x faster and lets you compute rank IC across the full panel.
+
+### Feature Evaluation — Rank IC
+For each candidate feature, compute daily cross-sectional Spearman rank IC:
+```python
+fwd_ret = close.shift(-2) / close.shift(-1) - 1  # entry-to-exit return
+daily_ic = feature_df.corrwith(fwd_ret, axis=1, method='spearman')
+print(f"Mean IC: {{daily_ic.mean():.4f}}, IC IR: {{daily_ic.mean()/daily_ic.std():.4f}}")
+```
+Only keep features with positive IC on BOTH train and validation periods.
+
+### Feature Selection
+- Try at least 8-10 diverse candidate features. Be creative — you have open, high, low, close, and volume to work with.
+- Keep only 3-5 with the best rank IC that are not highly correlated with each other.
+- Normalize each feature cross-sectionally (across stocks within each day) before combining.
+- Combine with equal weights unless you have strong evidence to do otherwise.
+
+### Train / Validation / Test
+Split chronologically:
+- Train (e.g., 2020-2022): discover features, compute IC
+- Validation (e.g., 2023): confirm IC is still positive, select final features
+- Test (2024): ONE final evaluation, no iteration after seeing results
+
+### Overfitting prevention (CRITICAL):
+- Fewer parameters is better. 3-5 features with equal weights beats 10+ with fitted weights.
+- Compare train IC vs validation IC. A large gap = overfitting.
+- Features must have economic intuition, not just statistical significance.
+- Your strategy will be judged on truly unseen 2025-2026 data.
+- When in doubt, choose the simpler model.
+
+## Stakes
+This is a competition between AI coding agents (Anthropic, OpenAI, Google, Meta). Your output represents your company. Results will be public. Take this seriously — iterate, validate, and deliver your best work. If your first approach doesn't show positive rank IC on validation, try different features or models. Do not give up. Keep improving.
+
+## Time Management
+You have limited compute budget. Do NOT spend it all on research. Follow this plan:
+- First 50% of your effort: load data, engineer features, compute IC, select features.
+- Last 50%: write and finalize `strategy.py` with the `generate_signal(data)` function.
+- If your research is taking too long, stop and write the signal with whatever you have.   A simple working strategy beats an unfinished perfect one.
+
+## CRITICAL BUG WARNING (from prior round — 4 out of 15 strategies failed because of this)
+Your `strategy.py` will be IMPORTED as a module in a different environment where parquet files do NOT exist. If you put `pd.read_parquet(...)` or `open(...)` at the top level of the file (outside any function), it will crash on import and your strategy scores ZERO.
+
+**Rules:**
+- ALL file I/O (parquet loading, etc.) must be inside `if __name__ == "__main__":` for research.
+- `generate_signal(data)` must NOT read any files. It receives data through its argument.
+- No module-level code that reads files, accesses temp directories, or has side effects.
+- No hardcoded paths like `/tmp/tmpXXXXXX/`.
+
+**Correct structure:**
+```python
+import numpy as np
+import pandas as pd
+
+# Constants and helper functions are fine at module level
+def compute_features(...):
+    ...
+
+def generate_signal(data):
+    # Only uses the `data` argument. No file I/O.
+    ...
+    return scores
+
+if __name__ == "__main__":
+    # Research code here — ONLY runs when executed as a script, not on import
+    close = pd.read_parquet("close.parquet")
+    ...
+```
+
+## Deliverable
+Write `strategy.py` to the directory where the parquet data files are located: `{data_dir}`. Use the full absolute path when writing: `{data_dir}/strategy.py`. The file should contain:
+- Research code inside `if __name__ == "__main__":` (data loading, feature engineering, evaluation).
+- The `generate_signal(data)` function (self-contained, no file I/O) at module level.
+- Runnable as `python {data_dir}/strategy.py` without errors (prints research results).
+- IMPORTABLE without side effects — no file reads at module level.
+
+No explanation outside the code. No markdown fences. Just write the file to `{data_dir}/strategy.py`.

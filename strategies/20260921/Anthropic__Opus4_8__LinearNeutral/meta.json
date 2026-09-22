@@ -1,0 +1,14 @@
+{
+  "model": "Anthropic__Opus4_8",
+  "version": "202609",
+  "strategy": "Anthropic__Opus4_8__LinearNeutral_202609",
+  "generated": "2026-09-21T12:09:40.056409",
+  "api_model": "claude-opus-4-8",
+  "code_sha256": "bdf7eb62441ca659ea284bfedc686e27574076fd25d2e292c269a0b3b6f0d29b",
+  "prompt_sha256": "c18df319ad5f172d4d77cf5db85630568a93437ff08315ec707dfcb2ec42797c",
+  "status": "active",
+  "activation_date": "2026-09-21",
+  "measurement": "live_forward_only",
+  "promoted_from": "/home/xiaoyusun/bm/strategies/Anthropic__Opus4_8__LinearNeutral_202609",
+  "cohort": "20260921"
+}

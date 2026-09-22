@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260921",
+  "strategy_slug": "Anthropic__Sonnet5__LinearNeutral",
+  "strategy_id": "20260921__Anthropic__Sonnet5__LinearNeutral",
+  "source_cache": "/home/xiaoyusun/bm/strategies/Anthropic__Sonnet5__LinearNeutral_202609",
+  "source_cache_name": "Anthropic__Sonnet5__LinearNeutral_202609",
+  "strategy_sha256": "fe3a7b6d4cb1ac48d711bd1673f35e8acbe8e38c385f915b34065712bd016cc9"
+}

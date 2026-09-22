@@ -1,0 +1,14 @@
+{
+  "model": "Anthropic__Sonnet5",
+  "version": "202609",
+  "strategy": "Anthropic__Sonnet5__LinearNeutral_202609",
+  "generated": "2026-09-21T12:06:03.179776",
+  "api_model": "claude-sonnet-5",
+  "code_sha256": "fe3a7b6d4cb1ac48d711bd1673f35e8acbe8e38c385f915b34065712bd016cc9",
+  "prompt_sha256": "c18df319ad5f172d4d77cf5db85630568a93437ff08315ec707dfcb2ec42797c",
+  "status": "active",
+  "activation_date": "2026-09-21",
+  "measurement": "live_forward_only",
+  "promoted_from": "/home/xiaoyusun/bm/strategies/Anthropic__Sonnet5__LinearNeutral_202609",
+  "cohort": "20260921"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "OpenAI__GPT5_6_Sol",
+  "version": "202609",
+  "strategy": "OpenAI__GPT5_6_Sol__LinearNeutral_202609",
+  "generated": "2026-09-21T11:50:32.853664",
+  "api_model": "gpt-5.6-sol",
+  "code_sha256": "361ec89db40ed25471faa21903e9f10ee64c80e4e95dc20b83d913c87702f6c7",
+  "prompt_sha256": "c18df319ad5f172d4d77cf5db85630568a93437ff08315ec707dfcb2ec42797c",
+  "status": "active",
+  "activation_date": "2026-09-21",
+  "measurement": "live_forward_only",
+  "promoted_from": "/home/xiaoyusun/bm/strategies/OpenAI__GPT5_6_Sol__LinearNeutral_202609",
+  "cohort": "20260921"
+}

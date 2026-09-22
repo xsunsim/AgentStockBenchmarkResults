@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "prompt_id": "20260921",
+  "strategy_slug": "Anthropic__Opus5__LinearNeutral",
+  "strategy_id": "20260921__Anthropic__Opus5__LinearNeutral",
+  "source_cache": "/home/xiaoyusun/bm/strategies/Anthropic__Opus5__LinearNeutral_202609",
+  "source_cache_name": "Anthropic__Opus5__LinearNeutral_202609",
+  "strategy_sha256": "ba5166a83512ca704cae96108a2e78b01a63ee6bb9b074f0f3176640e2bdd571"
+}

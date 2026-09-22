@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-09-21T22:32:50+00:00",
-  "n_strategies": 16,
+  "generated_at_utc": "2026-09-22T01:16:14+00:00",
+  "n_strategies": 20,
   "strategies": [
     {
       "prompt_id": "20260517",
@@ -114,6 +114,34 @@
       "strategy_id": "20260517__OpenAI__O4_mini__LinearNeutral",
       "path": "/home/hatch/workspace/AgentStockBenchmarkResults/strategies/20260517/OpenAI__O4_mini__LinearNeutral/strategy.py",
       "strategy_sha256": "ab890d4755a59b854b9fd83f5bd219653b8ee720c2babf00ff7be2274fdde1c4"
+    },
+    {
+      "prompt_id": "20260921",
+      "strategy_slug": "Anthropic__Opus4_8__LinearNeutral",
+      "strategy_id": "20260921__Anthropic__Opus4_8__LinearNeutral",
+      "path": "/home/hatch/workspace/AgentStockBenchmarkResults/strategies/20260921/Anthropic__Opus4_8__LinearNeutral/strategy.py",
+      "strategy_sha256": "bdf7eb62441ca659ea284bfedc686e27574076fd25d2e292c269a0b3b6f0d29b"
+    },
+    {
+      "prompt_id": "20260921",
+      "strategy_slug": "Anthropic__Opus5__LinearNeutral",
+      "strategy_id": "20260921__Anthropic__Opus5__LinearNeutral",
+      "path": "/home/hatch/workspace/AgentStockBenchmarkResults/strategies/20260921/Anthropic__Opus5__LinearNeutral/strategy.py",
+      "strategy_sha256": "ba5166a83512ca704cae96108a2e78b01a63ee6bb9b074f0f3176640e2bdd571"
+    },
+    {
+      "prompt_id": "20260921",
+      "strategy_slug": "Anthropic__Sonnet5__LinearNeutral",
+      "strategy_id": "20260921__Anthropic__Sonnet5__LinearNeutral",
+      "path": "/home/hatch/workspace/AgentStockBenchmarkResults/strategies/20260921/Anthropic__Sonnet5__LinearNeutral/strategy.py",
+      "strategy_sha256": "fe3a7b6d4cb1ac48d711bd1673f35e8acbe8e38c385f915b34065712bd016cc9"
+    },
+    {
+      "prompt_id": "20260921",
+      "strategy_slug": "OpenAI__GPT5_6_Sol__LinearNeutral",
+      "strategy_id": "20260921__OpenAI__GPT5_6_Sol__LinearNeutral",
+      "path": "/home/hatch/workspace/AgentStockBenchmarkResults/strategies/20260921/OpenAI__GPT5_6_Sol__LinearNeutral/strategy.py",
+      "strategy_sha256": "361ec89db40ed25471faa21903e9f10ee64c80e4e95dc20b83d913c87702f6c7"
     }
   ]
 }
