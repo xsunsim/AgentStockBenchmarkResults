@@ -4,6 +4,10 @@
 
 ![Cumulative PnL Performance](leaderboard/cumulative_pnl.png)
 
+![Recent Strong Models Cumulative PnL](leaderboard/recent_strong_models_cumulative_pnl.png)
+
+**Recent strong model daily PnL:** [summary and daily rows](leaderboard/recent_strong_models_daily_pnl.md).
+
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
 ### LATEST AI PREDICTIONS (Generated September 21, for September 22 cycle)
