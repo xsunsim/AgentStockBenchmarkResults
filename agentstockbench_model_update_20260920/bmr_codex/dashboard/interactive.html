@@ -264,7 +264,7 @@
     function renderStats(data) {
       const summary = data.summary;
       document.getElementById("stats").innerHTML = [
-        ["Top Strategy", summary.top_strategy_id],
+        ["Top Strategy", summary.top_strategy_label || summary.top_strategy_id],
         ["Top Sharpe", fmtNumber.format(summary.top_sharpe)],
         ["Top Cumulative PnL", formatSigned(summary.top_cumulative_pnl)],
         ["Latest PnL Date", fmtDate(summary.latest_pnl_date)],
@@ -281,7 +281,7 @@
     function renderStrategies(data) {
       document.getElementById("strategies").innerHTML = data.top_strategies.map((row) => `
         <tr>
-          <td>${row.strategy_id}</td>
+          <td>${row.model || row.strategy_id}</td>
           <td>${fmtNumber.format(row.sharpe)}</td>
           <td class="${row.cumulative_pnl >= 0 ? "pos" : "neg"}">${formatSigned(row.cumulative_pnl)}</td>
           <td class="neg">${formatSigned(row.max_drawdown)}</td>
