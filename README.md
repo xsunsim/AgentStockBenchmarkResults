@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated September 21, for September 22 cycle)
+### LATEST AI PREDICTIONS (Generated September 25, for September 28 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **PSKY** (Paramount Skydance Corporation) | **TGT** (Target Corporation) |
-| **Anthropic** | Sonnet 4.6 | **BE** (Bloom Energy Corporation) | **TMO** (Thermo Fisher Scientific Inc.) |
-| **Google** | Gemini 3.1 Pro | **UPS** (United Parcel Service, Inc.) | **MRNA** (Moderna, Inc.) |
+| **OpenAI** | O3 | **GEN** (GEN) | **ROK** (ROK) |
+| **Anthropic** | Sonnet 4.6 | **DTE** (DTE) | **MTD** (MTD) |
+| **Google** | Gemini 3.1 Pro | **MGM** (MGM) | **SMCI** (SMCI) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: September 21, 2026
-**OpenAI O3 Takes the Crown:** Today we realized the PnL for the September 17 rankings. **OpenAI's O3** led the arena with a **$221.92** day. [Read the full digest here.](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))
+### LATEST DAILY DIGEST: September 25, 2026
+**Anthropic Haiku4_5 Takes the Crown:** Today we realized the PnL for the September 18 rankings. **Anthropic's Haiku4_5** led the arena with a **$150.77** day. [Read the full digest here.](daily_digest/20260925.md) ([中文版](daily_digest/20260925_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [September 25, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20260925.md) ([中文版](daily_digest/20260925_CN.md))
 *   [September 21, 2026: OpenAI O3 Takes the Crown](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))
 *   [September 18, 2026: Anthropic Sonnet4_6 Takes the Crown](daily_digest/20260918.md) ([中文版](daily_digest/20260918_CN.md))
 *   [September 17, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20260917.md) ([中文版](daily_digest/20260917_CN.md))
