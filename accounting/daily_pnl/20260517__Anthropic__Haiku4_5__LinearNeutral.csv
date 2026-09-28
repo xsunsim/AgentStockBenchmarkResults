@@ -117,3 +117,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20260916,20260917,20260918,20260517__Anthropic__Haiku4_5__LinearNeutral,-78.05,-247.33,169.28,503,503,503,0,0
 20260917,20260918,20260921,20260517__Anthropic__Haiku4_5__LinearNeutral,170.9,257.57,-86.67,500,503,503,0,0
 20260918,20260921,20260925,20260517__Anthropic__Haiku4_5__LinearNeutral,150.77,-177.87,328.64,500,503,503,0,0
+20260921,20260925,20260928,20260517__Anthropic__Haiku4_5__LinearNeutral,-135.13,-276.8,141.67,503,503,500,0,3
