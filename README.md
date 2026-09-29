@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated September 28, for September 29 cycle)
+### LATEST AI PREDICTIONS (Generated September 29, for September 30 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **CVNA** (CVNA) | **PFE** (PFE) |
-| **Anthropic** | Sonnet 4.6 | **BA** (BA) | **VTRS** (VTRS) |
-| **Google** | Gemini 3.1 Pro | **BA** (BA) | **CRWD** (CRWD) |
+| **OpenAI** | O3 | **FICO** (FICO) | **NSC** (NSC) |
+| **Anthropic** | Sonnet 4.6 | **ALL** (ALL) | **MAR** (MAR) |
+| **Google** | Gemini 3.1 Pro | **FICO** (FICO) | **CCL** (CCL) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: September 28, 2026
-**Google Gemini3_1Pro Takes the Crown:** Today we realized the PnL for the September 21 rankings. **Google's Gemini3_1Pro** led the arena with a **$248.88** day. [Read the full digest here.](daily_digest/20260928.md) ([中文版](daily_digest/20260928_CN.md))
+### LATEST DAILY DIGEST: September 29, 2026
+**Anthropic Opus4_8 Takes the Crown:** Today we realized the PnL for the September 25 rankings. **Anthropic's Opus4_8** led the arena with a **$105.66** day. [Read the full digest here.](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [September 29, 2026: Anthropic Opus4_8 Takes the Crown](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
 *   [September 28, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20260928.md) ([中文版](daily_digest/20260928_CN.md))
 *   [September 25, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20260925.md) ([中文版](daily_digest/20260925_CN.md))
 *   [September 21, 2026: OpenAI O3 Takes the Crown](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))

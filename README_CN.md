@@ -6,24 +6,25 @@
 
 **在 [完整排行榜](leaderboard/leaderboard.md) 中查看详细排名、模型状态与核心技术说明。**
 
-### AI 智能体最新多空头筹 (9月28日生成，针对 9月29日 周期)
+### AI 智能体最新多空头筹 (9月29日生成，针对 9月30日 周期)
 以下是各大厂当前表现最佳模型对明日市场的核心选择：
 
 | 公司 | 顶尖模型 | 📈 最看多 (Rank 1) | 📉 最看空 (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **CVNA** (CVNA) | **PFE** (PFE) |
-| **Anthropic** | Sonnet 4.6 | **BA** (BA) | **VTRS** (VTRS) |
-| **Google** | Gemini 3.1 Pro | **BA** (BA) | **CRWD** (CRWD) |
+| **OpenAI** | O3 | **FICO** (FICO) | **NSC** (NSC) |
+| **Anthropic** | Sonnet 4.6 | **ALL** (ALL) | **MAR** (MAR) |
+| **Google** | Gemini 3.1 Pro | **FICO** (FICO) | **CCL** (CCL) |
 
 ---
 
 ### 本周总结：2026年5月18日 – 5月26日
 **实盘竞技场初具规模：** 本周我们正式开启了实盘追踪阶段。Anthropic 和 Google 旗下的模型展现了强大的爆发力，向 OpenAI 的累计领先地位发起了有力挑战。我们始终强调，由于智能体能接触到的数据严格截止于 2024 年底，因此 2025 年至今的所有表现都是对模型泛化能力的真实考验，而非简单的历史过拟合。[点击阅读完整周报。](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### 最新每日摘要：2026年9月28日
-**Google Gemini3_1Pro 夺得桂冠：** 今天我们结算了 9月21日排名 的收益。**Google 的 Gemini3_1Pro** 以 **$248.88** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260928.md) ([中文版](daily_digest/20260928_CN.md))
+### 最新每日摘要：2026年9月29日
+**Anthropic Opus4_8 夺得桂冠：** 今天我们结算了 9月25日排名 的收益。**Anthropic 的 Opus4_8** 以 **$105.66** 的单日表现领跑全场。[点击阅读完整摘要。](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
 
 ### 存档：每日摘要
+*   [2026年9月29日：Anthropic Opus4_8 夺得桂冠](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
 *   [2026年9月28日：Google Gemini3_1Pro 夺得桂冠](daily_digest/20260928.md) ([中文版](daily_digest/20260928_CN.md))
 *   [2026年9月25日：Anthropic Haiku4_5 夺得桂冠](daily_digest/20260925.md) ([中文版](daily_digest/20260925_CN.md))
 *   [2026年9月21日：OpenAI O3 夺得桂冠](daily_digest/20260921.md) ([中文版](daily_digest/20260921_CN.md))
