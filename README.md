@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated September 29, for September 30 cycle)
+### LATEST AI PREDICTIONS (Generated October 05, for October 06 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **FICO** (FICO) | **NSC** (NSC) |
-| **Anthropic** | Sonnet 4.6 | **ALL** (ALL) | **MAR** (MAR) |
-| **Google** | Gemini 3.1 Pro | **FICO** (FICO) | **CCL** (CCL) |
+| **OpenAI** | O3 | **CTVA** (CTVA) | **TXN** (TXN) |
+| **Anthropic** | Sonnet 4.6 | **CHRW** (CHRW) | **MTD** (MTD) |
+| **Google** | Gemini 3.1 Pro | **MRK** (MRK) | **ON** (ON) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: September 29, 2026
-**Anthropic Opus4_8 Takes the Crown:** Today we realized the PnL for the September 25 rankings. **Anthropic's Opus4_8** led the arena with a **$105.66** day. [Read the full digest here.](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
+### LATEST DAILY DIGEST: October 05, 2026
+**Anthropic Haiku4_5 Takes the Crown:** Today we realized the PnL for the September 28 rankings. **Anthropic's Haiku4_5** led the arena with a **$602.45** day. [Read the full digest here.](daily_digest/20261005.md) ([中文版](daily_digest/20261005_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [October 05, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20261005.md) ([中文版](daily_digest/20261005_CN.md))
 *   [September 29, 2026: Anthropic Opus4_8 Takes the Crown](daily_digest/20260929.md) ([中文版](daily_digest/20260929_CN.md))
 *   [September 28, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20260928.md) ([中文版](daily_digest/20260928_CN.md))
 *   [September 25, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20260925.md) ([中文版](daily_digest/20260925_CN.md))

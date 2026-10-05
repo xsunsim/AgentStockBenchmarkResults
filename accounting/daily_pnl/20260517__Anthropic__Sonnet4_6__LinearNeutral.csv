@@ -119,3 +119,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20260918,20260921,20260925,20260517__Anthropic__Sonnet4_6__LinearNeutral,-461.04,-517.91,56.87,500,503,503,9,0
 20260921,20260925,20260928,20260517__Anthropic__Sonnet4_6__LinearNeutral,59.57,-181.98,241.55,503,503,503,12,0
 20260925,20260928,20260929,20260517__Anthropic__Sonnet4_6__LinearNeutral,-99.08,-72.49,-26.59,503,503,503,12,0
+20260928,20260929,20261005,20260517__Anthropic__Sonnet4_6__LinearNeutral,-470.52,-96.68,-373.83,503,503,503,12,0
