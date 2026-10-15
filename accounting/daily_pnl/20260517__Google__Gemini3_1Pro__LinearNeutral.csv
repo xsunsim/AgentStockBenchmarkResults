@@ -127,3 +127,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20261008,20261009,20261012,20260517__Google__Gemini3_1Pro__LinearNeutral,-313.27,-188.38,-124.89,503,503,503,15,0
 20261009,20261012,20261013,20260517__Google__Gemini3_1Pro__LinearNeutral,148.53,86.68,61.85,503,503,503,15,0
 20261012,20261013,20261014,20260517__Google__Gemini3_1Pro__LinearNeutral,-605.3,-617.39,12.08,503,503,503,15,0
+20261013,20261014,20261015,20260517__Google__Gemini3_1Pro__LinearNeutral,-278.31,264.56,-542.87,503,503,503,15,0
