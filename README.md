@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated October 22, for October 23 cycle)
+### LATEST AI PREDICTIONS (Generated October 23, for October 26 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **GEV** (GEV) | **AFL** (AFL) |
-| **Anthropic** | Sonnet 4.6 | **DXCM** (DXCM) | **PEP** (PEP) |
-| **Google** | Gemini 3.1 Pro | **LITE** (LITE) | **ROP** (ROP) |
+| **OpenAI** | O3 | **FIX** (FIX) | **COO** (COO) |
+| **Anthropic** | Sonnet 4.6 | **EME** (EME) | **ROP** (ROP) |
+| **Google** | Gemini 3.1 Pro | **BE** (BE) | **CRWD** (CRWD) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: October 22, 2026
-**Anthropic Haiku4_5 Takes the Crown:** Today we realized the PnL for the October 20 rankings. **Anthropic's Haiku4_5** led the arena with a **$331.63** day. [Read the full digest here.](daily_digest/20261022.md) ([中文版](daily_digest/20261022_CN.md))
+### LATEST DAILY DIGEST: October 23, 2026
+**Google Gemini2_5Pro Takes the Crown:** Today we realized the PnL for the October 21 rankings. **Google's Gemini2_5Pro** led the arena with a **$260.07** day. [Read the full digest here.](daily_digest/20261023.md) ([中文版](daily_digest/20261023_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [October 23, 2026: Google Gemini2_5Pro Takes the Crown](daily_digest/20261023.md) ([中文版](daily_digest/20261023_CN.md))
 *   [October 22, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20261022.md) ([中文版](daily_digest/20261022_CN.md))
 *   [October 21, 2026: Google Gemini2_5Pro Takes the Crown](daily_digest/20261021.md) ([中文版](daily_digest/20261021_CN.md))
 *   [October 20, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20261020.md) ([中文版](daily_digest/20261020_CN.md))

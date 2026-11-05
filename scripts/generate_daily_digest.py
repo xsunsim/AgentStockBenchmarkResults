@@ -10,13 +10,19 @@ PNL_DIR = RESULTS_REPO / "accounting" / "daily_pnl"
 DIGEST_DIR = RESULTS_REPO / "daily_digest"
 LEADERBOARD_PATH = RESULTS_REPO / "leaderboard" / "leaderboard.csv"
 
-def generate_digest(target_date: dt.date):
+def generate_digest(target_date: dt.date, run_date_str=None):
     """
     Generate a lively digest for a specific ranking date.
     Note: ranking_date t is realized on t+2.
+    run_date_str: the run's ET date (YYYYMMDD) used for the digest filename.
+    It must be passed explicitly: the old behavior named the file by the
+    system (UTC) date, which mismatches the ET run date whenever a run
+    executes after UTC midnight (19:00-24:00 EST) — that broke the Nov 4
+    run, whose digest landed as 20261105.md while the README step looked
+    for 20261104.md. Falls back to the system date only when omitted.
     """
     did = target_date.strftime("%Y%m%d")
-    today_str = dt.date.today().strftime("%Y%m%d")
+    today_str = run_date_str if run_date_str else dt.date.today().strftime("%Y%m%d")
     
     # 1. Load Leaderboard
     if not LEADERBOARD_PATH.exists():
@@ -189,7 +195,11 @@ if __name__ == "__main__":
         # This is a bit complex to find purely from files, so we expect the caller to provide it
         # or we just guess T-2 for now if no arg provided.
         t_date = dt.date.today() - dt.timedelta(days=2)
-    
-    text = generate_digest(t_date)
+    # Optional 2nd arg: run date (ET, YYYYMMDD) for the digest filename.
+    # Required for runs after UTC midnight and for all backfills, where the
+    # system date differs from the run date (see generate_digest docstring).
+    run_date_str = sys.argv[2] if len(sys.argv) > 2 else None
+
+    text = generate_digest(t_date, run_date_str)
     print("\n--- SOCIAL MEDIA DRAFT ---")
     print(text)
