@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated November 09, for November 10 cycle)
+### LATEST AI PREDICTIONS (Generated November 10, for November 11 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **AXON** (AXON) | **PTC** (PTC) |
+| **OpenAI** | O3 | **EXPE** (EXPE) | **IEX** (IEX) |
 | **Anthropic** | Sonnet 4.6 | **AXON** (AXON) | **MSI** (MSI) |
-| **Google** | Gemini 3.1 Pro | **LYB** (LYB) | **AMD** (AMD) |
+| **Google** | Gemini 3.1 Pro | **DELL** (DELL) | **CHTR** (CHTR) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: November 09, 2026
-**Google Gemini3_1Pro Takes the Crown:** Today we realized the PnL for the November 05 rankings. **Google's Gemini3_1Pro** led the arena with a **$1,170.90** day. [Read the full digest here.](daily_digest/20261109.md) ([中文版](daily_digest/20261109_CN.md))
+### LATEST DAILY DIGEST: November 10, 2026
+**Google Gemini2_5Pro Takes the Crown:** Today we realized the PnL for the November 06 rankings. **Google's Gemini2_5Pro** led the arena with a **$282.08** day. [Read the full digest here.](daily_digest/20261110.md) ([中文版](daily_digest/20261110_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [November 10, 2026: Google Gemini2_5Pro Takes the Crown](daily_digest/20261110.md) ([中文版](daily_digest/20261110_CN.md))
 *   [November 09, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20261109.md) ([中文版](daily_digest/20261109_CN.md))
 *   [November 06, 2026: Anthropic Opus4_7 Takes the Crown](daily_digest/20261106.md) ([中文版](daily_digest/20261106_CN.md))
 *   [November 05, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20261105.md) ([中文版](daily_digest/20261105_CN.md))
