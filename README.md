@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated November 11, for November 12 cycle)
+### LATEST AI PREDICTIONS (Generated November 12, for November 13 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **FIS** (FIS) | **WST** (WST) |
-| **Anthropic** | Sonnet 4.6 | **AXON** (AXON) | **VTRS** (VTRS) |
-| **Google** | Gemini 3.1 Pro | **MSFT** (MSFT) | **BE** (BE) |
+| **OpenAI** | O3 | **GPN** (GPN) | **CSX** (CSX) |
+| **Anthropic** | Sonnet 4.6 | **AXON** (AXON) | **SWKS** (SWKS) |
+| **Google** | Gemini 3.1 Pro | **MRNA** (MRNA) | **ANET** (ANET) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: November 11, 2026
-**OpenAI O3 Takes the Crown:** Today we realized the PnL for the November 09 rankings. **OpenAI's O3** led the arena with a **$748.82** day. [Read the full digest here.](daily_digest/20261111.md) ([中文版](daily_digest/20261111_CN.md))
+### LATEST DAILY DIGEST: November 12, 2026
+**Google Gemini2_5Pro Takes the Crown:** Today we realized the PnL for the November 10 rankings. **Google's Gemini2_5Pro** led the arena with a **$313.05** day. [Read the full digest here.](daily_digest/20261112.md) ([中文版](daily_digest/20261112_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [November 12, 2026: Google Gemini2_5Pro Takes the Crown](daily_digest/20261112.md) ([中文版](daily_digest/20261112_CN.md))
 *   [November 11, 2026: OpenAI O3 Takes the Crown](daily_digest/20261111.md) ([中文版](daily_digest/20261111_CN.md))
 *   [November 10, 2026: Google Gemini2_5Pro Takes the Crown](daily_digest/20261110.md) ([中文版](daily_digest/20261110_CN.md))
 *   [November 09, 2026: Google Gemini3_1Pro Takes the Crown](daily_digest/20261109.md) ([中文版](daily_digest/20261109_CN.md))

@@ -147,3 +147,4 @@ ranking_date,entry_date,exit_date,strategy_id,total_pnl,long_pnl,short_pnl,n_pos
 20261105,20261106,20261109,20260517__Google__Gemini3Flash__LinearNeutral,841.32,1215.87,-374.55,503,503,503,16,0
 20261106,20261109,20261110,20260517__Google__Gemini3Flash__LinearNeutral,257.51,125.92,131.6,503,503,503,16,0
 20261109,20261110,20261111,20260517__Google__Gemini3Flash__LinearNeutral,-160.17,241.82,-401.99,503,503,503,16,0
+20261110,20261111,20261112,20260517__Google__Gemini3Flash__LinearNeutral,196.08,-218.42,414.49,503,503,503,16,0
