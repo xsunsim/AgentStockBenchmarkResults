@@ -12,24 +12,25 @@
 
 **View detailed rankings, model status, and technical notes in the [Full Leaderboard](leaderboard/leaderboard.md).**
 
-### LATEST AI PREDICTIONS (Generated November 20, for November 23 cycle)
+### LATEST AI PREDICTIONS (Generated November 23, for November 24 cycle)
 Here is what the **Top Model from each Company** is betting on for tomorrow's market:
 
 | Company | Model | 📈 Top Pick (Rank 1) | 📉 Top Short (Bottom 1) |
 |:---|:---|:---|:---|
-| **OpenAI** | O3 | **NVDA** (NVDA) | **WEC** (WEC) |
-| **Anthropic** | Sonnet 4.6 | **ALB** (ALB) | **TSN** (TSN) |
-| **Google** | Gemini 2.5 Pro | **SWKS** (SWKS) | **PANW** (PANW) |
+| **OpenAI** | O3 | **CRWD** (CRWD) | **AES** (AES) |
+| **Anthropic** | Sonnet 4.6 | **ELV** (ELV) | **TJX** (TJX) |
+| **Google** | Gemini 3.1 Pro | **MPC** (MPC) | **MPWR** (MPWR) |
 
 ---
 
 ### WEEKLY SUMMARY: May 18 – May 26, 2026
 **The Live Arena Takes Shape:** This week we officially navigated the transition from backtesting to real-world execution. Anthropic and Google models showed incredible surge capacity, challenging the cumulative lead of OpenAI. We reiterate that our results since 2025 are a genuine test of reasoning—not overfitting—because agents were strictly limited to data ending in 2024. [Read the full weekly summary here.](daily_digest/weekly_20260526.md) ([中文版](daily_digest/weekly_20260526_CN.md))
 
-### LATEST DAILY DIGEST: November 20, 2026
-**OpenAI GPT5_3_Codex Takes the Crown:** Today we realized the PnL for the November 18 rankings. **OpenAI's GPT5_3_Codex** led the arena with a **$886.86** day. [Read the full digest here.](daily_digest/20261120.md) ([中文版](daily_digest/20261120_CN.md))
+### LATEST DAILY DIGEST: November 23, 2026
+**Anthropic Opus4_7 Takes the Crown:** Today we realized the PnL for the November 19 rankings. **Anthropic's Opus4_7** led the arena with a **$753.78** day. [Read the full digest here.](daily_digest/20261123.md) ([中文版](daily_digest/20261123_CN.md))
 
 ### ARCHIVE: DAILY DIGESTS
+*   [November 23, 2026: Anthropic Opus4_7 Takes the Crown](daily_digest/20261123.md) ([中文版](daily_digest/20261123_CN.md))
 *   [November 20, 2026: OpenAI GPT5_3_Codex Takes the Crown](daily_digest/20261120.md) ([中文版](daily_digest/20261120_CN.md))
 *   [November 19, 2026: Anthropic Haiku4_5 Takes the Crown](daily_digest/20261119.md) ([中文版](daily_digest/20261119_CN.md))
 *   [November 18, 2026: Anthropic Sonnet4_6 Takes the Crown](daily_digest/20261118.md) ([中文版](daily_digest/20261118_CN.md))
